@@ -3,7 +3,6 @@ source "http://rubygems.org"
 gem "rails", "3.0.3"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
-gem "pg"
 
 group :development, :test do
   gem "sqlite3-ruby", :require => "sqlite3"
@@ -13,4 +12,8 @@ group :development, :test do
   gem "cucumber-rails", :group => :test
   gem "capybara", :group => :test
   gem "omniauth"
+end
+
+group :production do
+  gem "pg"
 end

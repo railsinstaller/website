@@ -61,7 +61,7 @@ input[type="checkbox"] { vertical-align: bottom; }
 .ie6 input { vertical-align: text-bottom; }
 label, input[type=button], input[type=submit], button { cursor: pointer; }
 button, input, select, textarea { margin: 0; }
-input:valid, textarea:valid   {  }
+input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red;  box-shadow: 0px 0px 5px red; }
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
@@ -77,7 +77,7 @@ button {  width: auto; overflow: visible; }
 .hidden { display: none; visibility: hidden; }
 .visuallyhidden { position: absolute !important; clip: rect(1px 1px 1px 1px);  clip: rect(1px, 1px, 1px, 1px); }
 .invisible { visibility: hidden; }
-.clearfix:before, .clearfix:after {  content: "\0020"; display: block; height: 0; visibility: hidden;	 }
+.clearfix:before, .clearfix:after {  content: "\0020"; display: block; height: 0; visibility: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
@@ -102,5 +102,22 @@ button {  width: auto; overflow: visible; }
   tr, img { page-break-inside: avoid; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
+  h2, h3 { page-break-after: avoid; }
 }
+
+
+/* oocss grids.css */
+.line:after,.lastUnit:after { clear:both; display:block; visibility:hidden; overflow:hidden; height:0 !important; line-height:0; font-size:xx-large; content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "; }
+.line { *zoom:1; }
+.unit { float:left; }
+.size1of1 { float:none; }
+.size1of2 { width:50%; }
+.size1of3 { width:33.33333%; }
+.size2of3 { width:66.66666%; }
+.size1of4 { width:25%; }
+.size3of4 { width:75%; }
+.size1of5 { width:20%; }
+.size2of5 { width:40%; }
+.size3of5 { width:60%; }
+.size4of5 { width:80%; }
+.lastUnit { display:table-cell; float:none; width:auto; *display:block; *zoom:1; _position:relative; _left:-3px; _margin-right:-3px; }

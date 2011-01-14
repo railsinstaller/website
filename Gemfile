@@ -14,6 +14,6 @@ group :development, :test do
   gem "omniauth"
 end
 
-group :production do
+group :production, :staging do
   gem "mysql2"
 end

@@ -6,3 +6,4 @@ tmp/**/*
 config/database.yml
 *~
 *.swp
+db/schema.rb

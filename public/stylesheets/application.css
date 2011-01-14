@@ -11,6 +11,7 @@
 
 /* global... */
 body {
+  position: relative;
   background: #eee;
   margin: 0 auto;
   font-family: helvetica, arial, sans-serif;
@@ -146,6 +147,29 @@ section[role=main] {
 }
 /* ...1,2,3 steps */
 
+/* lightbox... */
+#lightbox {
+  background: black;
+  background: rgba(0,0,0,.85);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#lightbox iframe {
+  margin: 25px auto 0 auto;
+  width:  800px;
+  height: 500px;
+  border: 1px solid #666;
+  display: block;
+  -webkit-box-shadow: 0 0 25px rgba(255, 255, 255, .25);
+  -moz-box-shadow:    0 0 25px rgba(255, 255, 255, .25);
+  box-shadow:         0 0 25px rgba(255, 255, 255, .25);
+}
+/* ...lightbox */
+
 /* site footer... */
 footer[role=contentinfo] {
   padding-top: 3em;
@@ -234,8 +258,21 @@ footer[role=contentinfo] a {
 }
 
 @media screen and (min-width: 450px) and (max-width: 880px) {
+  #lightbox iframe {
+    margin: 25px auto 0 auto;
+    width:  640px;
+    height: 400px;
+  }
   #steps h2 a span {
     display: inline;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #lightbox iframe {
+    margin: 25px auto 0 auto;
+    width:  90%;
+    height: 50%;
   }
 }
 /* ...narrow screens */

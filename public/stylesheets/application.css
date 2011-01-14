@@ -302,11 +302,7 @@ footer[role=contentinfo] a {
 /* ...wide screens */
 
 /* IE styles... */
-.ie6 #main {
-  width: 880px;
-}
-
-.ie #main {
-  min-width: 880px;
-}
+.ie header[role=banner] h2 { font-size: 300%; }
+.ie #main { min-width: 880px; }
+.ie6 #main { width: 880px; }
 /* ...IE styles */

@@ -13,9 +13,13 @@
   <meta name="description" content="Rails Installer. The easiest way to get up and running with Ruby on Rails. For Windows. Mac and Linux coming soon." />
   <meta name="author" content="Shane Becker : http://iamshane.com" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0" name="viewport" />
+  <meta content="true" name="HandheldFriendly" />
 
   <link rel="stylesheet" href="stylesheets/reset.css" />
   <link rel="stylesheet" href="stylesheets/application.css" />
@@ -25,46 +29,56 @@
 <body>
   <header role="banner">
     <hgroup>
-      <h1>Welcome to the Rails Installer</h1>
-      <h2>Get up and running with Rails</h2>
+      <h1>Rails Installer</h1>
+      <h2>Get up &amp; running with Rails</h2>
     </hgroup>
   </header>
 
   <section role="main">
     <ul id="steps" class="line">
-      <li class="step unit size1of3">
+      <li id="download" class="step unit size1of3">
         <article role="article">
           <header>
             <h1>Step 1</h1>
-            <a href="#">Download Welcome Kit</a>
+            <h2><a href="http://example.com/kit.zip">Download Welcome Kit</a></h2>
           </header>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
       </li>
 
-      <li class="step unit size1of3">
+      <li id="video" class="step unit size1of3">
         <article role="article">
           <header>
             <h1>Step 2</h1>
-            <a href="#">Watch Welcome Video</a>
+            <h2><a href="http://vimeo.com/18765668">Watch Welcome Video</a></h2>
           </header>
+
+          <div id="lightbox" style="display: none;">
+            <iframe src="http://player.vimeo.com/video/18765668?byline=0&amp;portrait=0" frameborder="0"></iframe>
+          </div>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
       </li>
 
-      <li class="step unit size1of3 lastUnit">
+      <li id="next" class="step unit size1of3">
         <article role="article">
           <header>
             <h1>Step 3</h1>
-            <a href="#">What Next?</a>
+            <h2><a href="#next">What Next?</a></h2>
           </header>
-        </article>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
       </li>
     </ul>
+  </section>
+
+  <section id="next">
+    <header>
+      <h1>Here&rsquo;s What to Do Next</h1>
+    </header>
   </section>
 
   <footer role="contentinfo">

@@ -148,7 +148,14 @@ section[role=main] {
 
 /* site footer... */
 footer[role=contentinfo] {
+  padding-top: 3em;
+  margin-bottom: 2em;
   text-align: right;
+  color: #666;
+}
+
+footer[role=contentinfo] a {
+  font-weight: bold;
 }
 /* ...site footer */
 

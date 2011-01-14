@@ -219,3 +219,9 @@ footer[role=contentinfo] {
     background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 480, from(white), to(#aaa));
   }
 }
+
+/* IE styles... */
+.ie #main {
+  min-width: 880px;
+}
+/* ...IE styles */

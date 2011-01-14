@@ -178,6 +178,28 @@ footer[role=contentinfo] {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .entry-content {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .entry-content {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  #steps h2 a span {
+    display: inline;
+  }
+
+  .entry-content {
+    font-size: 200%;
+  }
+}
+
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
   body {
     width: 320px;

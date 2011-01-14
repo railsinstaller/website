@@ -208,7 +208,6 @@ footer[role=contentinfo] {
 /* narrow screens... */
 @media screen and (max-width: 880px) {
   .step {
-    outline: 1px solid red;
     float: none;
     width: 100%;
     margin-bottom: 3em;

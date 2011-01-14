@@ -1,4 +1,4 @@
-$('#video header a').click(function() {
+$('#video header a, #video a.video-thumbnail').click(function() {
   $('#lightbox').show();
   return false;
 });

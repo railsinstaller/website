@@ -14,6 +14,7 @@ body {
   background: #eee;
   margin: 0 auto;
   font-family: helvetica, arial, sans-serif;
+  min-width: 280px;
 }
 
 abbr.amp {
@@ -151,6 +152,7 @@ footer[role=contentinfo] {
 }
 /* ...site footer */
 
+/* iphone... */
 @media screen and (max-device-width: 480px) {
   h1, h2, h3, h4, h5, h6 { font-family: helvetica, arial, sans-serif; }
   header[role=banner] hgroup { padding: 1em; }
@@ -177,7 +179,62 @@ footer[role=contentinfo] {
     width: 100%;
   }
 }
+/* ...iphone */
 
+/* iphone portrait... */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  body {
+    width: 320px;
+  }
+
+  header[role=banner] {
+    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 320, from(white), to(#aaa));
+  }
+}
+/* ...iphone portrait */
+
+/* iphone landscape... */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+  body {
+    width: 480px;
+  }
+
+  header[role=banner] {
+    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 480, from(white), to(#aaa));
+  }
+}
+/* ...iphone landscape */
+
+/* narrow screens... */
+@media screen and (max-width: 880px) {
+  .step {
+    outline: 1px solid red;
+    float: none;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  #download article,
+  #video article,
+  #next article {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .entry-content {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 880px) {
+  #steps h2 a span {
+    display: inline;
+  }
+}
+/* ...narrow screens */
+
+/* wide screens... */
 @media screen and (min-width: 1000px) {
   .entry-content {
     font-size: 125%;
@@ -199,28 +256,13 @@ footer[role=contentinfo] {
     font-size: 200%;
   }
 }
-
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
-  body {
-    width: 320px;
-  }
-
-  header[role=banner] {
-    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 320, from(white), to(#aaa));
-  }
-}
-
-@media screen and (max-device-width: 480px) and (orientation:landscape) {
-  body {
-    width: 480px;
-  }
-
-  header[role=banner] {
-    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 480, from(white), to(#aaa));
-  }
-}
+/* ...wide screens */
 
 /* IE styles... */
+.ie6 #main {
+  width: 880px;
+}
+
 .ie #main {
   min-width: 880px;
 }

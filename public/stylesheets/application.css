@@ -144,7 +144,7 @@ footer[role="contentinfo"] {
   }
 
   header[role=banner] {
-    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 320, from(red), to(#aaa));
+    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 320, from(white), to(#aaa));
   }
 }
 
@@ -154,6 +154,6 @@ footer[role="contentinfo"] {
   }
 
   header[role=banner] {
-    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 480, from(red), to(#aaa));
+    background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 480, from(white), to(#aaa));
   }
 }

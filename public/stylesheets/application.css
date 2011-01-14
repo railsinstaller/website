@@ -102,7 +102,7 @@ section[role=main] {
   background-position: right center;
   padding-right: 65px;
   height: 60px;
-  display: inline-block;
+  display: inline;
   color: black;
 }
 #steps #download h1 { background-image: url(/images/download.png); }

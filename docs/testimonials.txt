@@ -1,0 +1,11 @@
+"When Sarah Allen sent out a Railsbridge newsletter this morning
+announcing EngineYard's release of Rails Installer, I knew I had to
+give it try right away. I've built and released Windows applications,
+so I know how much it requires to "get it right." And the Rails
+Installer gets it right. From clicking on the download link to running
+the Rails new application page took about three and half minutes.
+Since I also run Ruby, Rails, Git and MySQL on a full blown
+cygwin installation - on the same Windows Vista machine -
+I was most impressed.  Everything worked exactly as it should."
+
+--- David M. Doolin, PhD

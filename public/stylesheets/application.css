@@ -44,6 +44,7 @@ h1 b, h2 b, h3 b, h4 b, h5 b, h6 b {
   text-transform: lowercase;
 }
 
+header#banner,
 header[role=banner] {
   border-bottom: 1px solid #bbb;
   background: #ddd;
@@ -52,21 +53,26 @@ header[role=banner] {
 
 }
 
+header#banner hgroup,
 header[role=banner] hgroup {
   text-align: center;
   margin: 0 auto;
   padding: 1em 0;
 }
 
+header#banner h1,
 header[role=banner] h1 {
   font-size: 800%;
   margin-right: .2em;
 }
 
+header#banner h2,
 header[role=banner] h2 {
   font-size: 500%;
 }
 
+header#banner h1,
+header#banner h2,
 header[role=banner] h1,
 header[role=banner] h2 {
   display: inline-block;
@@ -158,11 +164,12 @@ section[role=main] {
   left: 0;
 }
 
+#lightbox object,
+#lightbox embed,
 #lightbox iframe {
   margin: 25px auto 0 auto;
   width:  800px;
   height: 500px;
-  border: 1px solid #666;
   display: block;
   -webkit-box-shadow: 0 0 25px rgba(255, 255, 255, .25);
   -moz-box-shadow:    0 0 25px rgba(255, 255, 255, .25);
@@ -305,4 +312,14 @@ footer[role=contentinfo] a {
 .ie header[role=banner] h2 { font-size: 300%; }
 .ie #main { min-width: 880px; }
 .ie6 #main { width: 880px; }
+
+.ie7 #lightbox {
+  background: white;
+}
+
+.ie8 #lightbox iframe {
+  margin-top: -21px;
+  width:  640px;
+  height: 400px;
+}
 /* ...IE styles */

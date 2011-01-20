@@ -44,6 +44,7 @@ h1 b, h2 b, h3 b, h4 b, h5 b, h6 b {
   text-transform: lowercase;
 }
 
+header#banner,
 header[role=banner] {
   border-bottom: 1px solid #bbb;
   background: #ddd;
@@ -52,21 +53,26 @@ header[role=banner] {
 
 }
 
+header#banner hgroup,
 header[role=banner] hgroup {
   text-align: center;
   margin: 0 auto;
   padding: 1em 0;
 }
 
+header#banner h1,
 header[role=banner] h1 {
   font-size: 800%;
   margin-right: .2em;
 }
 
+header#banner h2,
 header[role=banner] h2 {
   font-size: 500%;
 }
 
+header#banner h1,
+header#banner h2,
 header[role=banner] h1,
 header[role=banner] h2 {
   display: inline-block;

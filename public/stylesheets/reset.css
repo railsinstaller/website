@@ -40,8 +40,8 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 html { overflow-y: scroll; }
 
 a:hover, a:active { outline: none; }
-p a, p a:active, p a:visited { color: #0076a3; }
-p a:hover { color: #80bed6; }
+p a, p a:active, p a:visited, header[role=banner] h3 a, header[role=banner] h3 a:active, header[role=banner] h3 a:visited { color: #0076a3; }
+p a:hover, header[role=banner] h3 a:hover { color: #80bed6; }
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
@@ -111,12 +111,6 @@ button {  width: auto; overflow: visible; }
 .size3of5 { width:60%; }
 .size4of5 { width:80%; }
 .lastUnit { display:table-cell; float:none; width:auto; *display:block; *zoom:1; _position:relative; _left:-3px; _margin-right:-3px; }
-
-/* oocss media block */
-.media-block .bd{display:table-cell; zoom:1;}
-.media-block .img{float:left;margin-right: 10px;}
-.media-block .img img{display:block;}
-.media-block .imgExt{float:right;margin-left: 10px;}
 
 /* oocss grids_iphone.css */
 @media screen and (max-device-width: 480px) {

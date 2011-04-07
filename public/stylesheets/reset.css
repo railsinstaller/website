@@ -40,8 +40,8 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 html { overflow-y: scroll; }
 
 a:hover, a:active { outline: none; }
-p a, p a:active, p a:visited { color: #0076a3; }
-p a:hover { color: #80bed6; }
+p a, p a:active, p a:visited, header[role=banner] h3 a, header[role=banner] h3 a:active, header[role=banner] h3 a:visited { color: #0076a3; }
+p a:hover, header[role=banner] h3 a:hover { color: #80bed6; }
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }

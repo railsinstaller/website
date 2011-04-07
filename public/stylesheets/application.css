@@ -71,10 +71,17 @@ header[role=banner] h2 {
   font-size: 500%;
 }
 
+header#banner h3,
+header[role=banner] h3 {
+  font-size: 200%;
+}
+
 header#banner h1,
 header#banner h2,
+header#banner h3,
 header[role=banner] h1,
-header[role=banner] h2 {
+header[role=banner] h2,
+header[role=banner] h3 {
   display: inline-block;
   line-height: 1em;
   letter-spacing: -.02em;

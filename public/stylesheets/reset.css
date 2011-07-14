@@ -96,6 +96,13 @@ button {  width: auto; overflow: visible; }
 }
 
 
+
+/* oocss media block */
+.media-block .bd{display:table-cell; zoom:1;}
+.media-block .img{float:left;margin-right: 10px;}
+.media-block .img img{display:block;}
+.media-block .imgExt{float:right;margin-left: 10px;}
+
 /* oocss grids.css */
 .line:after,.lastUnit:after { clear:both; display:block; visibility:hidden; overflow:hidden; height:0 !important; line-height:0; font-size:xx-large; content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "; }
 .line { *zoom:1; }

@@ -205,7 +205,9 @@ footer[role=contentinfo] a {
 
 /* global site header... */
 #global-header {
-  background: #83020A;
+/*  background: #83020A;*/
+  background: white;
+  border-bottom: 5px solid #83020A;
   color: #fff;
   overflow: hidden;
 }
@@ -255,9 +257,23 @@ footer[role=contentinfo] a {
 
 /* section stripe... */
 .stripe {
-  background: #369;
   padding: 2em 0;
   color: #fff;
+}
+
+#whats-next { background: #369; }
+#two-oh {
+  color: #d7d7d7;
+  border: solid 1px #333;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+  background: -moz-linear-gradient(top,  #666,  #000);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+
+#two-oh a {
+  color: white;
+  font-weight: bold;
 }
 
 .stripe a {

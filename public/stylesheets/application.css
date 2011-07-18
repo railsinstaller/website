@@ -205,14 +205,12 @@ footer[role=contentinfo] a {
 
 /* global site header... */
 #global-header {
-/*  background: #83020A;*/
   background: white;
   border-bottom: 5px solid #83020A;
-  color: #fff;
   overflow: hidden;
 }
 #global-header a {
-  color: #fff;
+  color: #83020A;
   text-decoration: none;
 }
 #global-header .inner {
@@ -223,7 +221,7 @@ footer[role=contentinfo] a {
   float: left;
   padding: .5em 0;
   font: normal 1.4em helvetica, arial, sans-serif;
-  text-transform: none  ;
+  text-transform: none;
 }
 #global-header .logo {
   display: inline-block;

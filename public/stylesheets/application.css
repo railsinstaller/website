@@ -233,7 +233,7 @@ footer[role=contentinfo] a {
 }
 #global-header ul {
   float: right;
-  margin-top: 1.2em;
+  margin: 1.2em 0 .25em 0;
 }
 #global-header li {
   float: left;
@@ -250,6 +250,16 @@ footer[role=contentinfo] a {
   text-indent: -999em;
   background: transparent url(../images/email-small.png) 0 0 no-repeat;
   overflow: hidden;
+}
+
+#ey-promo {
+  clear: both;
+}
+
+#ey-promo a {
+  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #83020A;
 }
 /* ...global site header */
 

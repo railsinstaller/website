@@ -9,7 +9,7 @@ group :development, :test do
   gem "ruby-debug19"
   gem "webrat"
   gem "rspec-rails", "~> 2.4"
-  gem "omniauth"
+  gem "omniauth", "~> 0.2.6"
   gem "cucumber-rails", :group => :test
   gem "capybara",       :group => :test
 end

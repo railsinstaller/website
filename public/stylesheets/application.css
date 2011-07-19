@@ -364,18 +364,38 @@ footer[role=contentinfo] a {
 /* iphone... */
 @media screen and (max-device-width: 480px) {
   h1, h2, h3, h4, h5, h6 { font-family: helvetica, arial, sans-serif; }
+
+  #global-header h1,
+  #global-header ul {
+    float: none;
+    margin: 0;
+  }
+
+  #global-header ul {
+    margin: 1em 0;
+    overflow: hidden;
+  }
+
+  #global-header p a {
+    display: block;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
   header[role=banner] hgroup { padding: 1em; }
 
   header[role=banner] h1 {
-    font-size: 400%;
+    font-size: 400% !important;
     margin-right: 0;
     text-align: left;
+    margin-left: 5px;
   }
 
   header[role=banner] h2 {
-    font-size: 200%;
+    font-size: 200% !important;
     text-transform: capitalize;
     text-align: left;
+    margin-left: 5px;
   }
 
   #steps h2 a { font-size: 300%; }
@@ -399,6 +419,7 @@ footer[role=contentinfo] a {
   header[role=banner] {
     background: -webkit-gradient(radial, 50% 0, 0, 50% 100, 320, from(white), to(#aaa));
   }
+
 }
 /* ...iphone portrait */
 

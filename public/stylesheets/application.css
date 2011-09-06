@@ -270,6 +270,7 @@ footer[role=contentinfo] a {
 }
 
 #whats-next { background: #369; }
+
 #testimonials {
   color: #d7d7d7;
   border: solid 1px #333;
@@ -282,6 +283,16 @@ footer[role=contentinfo] a {
 #testimonials a {
   color: white;
   font-weight: bold;
+}
+
+#testimonials blockquote {
+  margin-bottom:  2.25em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #999;
+}
+
+#testimonials blockquote:last-child {
+  border-bottom: none;
 }
 
 .stripe a {

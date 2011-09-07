@@ -24,9 +24,9 @@ abbr.amp {
   font-weight: normal;
 }
 
-p {
-  margin-bottom: 1em;
-}
+p { margin-bottom: 1em; }
+
+.entry-content p:first-child b { display: block; }
 
 q {
   font-weight: bold;
@@ -40,9 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: LeagueGothic;
 }
 
-h1 b, h2 b, h3 b, h4 b, h5 b, h6 b {
-  text-transform: lowercase;
-}
+h1 b, h2 b, h3 b, h4 b, h5 b, h6 b { text-transform: lowercase; }
 
 header#banner,
 header[role=banner] {
@@ -50,7 +48,6 @@ header[role=banner] {
   background: #ddd;
   background-image: -webkit-gradient(radial, 50% 0, 0, 50% 100, 950, from(white), to(#aaa));
   background-image: -moz-radial-gradient(50% 50% 90deg, circle cover, white, #aaa);
-
 }
 
 header#banner hgroup,

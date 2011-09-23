@@ -277,6 +277,15 @@ footer[role=contentinfo] a {
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
 }
 
+#previously {
+  background: white;
+  color: black;
+}
+
+#previously li a {
+  color: black;
+}
+
 #testimonials a {
   color: white;
   font-weight: bold;

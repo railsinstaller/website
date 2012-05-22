@@ -9,8 +9,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Rails Installer</title>
-  <meta name="description" content="Rails Installer. The easiest way to get up and running with Ruby on Rails. For Windows. Mac and Linux coming soon." />
+  <title>RailsInstaller</title>
+  <meta name="description" content="RailsInstaller. The easiest way to get up and running with Ruby on Rails. For Windows. Mac and Linux coming soon." />
   <meta name="author" content="Shane Becker : http://iamshane.com" />
 
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -27,9 +27,25 @@
 </head>
 
 <body>
-  <header role="banner">
+  <div id="global-header">
+    <div class="inner">
+      <h1><a href="http://engineyard.com">Project by <span class="logo">Engine Yard</span></a></h1>
+
+      <ul>
+        <li><a href="mailto:[insert email]?subject=Check out RailsInstaller&amp;body=Go to railsinstaller.org" class="share-email" title="Email friends about RailsInstaller">Email</a></li>
+        <li class="share-twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="railsinstaller">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+        <li class="share-fb">
+         <iframe src="http://facebook.com/plugins/like.php?href=http%3A%2F%2Frailsinstaller.org&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+        </li>
+      </ul>
+
+      <p id="ey-promo">Ready to deploy your app? <a href='http://engineyard.com'>Start a free trial at Engine Yard</a></p>
+    </div>
+  </div>
+
+  <header id="banner" role="banner">
     <hgroup>
-      <h1>Rails Installer</h1>
+      <h1>RailsInstaller</h1>
       <h2>Get up &amp; running with Rails</h2>
     </hgroup>
   </header>
@@ -41,7 +57,7 @@
           <header>
             <h1>Step&nbsp;1</h1>
             <h2>
-              <a href="http://files.rubyforge.vm.bytemark.co.uk/railsinstaller/railsinstaller-1.0.0.exe" class="button green" id="downloadlink">
+              <a href="http://rubyforge.org/frs/download.php/75894/railsinstaller-2.1.0.exe" class="button green">
                 <span>Download</span>
                 <span><b>the</b> Kit</span>
               </a>
@@ -58,10 +74,13 @@
             </p>
 
             <ul>
-              <li><b><a href="http://www.ruby-lang.org/">Ruby</a></b> 1.8.7-p330</li>
-              <li><b><a href="http://rubyonrails.org/">Rails</a></b> 3.0.3</li>
-              <li><b><a href="http://git-scm.com/">Git</a></b> 1.7.3.1</li>
-              <li><b><a href="http://www.sqlite.org/">Sqlite</a></b> 3.7.3</li>
+              <li><b><a href="http://ruby-lang.org">Ruby</a></b> 1.9.3-p125</li>
+              <li><b><a href="http://rubyonrails.org">Rails</a></b> 3.2</li>
+              <li><b><a href="http://gembundler.com">Bundler</a></b> 1.0.18</li>
+              <li><b><a href="http://git-scm.com">Git</a></b> 1.7.6</li>
+              <li><b><a href="http://sqlite.org">Sqlite</a></b> 3.7.3</li>
+              <li><b><a href="https://github.com/rails-sqlserver/tiny_tds">TinyTDS</a></b> 0.4.5</li>
+              <li><b><a href="https://github.com/rails-sqlserver/activerecord-sqlserver-adapter">SQL Server support</a></b> 3.3.3</li>
               <li><b><a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">DevKit</a></b></li>
             </ul>
           </section>
@@ -93,7 +112,7 @@
           <header>
             <h1>Step&nbsp;2</h1>
             <h2>
-              <a href="http://vimeo.com/18787139" class="button white">
+              <a href="http://vimeo.com/34078037" class="button white">
                 <span>Watch</span>
                 <span><b>the</b> Video</span>
               </a>
@@ -102,15 +121,15 @@
 
           <section class="entry-content">
             <p>
-              <a href="http://vimeo.com/18787139" class="video-thumbnail">
-                <img src="/images/video-thumbnail.png" width="100%" alt="Watch the Video">
+              <a href="http://vimeo.com/34078037" class="video-thumbnail">
+                <img src="images/video-thumbnail.png" width="100%" alt="Watch the Video">
               </a>
             </p>
             <p>
               In this short video, you'll see the simple installation process and how to
               confirm that Ruby, Rails, Git, etc are all installed properly. Watch it here or if you have
               trouble, view it on
-              <a href="http://vimeo.com/18787139">Vimeo</a>.
+              <a href="http://vimeo.com/34078037">Vimeo</a>.
             </p>
           </section>
         </article>
@@ -121,7 +140,7 @@
           <header>
             <h1>Step&nbsp;3</h1>
             <h2>
-              <a href="#next" class="button orange">
+              <a href="#whats-next" class="button yellow anchorLink">
                 <span>What&rsquo;s</span>
                 <span>Next?</span>
               </a>
@@ -129,6 +148,12 @@
           </header>
 
           <section class="entry-content">
+            <p>
+              <strong>Have troubles installing?</strong><br />
+              <a href="http://groups.google.com/group/railsinstaller" title="RailsInstaller |
+                Google Groups">Check the Rails Installer Google Group</a>.
+            </p>
+
             <p>
               You've got everything installed. You've written (and ran) some code. If you find yourself asking
               <q>where do I go from here</q>, don't worry. You're not alone.
@@ -140,11 +165,11 @@
               <a href="http://weblog.rubyonrails.org" title="Riding Rails">blog</a>,
               <a href="http://twitter.com/rails" title="@rails on Twitter">Twitter account (@rails)</a>, and
               <a href="http://groups.google.com/group/rubyonrails-talk" title="Ruby on Rails: Talk | Google Groups">mailing list</a>.
-              If you're into <abbr title="Internet Relay Chat">IRC</abbr>, swing by #rubyonrails on irc.freenode.net.
+              If you're into <abbr title="Internet Relay Chat">IRC</abbr>, swing by <a href="irc://irc.freenode.net#rubyonrails">#rubyonrails</a> on freenode.net.
               There's always the ever-growing <a href="http://guides.rubyonrails.org" title="Ruby on Rails Guides">Ruby on Rails guides</a>.
               If you learn by watching, there are more <a href="http://rubyonrails.org/screencasts" title="Ruby on Rails: Screencasts">screencasts</a>
               than you can shake a stick at. Some are free, some cost money.
-              Envy Labs produces the <a href="http://ruby5.envylabs.com/" title="Ruby5 by EnvyLabs">Ruby 5 News Show.</a>
+              Envy Labs produces the <a href="http://ruby5.envylabs.com" title="Ruby5 by EnvyLabs">Ruby 5 News Show.</a>
               <a href="http://5by5.tv" title="5by5 Studios">5by5</a> produces podcasts like
               <a href="http://5by5.tv/devshow" title="The Dev Show - 5by5">The Dev Show</a> and
               <a href="http://5by5.tv/rubyshow" title="The Ruby Show - 5by5">The Ruby Show</a>.
@@ -155,36 +180,168 @@
     </ul>
   </section>
 
-  <footer role="contentinfo">
-    <p>RailsInstaller initiated by <a href="http://www.engineyard.com" title="Engine Yard">Engine Yard</a></p>
-    <p>Site design by <a href="http://less.thanthree.com" title="Less Than Three">Less Than Three</a></p>
-  </footer>
+  <section id="whats-next" name="whats-next" class="stripe">
+    <div class="content">
+      <header>
+        <h1>Step 3: What's Next</h1>
+      </header>
+
+      <div class="social line">
+        <h2>Spread the Word</h2>
+        <ul>
+          <li class="unit size1of3">
+            <div class="media-block">
+              <div class="img"><img src="images/twitter.png" alt="Share on Twitter" /></div>
+              <div class="bd">
+                Tell your friends about RailsInstaller.
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="railsinstaller">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+              </div>
+            </div>
+          </li>
+          <li class="unit size1of3">
+            <div class="media-block">
+              <div class="img"><img src="images/facebook.png" alt="Like this on Facebook" /></div>
+              <div class="bd">
+                Spread the word on Facebook
+                <iframe src="http://facebook.com/plugins/like.php?href=http%3A%2F%2Frailsinstaller.org&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+              </div>
+            </div>
+          </li>
+          <li class="lastUnit">
+            <div class="media-block">
+              <div class="img"><img src="images/email.png" alt="Share through email" /></div>
+              <div class="bd"><a href="mailto:[.INSERT.EMAIL.]?subject=Check out RailsInstaller&amp;body=Go to railsinstaller.org" class="share-email" title="Email friends about RailsInstaller">Email your friends about RailsInstaller.</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="line">
+        <div class="more-info unit size2of3">
+          <h2>Get More Info</h2>
+          <ul>
+            <li><a href="http://rubyonrails.org">Ruby on Rails website</a></li>
+            <li>IRC&mdash;<a href="irc://irc.freenode.net#rubinius">#rubyonrails</a></li>
+            <li>Screencasts: <a href="http://engineyard.com/university">Engine Yard University</a>, <a href="http://railscasts.com" title="Ruby on Rails Screencasts - RailsCasts">RailCasts</a>, <a href="http://peepcode.com" title="Professional Screencast Tutorials for Web Developers and Alpha Geeks">PeepCode</a></li>
+            <li>Podcasts: <a href="http://ruby5.envylabs.com">Ruby 5 News</a>, <a href="http://5by5.tv/rubyshow">The Ruby Show</a>, <a href="http://5by5.tv/devshow">The Dev Show</a>, <a href="http://engineyard.com/podcasts">Cloud Out Loud</a></li>
+            <li>Books: <a href="http://pragprog.com/categories/ruby_and_rails" title="The Pragmatic Bookshelf | Ruby and Rails">Pragmatic Programmers</a>, <a href="http://ruby.railstutorial.org" title="Ruby on Rails Tutorial: Learn Rails by Example | Ruby on Rails 3 Tutorial book and screencasts | by Michael Hartl">Ruby on Rails Tutorial</a>, <a href="http://tr3w.com" title="The Rails 3 Way: Companion Website">The Rails 3 Way</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="stripe">
+    <div class="content">
+      <header>
+        <h1>Testimonials</h1>
+      </header>
+
+      <section class="entry-content">
+        <blockquote>
+          <p>
+            Having been part of leading Ruby on Windows workshops in the past,
+            where half a day install-fest may have been the norm, the Rails
+            Installer has made this so much easier. Both the Ruby Installer and
+            the RailsInstaller are great steps for the Ruby community toward
+            welcoming Windows users to Ruby and Rails, instead of ignoring Windows
+            as a 3rd-class citizen. What was once a many step process for
+            installing Ruby, Rails, DevKit, Git, database support, etc. has now
+            been consolidated into one easy-to-use RailsInstaller! Thanks for
+            all the hours spent by those who created this installer for Windows.
+          </p>
+          <footer>
+            &mdash; Charley Baker, <a href="http://groupon.com" title="The Daily Groupon | Coupons, Discounts, and Deals on the Best in Los Angeles">Groupon.com</a>
+            &amp;
+            Gayle Craig
+          </footer>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            I teach Ruby/Rails to new developers every week and setting up systems
+            can be EXTREMELY frustrating. Windows is now the easiest platform to
+            setup thanks to RailsInstaller &mdash; one download, one install, and go!
+          </p>
+          <footer>
+            &mdash; <a href="http://jumpstartlab.com" title="The Best Ruby on Rails Training - Jumpstart Lab">Jeff Casimir</a>
+          </footer>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            I'm giving some rails talk at college and RailsInstaller has
+            saved my life! I can't imagine teaching Rails on Windows without it!
+            Installing things on the university computers is a hard task.
+            I was really worried about installing Rails until I found you guys!
+            I love the fact that git is already installed!
+          </p>
+
+          <footer>
+            &mdash; Nicol&aacute;s Hock
+          </footer>
+        </blockquote>
+
+      </section>
+    </div>
+  </section>
+
+  <section id="previously" class="stripe">
+    <div class="content line">
+      <h1>Previous Stable Release</h1>
+      <div class="unit size1of3 last">
+        <p>
+          <a href="http://rubyforge.org/frs/download.php/75114/railsinstaller-1.3.0.exe" class="button green">
+            Download 1.3.0
+          </a>
+        </p>
+        <p>Packages included are:</p>
+        <ul>
+          <li><b><a href="http://ruby-lang.org">Ruby</a></b> 1.8.7-p352</li>
+          <li><b><a href="http://rubyonrails.org">Rails</a></b> 3.0.7</li>
+          <li><b><a href="http://git-scm.com">Git</a></b> 1.7.3.1</li>
+          <li><b><a href="http://sqlite.org">Sqlite</a></b> 3.7.3</li>
+          <li><b><a href="https://github.com/rails-sqlserver/tiny_tds">TinyTDS</a></b> 0.4.5</li>
+          <li><b><a href="https://github.com/rails-sqlserver/activerecord-sqlserver-adapter">SQL Server support</a></b> 3.0.14</li>
+          <li><b><a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">DevKit</a></b></li>
+        </ul>
+      </div>
+    </div> <!-- /div.content -->
+  </section>
 
   <div id="lightbox" style="display: none;">
-    <iframe src="http://player.vimeo.com/video/18787139?byline=0&amp;portrait=0" frameborder="0"></iframe>
+    <!--[if !(IE)]><!-->
+      <iframe src="http://player.vimeo.com/video/34078037?byline=0&amp;portrait=0" frameborder="0"></iframe>
+    <!--<![endif]-->
+
+    <!--[if IE]>
+      <object width="800" height="450">
+        <param name="allowfullscreen" value="true" />
+        <param name="allowscriptaccess" value="always" />
+        <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=34078037&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" />
+        <embed src="http://vimeo.com/moogaloop.swf?clip_id=34078037&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="800" height="450">
+        </embed>
+      </object>
+    <![endif]-->
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="javascripts/jquery.js"%3E%3C/script%3E'))</script>
+  <!-- <script src="javascripts/jquery.validate.min.js"></script> -->
+  <script src="javascripts/jquery.anchor.js"></script>
   <script src="javascripts/application.js"></script>
+  <script src="javascripts/entourage.js"></script>
 
   <!--[if lt IE 7 ]>
     <script src="javascripts/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); </script>
   <![endif]-->
 
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-764576-19']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
+  <script>
+    var _gaq=[['_setAccount','UA-764576-19'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 </body>
 </html>

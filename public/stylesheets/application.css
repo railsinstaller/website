@@ -282,7 +282,7 @@ footer[role=contentinfo] a {
   color: black;
 }
 
-#previously li a {
+#previously a {
   color: black;
 }
 
@@ -551,3 +551,11 @@ footer[role=contentinfo] a {
   height: 400px;
 }
 /* ...IE styles */
+.all_downloads {
+  padding-top: 20px;
+  clear: both;
+}
+
+.all_downloads a {
+  margin-right: 20px;
+}

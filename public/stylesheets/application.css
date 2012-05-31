@@ -251,6 +251,8 @@ footer[role=contentinfo] a {
 
 #ey-promo {
   clear: both;
+  font-size: 12px;
+  margin-left: 20px;
 }
 
 #ey-promo a {

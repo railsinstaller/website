@@ -10,10 +10,13 @@ group :development, :test do
   gem "webrat"
   gem "rspec-rails", "~> 2.4"
   gem "omniauth", "~> 0.2.6"
-  gem "cucumber-rails", :group => :test
-  gem "capybara",       :group => :test
 end
 
 group :production, :staging do
   gem "mysql2"
+end
+
+group :test do
+  gem "cucumber-rails"
+  gem "capybara"
 end

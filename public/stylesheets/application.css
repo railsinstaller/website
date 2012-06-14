@@ -95,7 +95,7 @@ section[role=main],
   margin: 0 auto;
 }
 
-section[role=main] {
+section {
   margin-bottom: 60px;
 }
 /* ...main */

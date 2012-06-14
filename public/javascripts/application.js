@@ -9,7 +9,11 @@ $('#lightbox').click(function() {
 
 $(function() {
   if(navigator.platform.indexOf('Mac') != -1) {
-    $('#downloadlink').attr('href','https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.1-osx-10.7.app.tgz');
+    if(navigator.userAgent.match(/Mac OS X 10.6/i)) {
+      $('#downloadlink').attr('href',$('osx106download').attr('href'));
+    } else {
+      $('#downloadlink').attr('href',$('osx107download').attr('href'));
+    }
     $('.vimeolink').attr('href','http://vimeo.com/43823464');
     $('.vimeoframe').attr('src','http://player.vimeo.com/video/43823464?byline=0&amp;portrait=0');
     $('#windows').hide();
@@ -20,5 +24,9 @@ $(function() {
   }
 
   if(navigator.platform.indexOf('Linux') != -1) {
+    $('#downloadlink').attr('href',$('#osx107download').attr('href'));
+    $('.vimeolink').attr('href','http://vimeo.com/43823464');
+    $('.vimeoframe').attr('src','http://player.vimeo.com/video/43823464?byline=0&amp;portrait=0');
+    $('#osx').after($('#windows'));
   }
 });

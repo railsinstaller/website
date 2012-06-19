@@ -8,14 +8,16 @@ $('#lightbox').click(function() {
 });
 
 $(function() {
+  var mac_video_id = '43823464';
+
   if(navigator.platform.indexOf('Mac') != -1) {
     if(navigator.userAgent.match(/Mac OS X 10.6/i)) {
       $('#downloadlink').attr('href',$('osx106download').attr('href'));
     } else {
       $('#downloadlink').attr('href',$('osx107download').attr('href'));
     }
-    $('.vimeolink').attr('href','http://vimeo.com/43823464');
-    $('.vimeoframe').attr('src','http://player.vimeo.com/video/43823464?byline=0&amp;portrait=0');
+    $('.vimeolink').attr('href','http://vimeo.com/' + mac_video_id);
+    $('.vimeoframe').attr('src','http://player.vimeo.com/video/' + mac_video_id + '?byline=0&amp;portrait=0');
     $('#windows').hide();
     $('#osx').show();
   }
@@ -25,8 +27,8 @@ $(function() {
 
   if(navigator.platform.indexOf('Linux') != -1) {
     $('#downloadlink').attr('href',$('#osx107download').attr('href'));
-    $('.vimeolink').attr('href','http://vimeo.com/43823464');
-    $('.vimeoframe').attr('src','http://player.vimeo.com/video/43823464?byline=0&amp;portrait=0');
+    $('.vimeolink').attr('href','http://vimeo.com/' + mac_video_id);
+    $('.vimeoframe').attr('src','http://player.vimeo.com/video/' + mac_video_id + '?byline=0&amp;portrait=0');
     $('#osx').after($('#windows'));
   }
 });

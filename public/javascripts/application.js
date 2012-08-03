@@ -12,9 +12,9 @@ $(function() {
 
   if(navigator.platform.indexOf('Mac') != -1) {
     if(navigator.userAgent.match(/Mac OS X 10.6/i)) {
-      $('#downloadlink').attr('href',$('osx106download').attr('href'));
+      $('#downloadlink').attr('href',$('#osx106download').attr('href'));
     } else {
-      $('#downloadlink').attr('href',$('osx107download').attr('href'));
+      $('#downloadlink').attr('href',$('#osx107download').attr('href'));
     }
     $('.vimeolink').attr('href','http://vimeo.com/' + mac_video_id);
     $('.vimeoframe').attr('src','http://player.vimeo.com/video/' + mac_video_id + '?byline=0&amp;portrait=0');

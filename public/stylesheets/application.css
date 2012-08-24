@@ -100,6 +100,15 @@ section {
 }
 /* ...main */
 
+.warning {
+  text-decoration: none;
+}
+.warning:before {
+  color: #83020A;
+  text-decoration: bold;
+  content: "Warning: ";
+}
+
 /* 1,2,3 steps... */
 .step h1 {
   font-size: 400%;

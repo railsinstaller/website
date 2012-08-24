@@ -100,6 +100,15 @@ section {
 }
 /* ...main */
 
+.notice {
+  text-decoration: none;
+}
+.notice:before {
+  color: #83020A;
+  text-decoration: bold;
+  content: "NOTICE: ";
+}
+
 .warning {
   text-decoration: none;
 }

@@ -33,7 +33,7 @@
         <!-- <span id="ey-promo">Ready to deploy your app? <a href='http://engineyard.com'>Start a free trial at Engine Yard</a></span> -->
       </h1>
       <ul>
-        <li><a href="mailto:[.INSERT.EMAIL.]?subject=Check out RailsInstaller&amp;body=Go to railsinstaller.org" class="share-email" title="Email friends about RailsInstaller">Email</a></li>
+        <li><a href="mailto:[insert email]?subject=Check out RailsInstaller&amp;body=Go to railsinstaller.org" class="share-email" title="Email friends about RailsInstaller">Email</a></li>
         <li class="share-twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="railsinstaller">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
         <li class="share-fb">
          <iframe src="http://facebook.com/plugins/like.php?href=http%3A%2F%2Frailsinstaller.org&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
@@ -50,135 +50,73 @@
     </hgroup>
   </header>
 
-  <section role="main" id="main">
-    <ul id="steps" class="line">
-      <li id="download" class="step unit size1of3">
-        <article role="article" id="step1">
-          <header>
-            <h1>Step&nbsp;1</h1>
-            <h2>
-              <a href="http://rubyforge.org/frs/download.php/75894/railsinstaller-2.1.0.exe" id='downloadlink' class="button green">
-                <span>Download</span>
-                <span><b>the</b> Kit</span>
-              </a>
-            </h2>
-          </header>
-
-          <section id="windows" class="entry-content">
-            <p><b>For Windows.</b></p>
-
-            <p>
-              <i>RailsInstaller</i> has everything you need to hit the ground running.
-              In one easy-to-use installer, you get all the common packages needed for a full Rails stack.
-              Download it now and be writing (and running) Rails code in no time. Packages included are:
-            </p>
-
-            <ul>
-              <li><b><a href="http://ruby-lang.org">Ruby</a></b> 1.9.3-p125</li>
-              <li><b><a href="http://rubyonrails.org">Rails</a></b> 3.2</li>
-              <li><b><a href="http://gembundler.com">Bundler</a></b> 1.0.18</li>
-              <li><b><a href="http://git-scm.com">Git</a></b> 1.7.6</li>
-              <li><b><a href="http://sqlite.org">Sqlite</a></b> 3.7.3</li>
-              <li><b><a href="https://github.com/rails-sqlserver/tiny_tds">TinyTDS</a></b> 0.4.5</li>
-              <li><b><a href="https://github.com/rails-sqlserver/activerecord-sqlserver-adapter">SQL Server support</a></b> 3.3.3</li>
-              <li><b><a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">DevKit</a></b></li>
-            </ul>
-          </section>
-          <section id="osx" class="entry-content">
-            <p><b>For OSX.</b></p>
-
-            <p>
-              <i>RailsInstaller</i> has everything you need to hit the ground running.
-              In one easy-to-use installer, you get all the common packages needed for a full Rails stack.
-              Download it now and be writing (and running) Rails code in no time.
-            </p>
-            <ul>
-              <li><b><a href="http://www.ruby-lang.org/">Ruby</a></b> 1.9.3-p194</li>
-              <li><b><a href="http://rubyonrails.org/">Rails</a></b> 3.2.7</li>
-              <li><b><a href="http://git-scm.com/">Git</a></b> 1.7.9.6</li>
-              <li><b><a href="http://www.sqlite.org/">Sqlite</a></b> 3070500</li>
-              <li><b><a href="https://github.com/kennethreitz/osx-gcc-installer">osx-gcc-installer</a></b> 4.1</li>
-              <li><b><a href="http://unfiniti.com/software/mac/jewelrybox">JewelryBox</a></b> 1.3.0</li>
-              <li><b><a href="https://rvm.io">RVM</a></b> 1.14.2</li>
-              <li><b><a href="https://smf.sh/">SM</a></b> 0.10.3</li>
-            </ul>
-          </section>
-        </article>
-      </li>
-
-      <li id="video" class="step unit size1of3">
-        <article role="article" id="step2">
-          <header>
-            <h1>Step&nbsp;2</h1>
-            <h2>
-              <a href="/windows" class="button white vimeolink">
-                <!-- <span>FOLLOW</span> -->
-                <span>Step-by-Step INSTRUCTIONS</span>
-              </a>
-            </h2>
-          </header>
-
-          <section class="entry-content">
-            <p>
-              <!-- <a href="http://vimeo.com/34078037" class="video-thumbnail vimeolink">
-                              <img src="images/video-thumbnail.png" width="100%" alt="Watch the Video"> -->
-              </a>
-            </p>
-            <p>
-              As we work hard to UPDATE the video tutorial please click on the link above to follow along step-by-step setup instructions after downloading the KIT. This easy to follow documentation will go through the entire installation process and will help ensure that Ruby, Rails, Git, etc are all installed properly. Enjoy!
-              <!-- <a href="http://vimeo.com/34078037" class="vimeolink">Vimeo</a>. -->
-              <!-- <p class="notice">Postgres is now the default database on Engine Yard. Please use the '<b>pg</b>' gem instead of -->
-              <!-- '<b>mysql2</b>' in your <b>Gemfile</b>.</p> -->
-            </p>
-			<!-- <p><a href="/instruction">Step-by-step instruction guide</a></p> -->
-          </section>
-        </article>
-      </li>
-
+<div style="padding:35px 100px 0px 100px;">
       <li id="next" class="step unit size1of3 lastUnit">
         <article role="article" id="step3">
           <header>
-            <h1>Step&nbsp;3</h1>
-            <h2>
-              <a href="#whats-next" class="button yellow anchorLink">
-                <span>What&rsquo;s</span>
-                <span>Next?</span>
-              </a>
-            </h2>
+            <h1>Step&nbsp;2: Instructions for MAC <a href="/windows" style="color: #0000FF;">(Click for Windows)</a></h1><br>
           </header>
 
           <section class="entry-content">
             <p>
-              <strong>Have troubles installing?</strong><br />
-              <a href="http://groups.google.com/group/railsinstaller" title="RailsInstaller |
-                Google Groups">Check the RailsInstaller Google Group</a>.
+              <strong>Now that you've downloaded the kit let's get started!</strong><br />
             </p>
 
-            <p>
-              You've got everything installed. You've written (and ran) some code. If you find yourself asking
-              <q>where do I go from here</q>, don't worry. You're not alone.
-            </p>
+            <ol>
+              <li>Open the downloaded TAR file to begin the installation and follow the onscreen instructions to setup GIT. This process takes about 20 minutes so I would go grab a cup of coffee and come back!</li><br>
+			  <li>Once installation is complete go ahead and open up Terminal under <tt>/Applications/Utilities</tt></li><br>
+			  <p>Next we will run a few commands to make sure everything was setup correctly:</p>
+			  	<pre style="border:dashed black 1px; font-style:italic;"> $ git --version </pre><br><p>This will display what version of GIT you have.</p>
+				<pre style="border:dashed black 1px; font-style:italic;"> $ rvm info </pre><br><p>This will display information about your Ruby Version Manager environment.</p>
+				<pre style="border:dashed black 1px; font-style:italic;"> $ ruby -v </pre><br><p>This will display information about your Ruby version to ensure everything was setup properly.</p>
+				<pre style="border:dashed black 1px; font-style:italic;"> $ rails -v </pre><br><p>This will display information about your Rails version to ensure everything was setup properly.</p>
+			  <li>Now that we've ensured everything is setup correctly we can now create a brand new rails application.</li><br>
+			  	<pre style="border:dashed black 1px; font-style:italic;"> $ cd Desktop/ </pre><br> 
+			  	<pre style="border:dashed black 1px; font-style:italic;"> $ rails new railsinstaller_osx_demo </pre><br>
+			  <li>Once that's complete we can visit the application folder and start Rails server to see the site in our browser.</li><br>
+			  	<pre style="border:dashed black 1px; font-style:italic;"> $ cd railsinstaller_osx_demo/ </pre><br> 
+			  	<pre style="border:dashed black 1px; font-style:italic;"> $ rails server </pre><br>
+					<p>Visit <a href="http://localhost:3000" style="color: #0000FF;">http://localhost:3000</a> in your web browser to see the default Rails welcome page.</p>
+			  <li>The remaining steps will require you to have a text editor. There are various text editors you can use out there but I'll put one below that is fairly popular in the developer community. </li><br>
+			  <p>- Visit link to download: <a href="http://www.sublimetext.com" style="color: #0000FF;">Sublime Text</a></p>
+			  <p>- After downloading and installing Sublime Text you'll need to install its command line functionality:</p>
+			  	<ul>
+					<li>The first task is to make a symlink to subl. Assuming you've placed Sublime Text 2 in the Applications folder, and that you have a ~/bin directory in your path, you can run: </li><br>
+						<pre style="border:dashed black 1px; font-style:italic;"> $ ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl </pre><br>
+					<li>You can now visit the folder of your rails application and open your new rails app with Sublime Text</li><br>
+						<pre style="border:dashed black 1px; font-style:italic;"> $ cd railsinstaller_demo </pre><br>
+						<pre style="border:dashed black 1px; font-style:italic;"> $ subl . </pre><br>
+				</ul>
+			  <li>Now that you have your rails demo app open in the text editor edit the <tt>/config/routes.rb</tt> file using the navigation panel. Once you're there uncomment the following line of code by removing the "#" sign in front of it. Be sure to to SAVE that file after the change</li><br>
+			   <pre style="border:dashed black 1px; font-style:italic;"> root :to => 'welcome#index'</pre><br>
+			  <li>Next you'll need to visit the command line prompt and create a welcome controller for the index action.</li><br>
+			   <pre style="border:dashed black 1px; font-style:italic;"> $ rails g controller welcome index</pre><br>
+			  <li>Now lets edit the welcome index.html which can be found under <tt>app/views/welcome/index.html.erb</tt>, and change the content to say something like the following:</li><br>
+			  <pre style="border:dashed black 1px; font-style:italic;"> &lt;h1&gt;Welcome to the Rails Installer Demo!!!&lt;/h1&gt;</pre><br>
+			  <p>Remember to SAVE that file after change.</p>
+			  <p>If you restart Rails server and visit <a href="http://localhost:3000" style="color: #0000FF;">http://localhost:3000</a> you'll see the exact same page because Rails is still serving your index.html file in the public folder. You'll need to remove the file at <tt>/public/index.html</tt> within Sublime Text. Then when you refresh the browser you should see your new page!</p>
+			  <li>Now for the FINAL stretch, using version control and committing your changes to Github. First let's visit your Github account at <a href="https://github.com/" style="color: #0000FF;">https://github.com/username</a>, sign up if you don't have one.</li><br>
+			  <li>Next we'll need to make sure your SSH key is all setup. On your Github page go to <tt>Account Settings</tt> then <tt>SSH Keys</tt> on the left hand side and click on <tt>Add SSH Key</tt>. You can name your key whatever you want. Now follow the command line steps below to generate your SSH Key</li><br>
+				<pre style="border:dashed black 1px; font-style:italic;"> $ ssh-keygen -t rsa -C "youremail@blank.com" </pre><br>
+				<p>Be sure to enter a nice strong password when prompted</p>
+			    <pre style="border:dashed black 1px; font-style:italic;"> $ pbcopy < ~/.ssh/id_rsa.pub </pre><br>
+				<p>Now go back to Github and paste the copied key into the required section. Save it.<>/p>
+			  <li>Next we'll create a new repository on Github, you can call it whatever you want but it's best to keep it similar to our app titled "railsinstaller_osx_demo"</li><br>
+			  <li>Finally we'll finish it off with the following commands to push your code to Git and Github.</li><br>
+			<strong>Command Line:</strong><br><br>
+			  <ul>
+				<li><pre style="border:dashed black 1px; font-style:italic;"> $ git init </pre><br></li><br>
+				<li><pre style="border:dashed black 1px; font-style:italic;"> $ git add . </pre><br></li><br>
+				<li><pre style="border:dashed black 1px; font-style:italic;"> $ git commit -m "first commit" </pre><br></li><br>
+				<li><pre style="border:dashed black 1px; font-style:italic;"> $ git remote add origin git@github.com:accountname/railsinstaller_demo.git </pre><br></li><br>
+				<li><pre style="border:dashed black 1px; font-style:italic;"> $ git push origin master </pre><br></li>
+				<p>Enter your Github.com credentials when prompted then press ENTER. </p><br>
+			  </ul>
 
-            <p>
-              The answer is <q>just about anywhere</q>, but here's a handful of good places to start.
-              The official <a href="http://rubyonrails.org" title="Ruby on Rails">Ruby on Rails site</a>,
-              <a href="http://weblog.rubyonrails.org" title="Riding Rails">blog</a>,
-              <a href="http://twitter.com/rails" title="@rails on Twitter">Twitter account (@rails)</a>, and
-              <a href="http://groups.google.com/group/rubyonrails-talk" title="Ruby on Rails: Talk | Google Groups">mailing list</a>.
-              If you're into <abbr title="Internet Relay Chat">IRC</abbr>, swing by <a href="irc://irc.freenode.net#rubyonrails">#rubyonrails</a> on freenode.net.
-              There's always the ever-growing <a href="http://guides.rubyonrails.org" title="Ruby on Rails Guides">Ruby on Rails guides</a>.
-              If you learn by watching, there are more <a href="http://rubyonrails.org/screencasts" title="Ruby on Rails: Screencasts">screencasts</a>
-              than you can shake a stick at. Some are free, some cost money.
-              Envy Labs produces the <a href="http://ruby5.envylabs.com" title="Ruby5 by EnvyLabs">Ruby 5 News Show.</a>
-              <a href="http://5by5.tv" title="5by5 Studios">5by5</a> produces podcasts like
-              <a href="http://5by5.tv/devshow" title="The Dev Show - 5by5">The Dev Show</a> and
-              <a href="http://5by5.tv/rubyshow" title="The Ruby Show - 5by5">The Ruby Show</a>.
-            </p>
-          </section>
-        </article>
-      </li>
-    </ul>
-  </section>
+            </ol>
+
+			<h1 style = "font-size: 48px; text-align:right;">It's OFFICIAL, You've created your first Rails Project!</h1> 
+</div>
 
   <section id="whats-next" name="whats-next" class="stripe">
     <div class="content">

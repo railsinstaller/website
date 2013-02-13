@@ -60,6 +60,7 @@ GEM
       multipart-post (~> 1.1.0)
       rack (>= 1.1.0, < 2)
     ffi (1.0.11)
+    gh_contributors (0.8.0)
     gherkin (2.4.21)
       json (>= 1.4.6)
     haml (3.1.6)
@@ -206,6 +207,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber-rails
+  gh_contributors
   haml (>= 3.0.0)
   haml-rails
   mysql2 (~> 0.2.7)

@@ -6,6 +6,7 @@ gem "haml-rails"
 
 group :development do
   gem "sqlite3"
+  gem "gh_contributors"
 end
 
 group :production do

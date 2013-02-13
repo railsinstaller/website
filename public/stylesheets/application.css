@@ -246,6 +246,17 @@ footer[role=contentinfo] a {
   text-indent: -999em;
   vertical-align: middle;
 }
+/* mpapis - Not sure about this, uncomment to get the list prefixed with " Contributors: "
+#global-header .contributors:before {
+  color: #83020A;
+  content: " Contributors: ";
+}
+*/
+#global-header .contributors img {
+  height: 29px;
+  width: 29px;
+  vertical-align: middle;
+}
 #global-header ul {
   float: right;
   margin: 1.2em 0 .25em 0;

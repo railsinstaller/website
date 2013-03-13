@@ -1,0 +1,69 @@
+!!!
+/[if lt IE 7 ] <html lang="en" class="no-js ie ie6">
+/[if IE 7 ] <html lang="en" class="no-js ie ie7">
+/[if IE 8 ] <html lang="en" class="no-js ie ie8">
+/[if IE 9 ] <html lang="en" class="no-js ie ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title RailsInstaller
+    %meta{:content => "RailsInstaller. The easiest way to get up and running with Ruby on Rails. For Windows and Mac. Linux coming soon.", :name => "description"}/
+    %meta{:content => "Shane Becker : http://iamshane.com", :name => "author"}/
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %meta{:content => "black", :name => "apple-mobile-web-app-status-bar-style"}/
+    %meta{:content => "width = device-width, initial-scale = 1.0, maximum-scale = 1.0", :name => "viewport"}/
+    %meta{:content => "true", :name => "HandheldFriendly"}/
+    %link{:href => "stylesheets/reset.css", :rel => "stylesheet"}/
+    %link{:href => "stylesheets/application.css", :rel => "stylesheet"}/
+    %script{:src => "javascripts/modernizr.js"}
+  %body
+    #global-header
+      .inner
+        %h1
+          %a{:href => "http://engineyard.com"}
+            Project by
+            %span.logo Engine Yard
+          %span.contributors
+            %a{:href => "https://api.github.com/users/wayneeseguin", :title => "wayneeseguin - 275"}
+              %img{:alt => "wayneeseguin - 275", :src => "https://secure.gravatar.com/avatar/b9b5ff40232c1dfd61238c2a90467f84?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/mpapis", :title => "mpapis - 193"}
+              %img{:alt => "mpapis - 193", :src => "https://secure.gravatar.com/avatar/3ec52ed58eb92026d86e62c39bdb7589?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/veganstraightedge", :title => "veganstraightedge - 60"}
+              %img{:alt => "veganstraightedge - 60", :src => "https://secure.gravatar.com/avatar/317259b800623d76bba3e7a4fbbbf70a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/luislavena", :title => "luislavena - 26"}
+              %img{:alt => "luislavena - 26", :src => "https://secure.gravatar.com/avatar/e7cff3cfd41c495e1012227d7dc24202?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/gpxl", :title => "gpxl - 21"}
+              %img{:alt => "gpxl - 21", :src => "https://secure.gravatar.com/avatar/572edfb30fef086b8347f7d1a3c2725f?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/drnic", :title => "drnic - 18"}
+              %img{:alt => "drnic - 18", :src => "https://secure.gravatar.com/avatar/cb2b768a5e546b24052ea03334e43676?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/emachnic", :title => "emachnic - 9"}
+              %img{:alt => "emachnic - 9", :src => "https://secure.gravatar.com/avatar/964c068a0bce23ae74d183fa6e3f9798?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/alexch", :title => "alexch - 2"}
+              %img{:alt => "alexch - 2", :src => "https://secure.gravatar.com/avatar/5a0d7f0cb2fac7858d234de7f7f01491?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/metaskills", :title => "metaskills - 2"}
+              %img{:alt => "metaskills - 2", :src => "https://secure.gravatar.com/avatar/f0b14b7dbae1e90259eb946d1c841a17?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/acco", :title => "acco - 1"}
+              %img{:alt => "acco - 1", :src => "https://secure.gravatar.com/avatar/446c3d7b371310456aab25e06034fa2b?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/edwardchiu38", :title => "edwardchiu38 - 1"}
+              %img{:alt => "edwardchiu38 - 1", :src => "https://secure.gravatar.com/avatar/54b526a3d07ad65cb861a5f0225372ba?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+            %a{:href => "https://api.github.com/users/jc00ke", :title => "jc00ke - 1"}
+              %img{:alt => "jc00ke - 1", :src => "https://secure.gravatar.com/avatar/8c94d965389694bd5adc14679977fd5d?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"}/
+          / <span id="ey-promo">Ready to deploy your app? <a href='http://engineyard.com'>Start a free trial at Engine Yard</a></span>
+        %ul
+          %li
+            %a.share-email{:href => "mailto:[.INSERT.EMAIL.]?subject=Check out RailsInstaller&amp;body=Go to railsinstaller.org", :title => "Email friends about RailsInstaller"} Email
+          %li.share-twitter
+            %a.twitter-share-button{"data-count" => "none", "data-via" => "railsinstaller", :href => "http://twitter.com/share"} Tweet
+            %script{:src => "http://platform.twitter.com/widgets.js", :type => "text/javascript"}
+          %li.share-fb
+            %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "http://facebook.com/plugins/like.php?href=http%3A%2F%2Frailsinstaller.org&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21", :style => "border:none; overflow:hidden; width:85px; height:21px;"}
+    %header#banner{:role => "banner"}
+      %hgroup
+        %h1 RailsInstaller
+        %h2 Get up &amp; running with Rails
+    = yield

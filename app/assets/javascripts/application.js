@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery_ujs
+//= require entourage
 //= require_self
 //= require_tree .
 $(function() {

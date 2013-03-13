@@ -51,5 +51,5 @@ RailsinstallerWeb::Application.configure do
   config.assets.compile = false
   config.assets.digest = true
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
-  config.assets.precompile += %w( .svg .eot .woff .ttf )
+  config.assets.precompile += %w( .svg .eot .woff .ttf jquery.anchor.js )
 end

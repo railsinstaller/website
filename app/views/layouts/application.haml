@@ -298,11 +298,9 @@
             = link_to 'Windows downloads', "http://rubyforge.org/frs/?group_id=5288&release_id=46621"
     / /div.content
   %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"}
+  = javascript_include_tag 'jquery.anchor.js'
   :javascript
     !window.jQuery && document.write(unescape('%3Cscript src="javascripts/jquery.js"%3E%3C/script%3E'))    
-  %script{:src => "javascripts/jquery.anchor.js"}
-  %script{:src => "javascripts/application.js"}
-  %script{:src => "javascripts/entourage.js"}
   /[if lt IE 7 ]
     <script src="javascripts/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); </script>

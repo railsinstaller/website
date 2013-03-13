@@ -7,3 +7,4 @@ config/database.yml
 *~
 *.swp
 db/schema.rb
+.sass-cache/

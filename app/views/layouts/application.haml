@@ -18,9 +18,8 @@
     %meta{:content => "black", :name => "apple-mobile-web-app-status-bar-style"}/
     %meta{:content => "width = device-width, initial-scale = 1.0, maximum-scale = 1.0", :name => "viewport"}/
     %meta{:content => "true", :name => "HandheldFriendly"}/
-    %link{:href => "stylesheets/reset.css", :rel => "stylesheet"}/
-    %link{:href => "stylesheets/application.css", :rel => "stylesheet"}/
-    %script{:src => "javascripts/modernizr.js"}
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
   %body
     #global-header
       .inner
@@ -77,7 +76,7 @@
           %li.unit.size1of3
             .media-block
               .img
-                %img{:alt => "Share on Twitter", :src => "images/twitter.png"}/
+                = image_tag 'twitter.png', alt: 'Share on Twitter'
               .bd
                 Tell your friends about RailsInstaller.
                 %a.twitter-share-button{"data-count" => "none", "data-via" => "railsinstaller", :href => "http://twitter.com/share"} Tweet
@@ -85,14 +84,14 @@
           %li.unit.size1of3
             .media-block
               .img
-                %img{:alt => "Like this on Facebook", :src => "images/facebook.png"}/
+                = image_tag 'facebook.png', alt: 'Like this on Facebook'
               .bd
                 Spread the word on Facebook
-                %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "http://facebook.com/plugins/like.php?href=http%3A%2F%2Frailsinstaller.org&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21", :style => "border:none; overflow:hidden; width:85px; height:21px;"}
+                %iframe(allowtransparency="true" frameborder="0" scrolling="no" src="http://facebook.com/plugins/like.php?href=http%3A%2F%2Frailsinstaller.org&layout=button_count&show_faces=false&width=100&action=like&font=lucida+grande&colorscheme=light&height=21" style="border:none; overflow:hidden; width:85px; height:21px;")
           %li.lastUnit
             .media-block
               .img
-                %img{:alt => "Share through email", :src => "images/email.png"}/
+                = image_tag 'email.png', alt: 'Share through email'
               .bd
                 %a.share-email{:href => "mailto:[.INSERT.EMAIL.]?subject=Check out RailsInstaller&amp;body=Go to railsinstaller.org", :title => "Email friends about RailsInstaller"} Email your friends about RailsInstaller.
       .line
@@ -100,31 +99,29 @@
           %h2 Get More Info
           %ul
             %li
-              %a{:href => "http://rubyonrails.org"} Ruby on Rails website
+              = link_to "Ruby on Rails website", "http://rubyonrails.org"
             %li
-              IRC&mdash;
-              %a{:href => "irc://irc.freenode.net#rubinius"} #rubyonrails
+              IRC &mdash;
+              = link_to "#rubyonrails", "irc://irc.freenode.net#rubinius"
             %li
               Screencasts:
-              / <a href="http://engineyard.com/university">Engine Yard University</a>,
               = succeed "," do
-                %a{:href => "http://railscasts.com", :title => "Ruby on Rails Screencasts - RailsCasts"} RailCasts
-              %a{:href => "http://peepcode.com", :title => "Professional Screencast Tutorials for Web Developers and Alpha Geeks"} PeepCode
+                = link_to "RailsCasts", "http://railscasts.com", title: "Ruby on Rails Screencasts - RailsCasts"
+              = link_to "PeepCode", "http://peepcode.com", title: "Professional Screencast Tutorials for Web Developers and Alpha Geeks"
             %li
               Podcasts:
               = succeed "," do
-                %a{:href => "http://ruby5.envylabs.com"} Ruby 5 News
+                = link_to "Ruby 5 News", "http://ruby5.envylabs.com"
               = succeed "," do
-                %a{:href => "http://5by5.tv/rubyshow"} The Ruby Show
-              %a{:href => "http://5by5.tv/devshow"} The Dev Show
-              / , <a href="http://engineyard.com/podcasts">Cloud Out Loud</a>
+                = link_to "The Ruby Show", "http://5by5.tv/rubyshow"
+              = link_to "The Dev Show", "http://5by5.tv/devshow"
             %li
               Books:
               = succeed "," do
-                %a{:href => "http://pragprog.com/categories/ruby_and_rails", :title => "The Pragmatic Bookshelf | Ruby and Rails"} Pragmatic Programmers
+                = link_to "Pragmatic Programmers", "http://pragprog.com/categories/ruby_and_rails", title: "The Pragmatic Bookshelf | Ruby and Rails"
               = succeed "," do
-                %a{:href => "http://ruby.railstutorial.org", :title => "Ruby on Rails Tutorial: Learn Rails by Example | Ruby on Rails 3 Tutorial book and screencasts | by Michael Hartl"} Ruby on Rails Tutorial
-              %a{:href => "http://tr3w.com", :title => "The Rails 3 Way: Companion Website"} The Rails 3 Way
+                = link_to "Ruby on Rails Tutorial", "http://ruby.railstutorial.org", title: "Ruby on Rails Tutorial: Learn Rails by Example | Ruby on Rails 3 Tutorial book and screencasts | by Michael Hartl"
+              = link_to "The Rails 3 Way", "http://tr3w.com", title: "The Rails 3 Way: Companion Website"
   %section#testimonials.stripe
     .content
       %header
@@ -142,7 +139,7 @@
             all the hours spent by those who created this installer for Windows.
           %footer
             \&mdash; Charley Baker,
-            %a{:href => "http://groupon.com", :title => "The Daily Groupon | Coupons, Discounts, and Deals on the Best in Los Angeles"} Groupon.com
+            = link_to "Groupon.com", "http://groupon.com", title: "The Daily Groupon | Coupons, Discounts, and Deals on the Best in Los Angeles"
             \&amp;
             Gayle Craig
         %blockquote
@@ -152,7 +149,7 @@
             setup thanks to RailsInstaller &mdash; one download, one install, and go!
           %footer
             \&mdash;
-            %a{:href => "http://jumpstartlab.com", :title => "The Best Ruby on Rails Training - Jumpstart Lab"} Jeff Casimir
+            = link_to "Jeff Casimir", "http://jumpstartlab.com", title: "The Best Ruby on Rails Training - Jumpstart Lab"
         %blockquote
           %p
             I'm giving some rails talk at college and RailsInstaller has
@@ -168,55 +165,55 @@
           %footer
             \&mdash;
             = succeed "," do
-              %a{:href => "http://twitter.com/Cropcho", :title => "James Cropcho (Cropcho) on Twitter"} James Cropcho
+              = link_to "James Cropcho", "http://twitter.com/Cropcho", title: "James Cropcho (Cropcho) on Twitter"
             instructor of
-            %a{:href => "http://generalassemb.ly/education/", :title => "Technology, Design, and Entrepreneurship Education at General Assembly"} classes and intensive workshops
+            = link_to "classes and intensive workshops", "http://generalassemb.ly/education/", title: "Technology, Design, and Entrepreneurship Education at General Assembly"
             on first-time Rails development at
-            %a{:href => "http://generalassemb.ly", :title => "Home"} General Assembly
+            = link_to "General Assembly", "http://generalassemb.ly", title: "Home"
   %section#previously.stripe
     .content.line
       %h1 Recent Releases
       .unit.size1of3.last
         %h2 OS X
         %p
-          %a#osx106download.button.green{:href => "http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz"}
+          %a#osx106download.button.green{href: "http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz"}
             Download 1.0.4 for OS X 10.6
         %p
-          %a#osx107download.button.green{:href => "http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz"}
+          %a#osx107download.button.green{href: "http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz"}
             Download 1.0.4 for OS X 10.7 &amp; 10.8
         %p Packages included are:
         %ul
           %li
             %b
-              %a{:href => "http://www.ruby-lang.org/"} Ruby
+              = link_to "Ruby", "http://www.ruby-lang.org/"
             1.9.3-p392
           %li
             %b
-              %a{:href => "http://rubyonrails.org/"} Rails
+              = link_to "Rails", "http://rubyonrails.org/"
             3.2.12
           %li
             %b
-              %a{:href => "http://git-scm.com/"} Git
+              = link_to "Git", "http://git-scm.com/"
             1.7.9.6
           %li
             %b
-              %a{:href => "http://www.sqlite.org/"} Sqlite
+              = link_to "Sqlite", "http://www.sqlite.org/"
             3.7.5
           %li
             %b
-              %a{:href => "https://github.com/kennethreitz/osx-gcc-installer"} osx-gcc-installer
+              = link_to "osx-gcc-installer", "https://github.com/kennethreitz/osx-gcc-installer"
             4.1
           %li
             %b
-              %a{:href => "http://unfiniti.com/software/mac/jewelrybox"} JewelryBox
+              = link_to "JewelryBox", "http://unfiniti.com/software/mac/jewelrybox"
             1.3.0/1.4.1
           %li
             %b
-              %a{:href => "https://rvm.io"} RVM
+              = link_to "RVM", "https://rvm.io"
             1.18.10
           %li
             %b
-              %a{:href => "https://smf.sh/"} SM
+              = link_to "SM", "https://smf.sh/"
             0.10.4
       .unit.size1of3.last
         %h2 Windows (Ruby 1.9)
@@ -227,35 +224,35 @@
         %ul
           %li
             %b
-              %a{:href => "http://ruby-lang.org"} Ruby
+              = link_to 'Ruby', "http://ruby-lang.org"
             1.9.3-p125
           %li
             %b
-              %a{:href => "http://rubyonrails.org"} Rails
+              = link_to 'Rails', "http://rubyonrails.org"
             3.2
           %li
             %b
-              %a{:href => "http://gembundler.com"} Bundler
+              = link_to 'Bundler', "http://gembundler.com"
             1.0.18
           %li
             %b
-              %a{:href => "http://git-scm.com"} Git
+              = link_to "Git", "http://git-scm.com"
             1.7.6
           %li
             %b
-              %a{:href => "http://sqlite.org"} Sqlite
+              = link_to "Sqlite", "http://sqlite.org"
             3.7.3
           %li
             %b
-              %a{:href => "https://github.com/rails-sqlserver/tiny_tds"} TinyTDS
+              = link_to "TinyTDS", "https://github.com/rails-sqlserver/tiny_tds"
             0.4.5
           %li
             %b
-              %a{:href => "https://github.com/rails-sqlserver/activerecord-sqlserver-adapter"} SQL Server support
+              = link_to "SQL Server Support", "https://github.com/rails-sqlserver/activerecord-sqlserver-adapter"
             3.3.3
           %li
             %b
-              %a{:href => "https://github.com/oneclick/rubyinstaller/wiki/Development-Kit"} DevKit
+              = link_to "DevKit", "https://github.com/oneclick/rubyinstaller/wiki/Development-Kit"
       .unit.size1of3.last
         %h2 Windows (Ruby 1.8)
         %p
@@ -265,40 +262,40 @@
         %ul
           %li
             %b
-              %a{:href => "http://ruby-lang.org"} Ruby
+              = link_to "Ruby", "http://ruby-lang.org"
             1.8.7-p352
           %li
             %b
-              %a{:href => "http://rubyonrails.org"} Rails
+              = link_to "Rails", "http://rubyonrails.org"
             3.0.7
           %li
             %b
-              %a{:href => "http://git-scm.com"} Git
+              = link_to "Git", "http://git-scm.com"
             1.7.3.1
           %li
             %b
-              %a{:href => "http://sqlite.org"} Sqlite
+              = link_to 'Sqlite', "http://sqlite.org"
             3.7.3
           %li
             %b
-              %a{:href => "https://github.com/rails-sqlserver/tiny_tds"} TinyTDS
+              = link_to 'TinyTDS', "https://github.com/rails-sqlserver/tiny_tds"
             0.4.5
           %li
             %b
-              %a{:href => "https://github.com/rails-sqlserver/activerecord-sqlserver-adapter"} SQL Server support
+              = link_to 'SQL Server Support', "https://github.com/rails-sqlserver/activerecord-sqlserver-adapter"
             3.0.14
           %li
             %b
-              %a{:href => "https://github.com/oneclick/rubyinstaller/wiki/Development-Kit"} DevKit
+              = link_to 'DevKit', "https://github.com/oneclick/rubyinstaller/wiki/Development-Kit"
       .all_downloads.more_info.entry_content
         %h2 All Releases
         %ul
           %li
-            %a{:href => "https://github.com/railsinstaller/railsinstaller-nix/downloads"} OS X downloads up to version 1.0.3
+            = link_to 'OSX downloads up to version 1.0.3', "https://github.com/railsinstaller/railsinstaller-nix/downloads"
           %li
-            %a{:href => "http://railsinstaller.s3.amazonaws.com/list.html"} OS X downloads from version 1.0.4
+            = link_to 'OSX downloads from version 1.0.4', "http://railsinstaller.s3.amazonaws.com/list.html"
           %li
-            %a{:href => "http://rubyforge.org/frs/?group_id=5288&release_id=46621"} Windows downloads
+            = link_to 'Windows downloads', "http://rubyforge.org/frs/?group_id=5288&release_id=46621"
     / /div.content
   %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"}
   :javascript

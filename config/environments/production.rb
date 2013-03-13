@@ -46,4 +46,10 @@ RailsinstallerWeb::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  config.assets.compress = true
+  config.assets.compile = false
+  config.assets.digest = true
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
 end

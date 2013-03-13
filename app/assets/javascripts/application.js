@@ -1,3 +1,7 @@
+//= require jquery
+//= require jquery_ujs
+//= require_self
+//= require_tree .
 $(function() {
 
   if(navigator.platform.indexOf('Mac') != -1) {

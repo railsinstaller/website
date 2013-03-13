@@ -1,16 +1,14 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
 gem "rails", "~>3.0.9"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
+gem 'rake', '~> 10.0.3'
+gem 'puma', '~> 1.6.3'
 
 group :development do
-  gem "sqlite3"
   gem "gh_contributors"
-end
-
-group :production do
-  gem "mysql2", "~> 0.2.7"
+  gem 'hpricot'
 end
 
 group :test do

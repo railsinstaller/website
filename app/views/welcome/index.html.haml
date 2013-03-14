@@ -5,7 +5,8 @@
         %header
           %h1 Step&nbsp;1
           %h2
-            %a#downloadlink.button.green{:href => "http://rubyforge.org/frs/download.php/75894/railsinstaller-2.1.0.exe"}
+            <!-- Modify `ri_win_download` in application_helper.rb -->
+            %a#downloadlink.button.green{:href => ri_win_download}
               %span Download
               %span
                 %b the
@@ -17,7 +18,7 @@
             %i RailsInstaller
             has everything you need to hit the ground running.
             In one easy-to-use installer, you get all the common packages needed for a full Rails stack.
-            %a#downloadlink{:href => "http://rubyforge.org/frs/download.php/75894/railsinstaller-2.1.0.exe"}
+            %a#downloadlink{:href => ri_win_download}
               Download it now
             and be writing (and running) Rails code in no time.
           %p
@@ -26,7 +27,7 @@
             %li
               %b
                 %a{:href => "http://ruby-lang.org"} Ruby
-              1.9.3-p125
+              1.9.3-p392
             %li
               %b
                 %a{:href => "http://rubyonrails.org"} Rails
@@ -34,23 +35,19 @@
             %li
               %b
                 %a{:href => "http://gembundler.com"} Bundler
-              1.0.18
             %li
               %b
                 %a{:href => "http://git-scm.com"} Git
-              1.7.6
+              1.8.1.2
             %li
               %b
                 %a{:href => "http://sqlite.org"} Sqlite
-              3.7.3
             %li
               %b
                 %a{:href => "https://github.com/rails-sqlserver/tiny_tds"} TinyTDS
-              0.4.5
             %li
               %b
                 %a{:href => "https://github.com/rails-sqlserver/activerecord-sqlserver-adapter"} SQL Server support
-              3.3.3
             %li
               %b
                 %a{:href => "https://github.com/oneclick/rubyinstaller/wiki/Development-Kit"} DevKit
@@ -61,7 +58,7 @@
             %i RailsInstaller
             has everything you need to hit the ground running.
             In one easy-to-use installer, you get all the common packages needed for a full Rails stack.
-            %a#downloadlink{:href => "http://rubyforge.org/frs/download.php/75894/railsinstaller-2.1.0.exe"}
+            %a#downloadlink{:href => ri_win_download}
               Download it now
             and be writing (and running) Rails code in no time.
           %p

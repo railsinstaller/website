@@ -5,6 +5,8 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem 'rake', '~> 10.0.3'
 gem 'puma', '~> 1.6.3'
+gem 'newrelic_rpm'
+gem 'ey_config'
 
 group :assets do
   gem 'sass-rails', " ~> 3.2.5"

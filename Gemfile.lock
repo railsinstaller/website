@@ -63,6 +63,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ey_config (0.0.6)
     faraday (0.6.1)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
@@ -97,6 +98,7 @@ GEM
     multi_xml (0.2.2)
     multipart-post (1.1.5)
     net-ldap (0.2.2)
+    newrelic_rpm (3.5.8.72)
     nokogiri (1.4.7)
     oa-basic (0.2.6)
       oa-core (= 0.2.6)
@@ -235,11 +237,13 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.2)
   cucumber-rails
+  ey_config
   gh_contributors
   haml (>= 3.0.0)
   haml-rails
   hpricot
   jquery-rails
+  newrelic_rpm
   omniauth (~> 0.2.6)
   puma (~> 1.6.3)
   rails (~> 3.2.12)

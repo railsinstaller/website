@@ -1,10 +1,13 @@
 class WelcomeController < ApplicationController
+  caches_page :index, :windows, :mac
 
   def index
-    # For now, nothing to do
   end
-  
-  def instruction
+
+  def windows
+  end
+
+  def mac
   end
 
 end

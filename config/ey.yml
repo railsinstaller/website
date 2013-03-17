@@ -21,7 +21,9 @@
 #
 # NOTE: Please commit this file into your git repository.
 #
---- 
-environments: 
-  production: 
+---
+environments:
+  production_puma:
+    migrate: false
+  production_puma_clone:
     migrate: false

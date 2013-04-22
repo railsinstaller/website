@@ -1,0 +1,28 @@
+/*
+ *= require reset
+ *= require_self
+*/
+
+// COLOURS 
+ 
+$darkRed: rgb(191, 26, 46);
+$lightRed: rgb(241, 100, 78);
+$blue: rgb(75, 179, 209);
+$green: rgb(151, 204, 90);
+$lightGray1: rgb(242, 238, 237);
+$lightGray2: rgb(230, 226, 225);
+$lightGray3: rgb(166, 163, 162);
+$darkGray1: rgb(89, 88, 87);
+$darkGray2: rgb(51, 50, 50);
+$darkGray3: rgb(26, 25, 25);
+
+$smallText: 0.75em;
+
+$radius: 4px;
+
+@import "ey-mixins.scss";
+@import "ey-bootstrap.scss";
+@import "ey-buttons.scss";
+@import "ey-responsive.scss";
+@import "global_header.scss";
+@import "ri_style.scss";

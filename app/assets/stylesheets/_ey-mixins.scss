@@ -1,0 +1,85 @@
+// EY Mixins - all the mixins used in the style guide
+
+// TYPOGRAPHY 
+
+@mixin helvetica {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+ 
+@mixin proximaLight {
+	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 300; 
+}
+
+@mixin proximaRegular {
+	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 400;
+}
+
+@mixin proximaSemibold {
+	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 600; 
+}
+
+@mixin proximaBold {
+	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 700; 
+}
+
+
+// BORDER RADIUS
+
+@mixin borderRadius($topleft :4px, $topright: 4px, $bottomright: 4px, $bottomleft: 4px) {
+		-moz-border-radius-topleft: $topleft;
+       -moz-border-radius-topright: $topright;
+    -moz-border-radius-bottomright: $bottomright;
+     -moz-border-radius-bottomleft: $bottomleft;
+    		 -webkit-border-radius: $topleft $topright $bottomright $bottomleft;
+    				 border-radius: $topleft $topright $bottomright $bottomleft;
+}
+
+// BOX SHADOWS
+
+	// These can be used as their defaults, or modified by using with a string of properties
+	// e.g. Default:    @include boxShadowRegular;
+	// e.g. Custom:     @include boxShadowRegular(0, 1px, 4px, 255, 0.5, inset);
+
+@mixin boxShadowLarge( $left:0, $top:0px, $blur:5px, $color: 170, $opacity:0.3, $inset:"") {
+  -webkit-box-shadow:$left $top  $blur rgba($color, $color, $color, $opacity) #{$inset};
+  -moz-box-shadow:$left $top  $blur rgba($color, $color, $color, $opacity) #{$inset};
+  box-shadow:$left $top $blur rgba($color, $color, $color, $opacity) #{$inset};
+}
+
+@mixin boxShadowRegular( $left:0, $top:0px, $blur:3px, $color: 170, $opacity:0.3, $inset:"") {
+  -webkit-box-shadow:$left $top  $blur rgba($color, $color, $color, $opacity) #{$inset};
+  -moz-box-shadow:$left $top  $blur rgba($color, $color, $color, $opacity) #{$inset};
+  box-shadow:$left $top $blur rgba($color, $color, $color, $opacity) #{$inset};
+}
+
+@mixin boxShadowSmall( $left:0, $top:0px, $blur:1px, $color: 170, $opacity:0.4, $inset:"") {
+  -webkit-box-shadow:$left $top  $blur rgba($color, $color, $color, $opacity) #{$inset};
+  -moz-box-shadow:$left $top  $blur rgba($color, $color, $color, $opacity) #{$inset};
+  box-shadow:$left $top $blur rgba($color, $color, $color, $opacity) #{$inset};
+}
+
+// ANIMATION 
+
+@mixin btnHoverFX {
+	-webkit-transition: all 0.3s linear; 
+	-moz-transition: all 0.3s linear; 
+	-o-transition: all 0.3s linear; 
+	  transition: all 0.3s linear; 
+
+}
+
+@mixin btnHover($color) {
+	text-decoration: none;
+	background-color: darken($color, 10%);
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(163, 163, 163, .1);
+		box-shadow: 0px 0px 3px 0px rgba(163, 163, 163, .1);
+}
+
+// GRADIENTS
+
+@mixin gradientBG($color1, $color2) {
+	background-color: $color1;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+	background-image: -moz-linear-gradient(center top, $color1, $color2);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+ }

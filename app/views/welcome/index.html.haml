@@ -1,168 +1,146 @@
-%section#main{:role => "main"}
-  %ul#steps.line
-    %li#download.step.unit.size1of3
-      %article#step1{:role => "article"}
-        %header
-          %h1 Step&nbsp;1
-          %h2
-            <!-- Modify `ri_win_download` in application_helper.rb -->
-            %a#downloadlink.button.green{:href => ri_win_download}
-              %span Download
-              %span
-                %b the
-                Kit
-        %section#windows.entry-content
-          %p
-            %b For Windows.
-          %p
-            %i RailsInstaller
-            has everything you need to hit the ground running.
-            In one easy-to-use installer, you get all the common packages needed for a full Rails stack.
-            Download it now and be writing (and running) Rails code in no time.
-          %p
-            Packages included are:
-          %ul
-            %li
-              %b
-                %a{:href => "http://ruby-lang.org"} Ruby
-              1.9.3-p392
-            %li
-              %b
-                %a{:href => "http://rubyonrails.org"} Rails
-              3.2
-            %li
-              %b
-                %a{:href => "http://gembundler.com"} Bundler
-            %li
-              %b
-                %a{:href => "http://git-scm.com"} Git
-              1.8.1.2
-            %li
-              %b
-                %a{:href => "http://sqlite.org"} Sqlite
-            %li
-              %b
-                %a{:href => "https://github.com/rails-sqlserver/tiny_tds"} TinyTDS
-            %li
-              %b
-                %a{:href => "https://github.com/rails-sqlserver/activerecord-sqlserver-adapter"} SQL Server support
-            %li
-              %b
-                %a{:href => "https://github.com/oneclick/rubyinstaller/wiki/Development-Kit"} DevKit
-        %section#osx.entry-content
-          %p
-            %b For OSX.
-          %p
-            %i RailsInstaller
-            has everything you need to hit the ground running.
-            In one easy-to-use installer, you get all the common packages needed for a full Rails stack.
-            Download it now and be writing (and running) Rails code in no time.
-          %p
-            Packages included are:
-          %ul
-            %li
-              %b
-                %a{:href => "http://www.ruby-lang.org/"} Ruby
-              1.9.3-p392
-            %li
-              %b
-                %a{:href => "http://rubyonrails.org/"} Rails
-              3.2.12
-            %li
-              %b
-                %a{:href => "http://git-scm.com/"} Git
-              1.7.9.6
-            %li
-              %b
-                %a{:href => "http://www.sqlite.org/"} Sqlite
-              3.7.5
-            %li
-              %b
-                %a{:href => "https://github.com/kennethreitz/osx-gcc-installer"} osx-gcc-installer
-              4.1
-            %li
-              %b
-                %a{:href => "http://unfiniti.com/software/mac/jewelrybox"} JewelryBox
-              1.3.0/1.4.1
-            %li
-              %b
-                %a{:href => "https://rvm.io"} RVM
-              1.18.10
-            %li
-              %b
-                %a{:href => "https://smf.sh/"} SM
-              0.10.4
-    %li#video.step.unit.size1of3
-      %article#step2{:role => "article"}
-        %header
-          %h1 Step&nbsp;2
-          %h2
-            %a.button.white.vimeolink{:href => "/windows"}
-              / <span>FOLLOW</span>
-              %span Step-by-Step INSTRUCTIONS
-        %section.entry-content
-          %p
-            /
-              <a href="http://vimeo.com/34078037" class="video-thumbnail vimeolink">
-              <img src="images/video-thumbnail.png" width="100%" alt="Watch the Video" />
-              </a>
-          %p
-            As we work hard to UPDATE the video tutorial please click on the link above to follow along step-by-step setup instructions after downloading the KIT. This easy to follow documentation will go through the entire installation process and will help ensure that Ruby, Rails, Git, etc are all installed properly. Enjoy!
-            / <a href="http://vimeo.com/34078037" class="vimeolink">Vimeo</a>.
-            / <p class="notice">Postgres is now the default database on Engine Yard. Please use the '<b>pg</b>' gem instead of
-            / '<b>mysql2</b>' in your <b>Gemfile</b>.</p>
-          / <p><a href="/instruction">Step-by-step instruction guide</a></p>
-    %li#next.step.unit.size1of3.lastUnit
-      %article#step3{:role => "article"}
-        %header
-          %h1 Step&nbsp;3
-          %h2
-            %a.button.yellow.anchorLink{:href => "#whats-next"}
-              %span What&rsquo;s
-              %span Next?
-        %section.entry-content
-          %p
-            %strong Have troubles installing?
-            %br/
-            = succeed "." do
-              %a{:href => "http://groups.google.com/group/railsinstaller", :title => "RailsInstaller |\n              Google Groups"} Check the RailsInstaller Google Group
-          %p
-            You've got everything installed. You've written (and ran) some code. If you find yourself asking
-            = succeed "," do
-              %q where do I go from here
-            don't worry. You're not alone.
-          %p
-            The answer is
-            = succeed "," do
-              %q just about anywhere
-            but here's a handful of good places to start.
-            The official
-            = succeed "," do
-              %a{:href => "http://rubyonrails.org", :title => "Ruby on Rails"} Ruby on Rails site
-            = succeed "," do
-              %a{:href => "http://weblog.rubyonrails.org", :title => "Riding Rails"} blog
-            = succeed "," do
-              %a{:href => "http://twitter.com/rails", :title => "@rails on Twitter"} Twitter account (@rails)
-            and
-            = succeed "." do
-              %a{:href => "http://groups.google.com/group/rubyonrails-talk", :title => "Ruby on Rails: Talk | Google Groups"} mailing list
-            If you're into
-            = succeed "," do
-              %abbr{:title => "Internet Relay Chat"} IRC
-            swing by
-            %a{:href => "irc://irc.freenode.net#rubyonrails"} #rubyonrails
-            on freenode.net.
-            There's always the ever-growing
-            = succeed "." do
-              %a{:href => "http://guides.rubyonrails.org", :title => "Ruby on Rails Guides"} Ruby on Rails guides
-            If you learn by watching, there are more
-            %a{:href => "http://rubyonrails.org/screencasts", :title => "Ruby on Rails: Screencasts"} screencasts
-            than you can shake a stick at. Some are free, some cost money.
-            Envy Labs produces the
-            %a{:href => "http://ruby5.envylabs.com", :title => "Ruby5 by EnvyLabs"} Ruby 5 News Show.
-            %a{:href => "http://5by5.tv", :title => "5by5 Studios"} 5by5
-            produces podcasts like
-            %a{:href => "http://5by5.tv/devshow", :title => "The Dev Show - 5by5"} The Dev Show
-            and
-            = succeed "." do
-              %a{:href => "http://5by5.tv/rubyshow", :title => "The Ruby Show - 5by5"} The Ruby Show
+%div.row-fluid.space
+  %div.hero-unit.logo
+    %p
+      = image_tag 'ri-logo.png', alt: 'RailsInstaller Logo'
+    %h1.tagline Get to work.
+%div.row-fluid.space
+  %div.span6
+    %h2 What is it? 
+    %p
+      RailsInstaller is the quickest way to go from zero to developing
+      Ruby on Rails applications. Whether you're on Windows or Mac,
+      RailsInstaller has you covered.
+  %div.span6
+    %h2 Who is it for?
+    %p
+      Have you ever started a new job with a fresh computer? Setting everything
+      up to be able to start creating can take hours. RailsInstaller streamlines
+      the process for Rails developers to enable them to be successful.
+%div.row-fluid.space
+  %div.span8.offset2.video_container
+    %iframe.img-polaroid{ src: "http://www.youtube.com/embed/InKZOPylUSQ", frameborder: "0", allowfullscreen: true }
+%div.row-fluid
+  %div.span12
+    %div.row-fluid
+      %div.span6
+        %h2 Windows Downloads
+        %div.row-fluid
+          %div.span6
+            %p.downloadlink
+              %a.btn.btn-success.btn-block{ href: 'http://rubyforge.org/frs/download.php/76862/railsinstaller-2.2.1.exe' }
+                Windows
+                %br/
+                Ruby 1.9
+            %div.packages
+              %small Packages included are
+              %ul.unstyled
+                %li
+                  = link_to 'Ruby', 'http://www.ruby-lang.org/'
+                  1.9.3-p392
+                %li
+                  = link_to 'Rails', 'http://rubyonrails.org/'
+                  3.2
+                %li
+                  = link_to 'Bundler', 'http://gembundler.com/'
+                %li
+                  = link_to 'Git', 'http://git-scm.com/'
+                %li
+                  = link_to 'Sqlite', 'http://sqlite.org/'
+                %li
+                  = link_to 'TinyTDS', 'https://github.com/rails-sqlserver/tiny_tds'
+                %li
+                  = link_to 'SQL Server Support', 'https://github.com/rails-sqlserver/activerecord-sqlserver-adapter'
+                %li
+                  = link_to 'DevKit', 'https://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
+          %div.span6
+            %p.downloadlink
+              %a.btn.btn-success.btn-block{ href: 'http://rubyforge.org/frs/download.php/75114/railsinstaller-1.3.0.exe' }
+                Windows
+                %br/
+                Ruby 1.8
+            %div.packages
+              %small Packages included are
+              %ul.unstyled
+                %li
+                  = link_to 'Ruby', 'http://www.ruby-lang.org/'
+                  1.8.7-p352
+                %li
+                  = link_to 'Rails', 'http://rubyonrails.org/'
+                  3.0.7
+                %li
+                  = link_to 'Bundler', 'http://gembundler.com/'
+                %li
+                  = link_to 'Git', 'http://git-scm.com/'
+                %li
+                  = link_to 'Sqlite', 'http://sqlite.org/'
+                %li
+                  = link_to 'TinyTDS', 'https://github.com/rails-sqlserver/tiny_tds'
+                %li
+                  = link_to 'SQL Server Support', 'https://github.com/rails-sqlserver/activerecord-sqlserver-adapter'
+                %li
+                  = link_to 'DevKit', 'https://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
+      %div.span6
+        %h2 Mac Downloads
+        %div.row-fluid
+          %div.span6
+            %p.downloadlink
+              %a.btn.btn-success.btn-block{ href: 'http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz' } 
+                Mac OSX
+                %br/
+                10.7 &amp; 10.8
+          %div.span6
+            %p.downloadlink
+              %a.btn.btn-success.btn-block{ href: 'http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz' } 
+                Mac OSX
+                %br/
+                10.6
+        %div.row-fluid
+          %div.span12.packages
+            %small Packages included are
+            %ul.unstyled
+              %li
+                = link_to 'Ruby', 'http://www.ruby-lang.org/'
+                1.9.3-p392
+              %li
+                = link_to 'Rails', 'http://rubyonrails.org/'
+                3.2
+              %li
+                = link_to 'Bundler', 'http://gembundler.com/'
+              %li
+                = link_to 'Git', 'http://git-scm.com/'
+              %li
+                = link_to 'Sqlite', 'http://sqlite.org/'
+              %li
+                = link_to 'osx-gcc-installer', 'https://github.com/kennethreitz/osx-gcc-installer'
+              %li
+                = link_to 'JewelryBox', 'http://unfiniti.com/software/mac/jewelrybox'
+              %li
+                = link_to 'RVM', 'https://rvm.io/'
+              %li
+                = link_to 'SM Framework', 'https://smf.sh/'
+%div.row-fluid.space
+  %div.span12
+    %h2 What's next
+    %p
+      After installing the kit, check out the
+      = link_to 'Rails Guides', 'http://guides.rubyonrails.org'
+      for information about developing Ruby on Rails applications.
+    %p
+      Another great resource is the
+      = link_to 'Ruby on Rails Tutorial', 'http://ruby.railstutorial.org'
+      by Michael Hartl. While the tutorial is Mac-focused, it does provide
+      great value and insight for Windows users as well. Additionally, there is
+      about 15 hours of accompanying video to in case you're more visually-oriented.
+    %p
+      If you need assistance with RailsInstaller, please see our
+      = link_to 'Google Group', 'http://groups.google.com/group/railsinstaller'
+      where you can view posts from other users as well as ask questions. Any
+      bugs with the installer should be reported on
+      = link_to 'Github', 'http://github.com/railsinstaller'
+      in the respective repositories (
+      = link_to 'railsinstaller-windows', 'http://github.com/railsinstaller/railsinstaller-windows/issues'
+      or
+      = link_to 'railsinstaller-nix', 'http://github.com/railsinstaller/railsinstaller-nix/issues'
+      ). There is also a
+      = link_to '#railsinstaller', 'http://webchat.freenode.net/#railsinstaller'
+      room on Freenode where you can get help in real-time chat.

@@ -1,0 +1,52 @@
+#main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.space {
+  margin-bottom: 5em;
+}
+.logo {
+    margin: 0 auto;
+    text-align: center;
+  img {
+    height: 812.5%;
+    padding-top: 1em;
+    width: 37.8125em;
+  }
+  .tagline {
+    font-size: 2.5em;
+    margin-top: -1em;
+  }
+}
+
+h2 {
+  color: $blue;
+}
+
+.video_container {
+  position: relative;
+  padding-bottom: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.downloadlink .btn-block {
+  font-size: 1.5em;
+}
+
+.packages a, .packages a:visited {
+  color: $darkGray3;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.packages a:hover {
+  color: $darkGray2;
+  text-decoration: none;
+}

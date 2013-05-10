@@ -1,0 +1,87 @@
+// EY Alerts: _ey-alerts.scss
+
+.alert {
+	padding: .5em 35px .5em 14px;
+	margin-bottom: 1em;
+	color: #fff;
+	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.1);
+	background-color: $lightGray3;
+	@include borderRadius;
+	
+	h4 {
+		color: #fff;
+		margin: 0;
+	}
+
+	a {
+		color: white;
+		border-bottom: 1px dotted white;
+	}
+	
+	.close {
+		position: relative;
+		top: -2px;
+		right: -21px;
+		line-height: 20px;
+		color: #fff;
+		text-shadow: 0 1px 0 #000;
+		opacity: .5;
+	}
+	
+	.close:hover {
+		opacity: .8
+	}
+}
+
+.alert-success {
+	background-color: $green;
+	border-color: #d6e9c6;
+}
+
+
+.alert-danger,
+.alert-error {
+	background-color: $darkRed;
+}
+
+.alert-info {
+	background-color: $blue;
+}
+
+.alert-light {
+	background-color: #fff;
+	color: $darkGray2;
+	
+	.close {
+		position: relative;
+		top: -2px;
+		right: -21px;
+		line-height: 20px;
+		color: #000;
+		text-shadow: none;
+		opacity: .5;
+	}
+}
+
+.alert-block {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.alert-block > p,
+.alert-block > ul {
+	margin-bottom: 0;
+}
+
+.alert-block p + p {
+	margin-top: 5px;
+}
+
+.alert-shadow {
+	@include boxShadowRegular;
+	
+	.close {
+		text-shadow: none;
+	}
+}
+

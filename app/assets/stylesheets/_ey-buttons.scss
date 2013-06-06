@@ -1,4 +1,4 @@
-/* 
+/*
 BUTTONS
 */
 
@@ -11,7 +11,7 @@ BUTTONS
 	padding: 0.836em 1.425em;
 	margin-bottom: 0;
 	*margin-left: 0.3em;
-	font-size: 0.925em; 
+	font-size: 0.925em;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
@@ -21,10 +21,38 @@ BUTTONS
   @include borderRadius;
   @include boxShadowRegular;
 	@include btnHoverFX;
-  
+
   [class^="icon-"],
   [class*=" icon-"] {
     margin: 0.125em 0.425em 0 -0.2em;
+  }
+}
+
+.btn {
+  background-image: linear-gradient(bottom, #f9f9f9 34%, #FFFFFF 67%);
+  background-image: -o-linear-gradient(bottom, #f9f9f9 34%, #FFFFFF 67%);
+  background-image: -moz-linear-gradient(bottom, #f9f9f9 34%, #FFFFFF 67%);
+  background-image: -webkit-linear-gradient(bottom, #f9f9f9 34%, #FFFFFF 67%);
+  background-image: -ms-linear-gradient(bottom, #f9f9f9 34%, #FFFFFF 67%);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.34, #f9f9f9),
+    color-stop(0.67, #FFFFFF)
+  );
+  @include boxShadowSmall(0,0,2px,180,0.7);
+
+  &.btn-primary,
+  &.btn-info,
+  &.btn-warning,
+  &.btn-danger,
+  &.btn-success,
+  &.btn-inverse,
+  &.btn-link,
+  &.btn-cancel {
+    background-image: none;
+    @include boxShadowSmall(0,0,0,0,0);
   }
 }
 
@@ -105,7 +133,8 @@ BUTTONS
 
 .btn-large {
 	font-size: 1.275em;
-  
+	line-height: 0.8;
+
 	[class^="icon-"],
 	[class*=" icon-"] {
 		//margin-top: 4px;
@@ -115,7 +144,7 @@ BUTTONS
 .btn-small {
   font-size: .836em;
  // padding: 0.425em 1em 0.425em !important;
-  
+
 	[class^="icon-"],
 	[class*=" icon-"] {
 		// margin-top: 0;
@@ -128,7 +157,7 @@ BUTTONS
   height: 1.75em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  
+
 	[class^="icon-"],
 	[class*=" icon-"] {
 		// margin-top: -1px;
@@ -143,7 +172,7 @@ BUTTONS
 	-webkit-box-sizing: border-box;
 	 -moz-box-sizing: border-box;
 	      box-sizing: border-box;
-          
+
 	+ .btn-block {
 		// margin-top: 5px;
 	}
@@ -163,7 +192,7 @@ input[type="button"].btn-block {
 .btn-inverse.active {
 	color: rgba(255, 255, 255, 0.75);
 }
- 
+
 .btn-primary {
 	color: #ffffff;
 	background-color: $blue;
@@ -528,6 +557,33 @@ input[type="submit"].btn.btn-mini {
 
 .btn .caret {
   margin: 0.375em -0.125em 0 0.425em;
+}
+
+.btn,
+.dropdown {
+  &.dropdown-toggle,
+  .dropdown-toggle {
+
+    .ss-dropdown,
+    .ss-directup {
+      margin: 0.225em -1em 0 1.5em;
+      font-size: 0.5em;
+      display: inline-block;
+    }
+    .ss-directup {
+      margin: 0.225em 0.25em 0 0.5em;
+    }
+  }
+}
+
+.btn-group {
+  &.dropdown-toggle {
+    .ss-dropdown,
+    .ss-directup {
+      margin: 0.225em 0.125em 0 0.5375em;
+      font-size: 0.5em;
+    }
+  }
 }
 
 .btn-mini .caret,

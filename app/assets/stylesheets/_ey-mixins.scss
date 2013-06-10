@@ -1,25 +1,41 @@
 // EY Mixins - all the mixins used in the style guide
 
-// TYPOGRAPHY 
+// TYPOGRAPHY
 
 @mixin helvetica {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
- 
+
 @mixin proximaLight {
-	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 300; 
+	font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 100;
 }
 
 @mixin proximaRegular {
 	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 400;
 }
 
-@mixin proximaSemibold {
-	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 600; 
+@mixin proximaBold {
+	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 700;
 }
 
-@mixin proximaBold {
-	  font-family: "proxima-nova",sans-serif; font-style: normal; font-weight: 700; 
+@mixin textLayout ($textSize: $baseFontSize, $lineHeight: $baseLineHeight) {
+
+	$paddingValue: ($textSize * $lineHeight) / 2; //get the line height of the element and divide it in 2 for top and bottom padding
+
+	$paddingValue: ($paddingValue / 1em); // convert to unitless number
+	$paddingValue: ($paddingValue*16) + 0px; // convert to pixels
+	$paddingValue: ($paddingValue / 1px); // convert to unitless number
+	@if $paddingValue < 16 {
+		$paddingValue: ($paddingValue/16) + 0em;
+	}
+	@if $paddingValue > 16 {
+		$paddingValue: (16/$paddingValue) + 0em;
+	} //convert back to ems
+
+	padding-top: $paddingValue;
+	padding-bottom: $paddingValue;
+	line-height: $lineHeight;
+	font-size: $textSize;
 }
 
 
@@ -58,28 +74,126 @@
   box-shadow:$left $top $blur rgba($color, $color, $color, $opacity) #{$inset};
 }
 
-// ANIMATION 
+
+// BUTTONS
 
 @mixin btnHoverFX {
-	-webkit-transition: all 0.3s linear; 
-	-moz-transition: all 0.3s linear; 
-	-o-transition: all 0.3s linear; 
-	  transition: all 0.3s linear; 
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	  transition: all 0.3s linear;
+}
 
+@mixin btnShade($color) {
+	@include gradientColor($color);
+	background-color: $color;
+	@include boxShadowSmall(0,0,3px,180,0.7);
 }
 
 @mixin btnHover($color) {
 	text-decoration: none;
-	background-color: darken($color, 10%);
-	-webkit-box-shadow: 0px 0px 3px 0px rgba(163, 163, 163, .1);
-		box-shadow: 0px 0px 3px 0px rgba(163, 163, 163, .1);
+	@include gradientColor(darken($color, 3.5%));
+	background-color: darken($color, 3.5%);
+	@include boxShadowSmall(0,0,5px,180,0.825);
 }
+
 
 // GRADIENTS
 
-@mixin gradientBG($color1, $color2) {
-	background-color: $color1;
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
-	background-image: -moz-linear-gradient(center top, $color1, $color2);
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+@mixin gradientColor(
+		$color:white, $darken:11.5%, $lighten:12.5%,
+		$step1:2%, $step2:50%, $step3:98%
+	) {
+ 	background-image: linear-gradient(bottom, darken($color, $darken) $step1, $color $step2, lighten($color, $lighten) $step3 );
+ 	background-image: -o-linear-gradient(bottom, darken($color, $darken) $step1, $color $step2, lighten($color, $lighten) $step3 );
+ 	background-image: -moz-linear-gradient(bottom, darken($color, $darken) $step1, $color $step2, lighten($color, $lighten) $step3 );
+ 	background-image: -webkit-linear-gradient(bottom, darken($color, $darken) $step1, $color $step2, lighten($color, $lighten) $step3 );
+ 	background-image: -ms-linear-gradient(bottom, darken($color, $darken) $step1, $color $step2, lighten($color, $lighten) $step3 );
+ 	background-image: -webkit-gradient(
+ 	  linear, left bottom, left top,
+ 	  color-stop(($step1), darken($color, $darken) ),
+ 	  color-stop(($step2), $color ),
+ 	  color-stop(($step3), lighten($color, $lighten) )
+ 	);
  }
+
+@mixin gradientBG($color1, $color2) {
+ 	background-color: $color1;
+ 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+ 	background-image: -moz-linear-gradient(center top, $color1, $color2);
+ 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+}
+
+
+// BOX SIZING
+
+@mixin box-sizing ($sizing: border-box) {
+ 	-webkit-box-sizing: $sizing;
+ 	-khtml-box-sizing: $sizing;
+ 	-moz-box-sizing: $sizing;
+ 	-ms-box-sizing: $sizing;
+ 	box-sizing: $sizing;
+}
+
+// THEME STRIPE
+
+@mixin themeStripe {
+	border-top: 3px solid $darkRed;
+}
+
+
+// TEXT MODIFIERS
+
+@mixin blockText {
+	//letter-spacing: 0.125em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+	.blocktext {
+		@include blockText;
+	}
+
+@mixin thinText {
+	letter-spacing: -0.025em;
+	font-weight: 200;
+}
+
+	.thintext {
+		@include thinText;
+	}
+
+@mixin circled {
+	@include borderRadius(50%,50%,50%,50%);
+	text-align: center;
+	color: white;
+	width: 1.5em;
+	display: inline-block;
+	margin:0 0.25em;
+	line-height: 1.4;
+	padding-top: 0.1em;
+	background-color: $darkGray1;
+}
+
+	.circled {
+		@include circled;
+
+		&.font-icon {
+			font-size: 0.925em !important;
+			padding-top:0.2em;
+			line-height: 1.3;
+		}
+
+		&.circled-blue {
+			background-color: $blue;
+		}
+
+		&.circled-green {
+			background-color: $green;
+		}
+
+		&.circled-white {
+			background-color: white;
+			color: $darkGray1;
+		}
+	}

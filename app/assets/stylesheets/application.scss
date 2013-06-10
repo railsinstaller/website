@@ -20,6 +20,24 @@ $smallText: 0.75em;
 
 $radius: 4px;
 
+// TYPOGRAPHIC SCALE
+
+$baseFontSize: 0.9375em;
+$baseLineHeight: 1.5;
+$smallText: 0.866666em;
+
+/* Modular Scale
+  ----------------------
+    15px @ 1:1.26
+      ----------------------*/
+
+$scalex1: 1.2;
+$scalex2: 1.44;
+$scalex3: 1.728;
+$scalex4: 2.074;
+$scalex5: 2.488;
+$scalex6: 2.986;
+
 @import "ey-mixins.scss";
 @import "ey-bootstrap.scss";
 @import "ey-buttons.scss";

@@ -1,0 +1,148 @@
+pt-BR:
+  layouts:
+    application:
+      description: RailsInstaller. A maneira mais rápida para desenvolver aplicações com Ruby on Rails do zero. Se você tem Windows ou Mac, RailsInstaller te dá cobertura.
+      engine_yard: Engine Yard
+      project_by: Projeto de
+      share_email_body: Ir para railsinstaller.org
+      share_email_subject: Dê uma olhada no RailsInstaller
+      share_email_title: Envie um email para seu amigos sobre o RailsInstaller
+  register:
+    index:
+      register: Registrar para notícias e acontecimentos
+  team:
+    index:
+      team: Time do RailsInstaller
+  welcome:
+    index:
+      bundler: Bundler
+      devkit: DevKit
+      freenode: ! '#railsinstaller'
+      freenode_preffix: Há também a sala
+      freenode_suffix: no Freenode onde você pode conseguir ajuda num chat em tempo real
+      get_to_work: Ao trabalho.
+      git: Git
+      github: Github
+      github_preffix: Quaisquer problemas com o instalador podem ser reportados no
+      google_group: Google Group
+      google_group_preffix: Se você precisa de ajuda com o RailsInstaller, por favor veja nosso
+      google_group_suffix: onde você pode ver posts de outros usuários assim como fazer suas perguntas.
+      jewerlybox: JewelryBox
+      last_version_download: Baixe
+      last_version_download_preffix: Quer viver no limite?
+      last_version_download_suffix: o railsinstaller-windows 3.0.0-alpha1 com Ruby 2.0.0!
+      mac: Mac OSX
+      mac_downloads: Downloads para Mac
+      mac_ver_new: 10.7 & 10.8
+      mac_ver_old: '10.6'
+      next: E agora
+      nix_repository: railsinstaller-nix
+      or: ou
+      osx_gcc_installer: osx-gcc-installer
+      osx_note: ! 'Observação:'
+      osx_note_description: O instalador para OSX 10.6 é apenas 64 bits. Por isso provavelmente não irá funcionar em computadores 32 bits.
+      packages_included: Os pacotes incluídos são
+      rails: Rails
+      rails_guides: Rails Guides
+      rails_guides_preffix: Após instalar o kit, dê uma olhada no
+      rails_guides_suffix: para informações sobre desenvolvimento de aplicações com Ruby on Rails.
+      rails_tutorial: Tutorial de Ruby on Rails
+      rails_tutorial_preffix: Um outro grande recurso é o
+      rails_tutorial_suffix: por Michael Hartl. Mesmo o tutorial sendo focado em usuários de Mac, ele também disponibiliza grande valor e conhecimento para usuários de Windows. Além disso, são aproximadamente 15 horas de vídeo acompanhadas caso seja melhor algo mais visualmente orientado para você.
+      rails_ver_new: '3.2'
+      rails_ver_old: 3.0.7
+      repositories_preffix: nos respectivos repositórios (
+      repositories_suffix: ).
+      ruby: Ruby
+      ruby_18: Ruby 1.8
+      ruby_19: Ruby 1.9
+      ruby_ver_new: 1.9.3-p392
+      ruby_ver_old: 1.8.7-p352
+      rvm: RVM
+      sm_framework: Framework SM
+      sql_support: Suporte do SQL Server
+      sqlite: Sqlite
+      tinyTDS: TinyTDS
+      what: O que é?
+      what_description: RailsInstaller é a maneira mais rápida para desenvolver aplicações com Ruby on Rails do zero. Se você tem Windows ou Mac, RailsInstaller te dá cobertura.
+      who: Pra quem é?
+      who_description: Você algum dia já iniciou um novo trabalho com um computador novo? Configurando tudo para poder começar a produzir pode demorar horas. O RailsInstaller agiliza o processo para desenvolvedores Rails para permitir o seu sucesso.
+      win: Windows
+      win_downloads: ! 'Downloads para Windows '
+      win_repository: railsinstaller-windows
+    mac:
+      click_for_windows: (Clique para Windows)
+      instructions: ! 'Passo 2: Instruções para MAC'
+      instructions_1: Agora que você baixou o kit vamos começar!
+      instructions_10: Uma vez concluído, podemos visitar a pasta da aplicação e iniciar o servidor Rails para ver o site no navegador.
+      instructions_11: Visite
+      instructions_12: no seu navegado para ver a pagina de boas vindas padrão do Rails.
+      instructions_13: Os passos restantes vão precisar de um editor de texto. Há vários editores que você pode usar por aí, mas colocarei um abaixo que é mais popular na comunidade de desenvolvimento.
+      instructions_14: ! 'Visite o link do download:'
+      instructions_15: Sublime Text
+      instructions_16: ! 'Após baixar e instalar o Sublime Text você precisa instalar a funcionalidade de linha de comando:'
+      instructions_17: A primeira tarefa é fazer um link com o nome subl para o sublime. Assumindo que você colocou o Sublime Text 2 na pasta Applications, e que você tenha a pasta ~/bin no seu path, você pode executar
+      instructions_18: Você pode visitar a pasta da sua aplicação rails e abrir seu novo aplicativo rails com o Sublime Text
+      instructions_19: Agora que você tem o aplicativo demonstração do rails aberto no editor de texto, edite o
+      instructions_2: Abra o arquivo TAR para começar a instalação e siga as instruções na tela para instalar o GIT. Este processo demora mais ou menos 20 minutos, então irei pegar um copo de café e já volto!
+      instructions_20: arquivo usando o painel de navegação. Fazendo isso, descomente a seguinte linha de código removendo o
+      instructions_21: No próximo passo você precisa abrir o prompt de linha de comando e criar um controller de boas vindas para a ação 'index'.
+      instructions_22: Agora vamos editar o arquivo de boas vindas index.html que pode ser encontrado em
+      instructions_23: ! 'e alterar o conteúdo para falar algo como:'
+      instructions_24: Lembre de SALVAR aquele arquivo depois de alterar
+      instructions_25: Se você reiniciar o servidor Rails e visitar
+      instructions_26: você verá exatamente a mesma página porque o Rails continua apontando para seu index.html na pasta public do seu projeto, Você precisa remover ela em
+      instructions_27: no Sublime Text. Então quando você atualizar a página no navegador você verá sua nova página!
+      instructions_28: Agora para o trecho FINAL, usando o controle de versão de arquivos e commitando suas alterações no Github. Primeiro vamos visitar sua conta no Github em
+      instructions_29: crie uma nova se não tiver uma.
+      instructions_3: Uma vez completa a instalação vamos seguir em frente e abrir o terminal em
+      instructions_30: O próximo passo é ter certeza que suas chave SSH está configurada corretamente. Na sua página de Github vá em
+      instructions_31: então
+      instructions_32: na canto esquerdo e clique em
+      instructions_33: Você pode dar a nome que você quiser a sua chave. Agora siga os passos na linha de comando abaixo para gerar a chave SSH
+      instructions_34: Seja cauteloso em criar uma senha forte quando pedirem
+      instructions_35: Agora volte ao Github e cole a key copiada na seção requerida. Salve-a.
+      instructions_36: Nosso próximo passo é criar um novo repositório no Github, você pode chamar ele como quiser, mas é melhor manter a nomenclatura similar ao título do seu aplicativo
+      instructions_37: Finalmente nos iremos terminar com os seguintes comandos para colocar seu código no Git e no Github
+      instructions_38: Linha de comando
+      instructions_39: Entre suas credenciais do Gtihub.com quando perguntado e então pressione ENTER
+      instructions_4: Agora, nós iremos executar alguns comandos para ter certeza que está tudo configurado corretamente
+      instructions_40: É OFICIAL, você criou seu primeiro projeto em Rails
+      instructions_5: Isto irá mostrar a versão do GIT que você tem.
+      instructions_6: Isto irá mostrar informações sobre o ambiente do seu RVM
+      instructions_7: Isto irá mostrar informações sobre a versão do seu Ruby para ter certeza que tudo está configurado corretamente.
+      instructions_8: Isto irá mostrar informações sobre a sua versão do Rails para ter certeza que tudo está configurado corretamente.
+      instructions_9: Agora que temos certeza que tudo está configurado corretamente, nós podemos create uma nova aplicação rails.
+    windows:
+      click_for_mac: (Clique para Mac)
+      intructions: ! 'Passo 2: Instuções para Windows'
+      intructions_1: Agora que você baixou o kit vamos começar!
+      intructions_10: ! 'Visite o link para baixar:'
+      intructions_11: ! '- Depois de baixar e instalar o Sublime Tex você precisará instalar a sua funcionalidade de linha de comando:'
+      intructions_12: ! 'Abra a pasta contendo o arquivo SublimeText.exe. Provavelmente dentro de:'
+      intructions_13: Copie aquele arquivo .exe e cole-o na mesma pasta. Renomeie o arquivo copiado para algo como subl ou qualquer que seja o comando que você deseja usar para chamar ele do prompt de comando
+      intructions_14: Copie o caminho da pasta deste arquivo ou da pasta que contém o arquivo subl.exe criado anteriormente
+      intructions_15: Clique com o botão direito em "Meu computador", clique em "Opções avançadas do sistema", clique em "Variáveis de ambiente", na lista de variáveis de ambiente, selecione a chamada "PATH" e clieque em "Editar". Agora digite um ponto-e-vírgula ";" e cole o caminho copiado anteriormente. Então saia de todas as telas abertas clicando em "OK" e reinicie seu prompt de comando
+      intructions_16: Você pode agora visitar a pasta da sua aplicação rails e abrir o seu novo aplicativo rails com o Sublime Text
+      intructions_17: Agora que você tem sua aplicação demonstração do rails aberta no editor, edite o arquivo
+      intructions_18: usando o painel de navegação. Uma vez aberto o arquivo, descomente a seguinte linha de código removendo o
+      intructions_19: No próximo passo você precisará visitar o prompt de comando e criar um controller de boas vindas para a ação do índice.
+      intructions_2: Abra o arquivo baixado para começar a instalação e siga as instruções na tela.
+      intructions_20: Agora vamos editar o arquivo de boas vindas index.html que pode ser encontrado em
+      intructions_21: ! 'e mudar o conteúdo para dizer algo como:'
+      intructions_22: Lembre de SALVAR o arquivo depois de alterar.
+      intructions_23: Se você reiniciar o servidor Rails e visitar
+      intructions_24: você verá exatamente a mesma pagina porque o Rails continua direcionando para o index.html na pasta public. Você precisará remover o arquivo em
+      intructions_25: clicando com o botão direito nele no Sublime Text. Então quando você atualizar o browser você verá a nova página!
+      intructions_26: Agora vamos ao passo FINAL, commitando suas alterações no Github. Primeiro vamos visitar a sua conta no Github em
+      intructions_27: ! 'crie uma se você não tiver. Crie um novo repositório e chame-o como quiser. Então siga os seguintes passos no prompt de comando para conectar seu computador ao repositório git. '
+      intructions_28: ! 'Prompt de comando:'
+      intructions_29: Este comando irá copiar sua chave publica que foi gerada anteriormente, visite a página "Account Settings" no Github.com e clique em
+      intructions_3: Uma vez completa a instalação, ela deve levantar o Prompt de comando do Windows perguntando seu nome e endereço de email
+      intructions_30: É OFICIAL, você criou seu primeiro projeto Rails!
+      intructions_4: Uma vez que você entrou com os dados, você pode ver sua chave SSH publica que você precisará mais tarde.
+      intructions_5: No próximo passo, iremos criar uma nova aplicação rails via linha de comando. Este processo pode levar um minuto.
+      intructions_6: Uma vez completo, nos podemos visitar a pasta a aplicação e iniciar o servidor Rails para ver o site no navegador.
+      intructions_7: Agora podemos visitar
+      intructions_8: no seu navegador e ver a página de boas vindas padrão do Rails.
+      intructions_9: Os passos restantes irão requerir um editor de texto. Há vários editores de texto que você pode usar por aí, mas iremos colocar um abaixo que é mais popular entre a comunidade de desenvolvedores.

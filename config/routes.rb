@@ -1,10 +1,13 @@
 RailsinstallerWeb::Application.routes.draw do
 
-  #match "/auth/:provider/callback", :to => "sessions#callback"
+  root to: 'welcome#index'
 
-  root :to => "welcome#index"
-  
-  #match "/windows", :to => "welcome#windows"
-  #match "/mac", :to => "welcome#mac"
-  
+  match '/:locale' => 'welcome#index'
+
+  #scope '(:locale)', locale: 'en' do
+  #  match "/auth/:provider/callback", :to => "sessions#callback"
+  #  match '/windows', :to => 'welcome#windows'
+  #  match '/mac', :to => 'welcome#mac'
+  #end
+
 end

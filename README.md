@@ -6,6 +6,15 @@ Web application for http://railsinstaller.org
 
 Fork repository, make required changes, test, open a pull request on GH.
 
+If you'd like to translate the site into a different locale, add the relevant
+YAML file with translated strings to `config/locales` and make sure everything
+works properly. Check out `config/locales/en.yml` for strings to localize.
+
+#### Current Translations
+
+- English (en)
+- Portuegese - Brazil (pt-BR) 
+
 ### Testing
 
 ```bash

@@ -1,13 +1,8 @@
 RailsinstallerWeb::Application.routes.draw do
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    root to: 'welcome#index'
+  end
 
-  root to: 'welcome#index'
-
-  match '/:locale' => 'welcome#index'
-
-  #scope '(:locale)', locale: 'en' do
-  #  match "/auth/:provider/callback", :to => "sessions#callback"
-  #  match '/windows', :to => 'welcome#windows'
-  #  match '/mac', :to => 'welcome#mac'
-  #end
-
+  match '*path', to: redirect("/#{I18n.default_locale}/%{path}")
+  match '', to: redirect("/#{I18n.default_locale}")
 end

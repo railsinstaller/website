@@ -1,117 +1,118 @@
-%div{style: 'padding:35px 100px 0px 100px;'}
+%div{:style => "padding:35px 100px 0px 100px;"}
   %li#next.step.unit.size1of3.lastUnit
-    %article#step3{role: 'article'}
+    %article#step3{:role => "article"}
       %header
         %h1
-          = t('.intructions')
-          %a{href: '/mac', style: 'color: #0000FF;'}
-            = t('.click_for_mac')
+          Step&nbsp;2: Instructions for Windows
+          %a{:href => "/mac", :style => "color: #0000FF;"} (Click for Mac)
         %br/
       %section.entry-content
         %p
-          %strong
-            = t('.intructions_1')
+          %strong Now that you've downloaded the kit let's get started!
           %br/
         %ol
+          %li Open the downloaded file to begin the installation and follow the onscreen instructions.
+        %br/
+        %li Once installation is complete it should bring up the Windows Command Line (DOS prompt) asking for your name and email address.
+        %br/
+        %p Once you enter both you should see your generated public SSH key which you will need later.
+        %li Next you'll need to create a new rails application via the command line. This process may take up to a minute.
+        %br/
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} $ rails new railsinstaller_demo
+        %br/
+        %li Once it's complete we can now visit the application folder and start the Rails server to see the site in our browser.
+        %br/
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} $ cd railsinstaller_demo
+        %br/
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} $ rails s
+        %br/
+        %p
+          \- Now you can visit
+          %a{:href => "http://localhost:3000", :style => "color: #0000FF;"} http://localhost:3000
+          in your web browser and see the default Rails welcome page.
+        %li The remaining steps will require you to have a text editor. There are various text editors you can use out there but I'll put one below that is fairly popular in the developer community.
+        %br/
+        %p
+          \- Visit link to download:
+          %a{:href => "http://www.sublimetext.com", :style => "color: #0000FF;"} Sublime Text
+        %p - After downloading and installing Sublime Text you'll need to install its command line functionality:
+        %ul
           %li
-            = t('.intructions_2')
-          %br/
-          %li
-            = t('.intructions_3')
-          %br/
-          %p
-            = t('.intructions_4')
-          %li
-            = t('.intructions_5')
-          %br/
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} $ rails new railsinstaller_demo
-          %br/
-          %li
-            = t('.intructions_6')
-          %br/
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} $ cd railsinstaller_demo
-          %br/
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} $ rails s
-          %br/
-          %p
-            = t('.intructions_7')
-            %a{href: 'http://localhost:3000', style: 'color: #0000FF;'} http://localhost:3000
-            = t('.intructions_8')
-          %li
-            = t('.intructions_9')
-          %br/
-          %p
-            = t('.intructions_10')
-            %a{href: 'http://www.sublimetext.com', style: 'color: #0000FF;'} Sublime Text
-          %p
-            = t('.intructions_11')
-          %ul
-            %li
-              = t('.intructions_12')
-              %br/
-              %br/
-              %tt C:\Program Files\Sublime_Text_2.exe
-          %br/
-          %li
-            = t('.intructions_13')
-          %br/
-          %li
-            = t('.intructions_14')
-          %br/
-          %li
-            = t('.intructions_15')
-          %br/
-          %li
-            = t('.intructions_16')
-          %br/
-          %ul
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} $ cd railsinstaller_demo
-          %br/
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} $ subl .
-          %br/
-          %li
-            = t('.intructions_17')
-            %tt /config/routes.rb
-            = t('.intructions_18')
-          %br/
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} root :to => 'welcome#index'
-          %br/
-          %li
-            = t('.intructions_19')
-          %br/
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} $ rails g controller welcome index
-          %br/
-          %li
-            = t('.intructions_20')
-            = succeed ',' do
-              %tt app/views/welcome/index.html.erb
-            = t('.intructions_21')
-          %br/
-          %pre{style: 'border:dashed black 1px; font-style:italic;'} &lt;h1&gt;Welcome to the Rails Installer Demo!!!&lt;/h1&gt;
-          %br/
-          %p = t('.intructions_22')
-          %p
-            = t('.intructions_23')
-            %a{href: 'http://localhost:3000', style: 'color: #0000FF;'} http://localhost:3000
-            = t('.intructions_24')
-            %tt /public/index.html
-            = t('.intructions_25')
-          %li
-            = t('.intructions_26')
-            = succeed ',' do
-              %a{href: 'https://github.com/', style: 'color: #0000FF;'} https://github.com/username
-            = t('.intructions_27')
-          %br/
-          %strong
-            = t('.intructions_28')
-          %br/
-          %br/
-          %ul
-            %li
-              %pre{style: 'border:dashed black 1px; font-style:italic;'} $ git init<br/>$ git add .<br/>$ git commit -m "first commit"<br/>$ git remote add origin git@github.com:accountname/railsinstaller_demo.git<br/>$ publickey
+            Open up the folder containing your SublimeText.exe file. Should be under something like:
             %br/
-          %p = t('.intructions_29')
-          %li
-            %pre{style: 'border:dashed black 1px; font-style:italic;'} $ git push origin master
             %br/
-          %h1{style: 'font-size: 48px; text-align:right;'} = t('.intructions_30')
+            %tt C:\Program Files\Sublime_Text_2.exe
+        %br/
+        %li Copy that .exe file and paste it into the same folder. Rename the copied file to something like "subl" or whatever command you want to use to call it from the command prompt
+        %br/
+        %li Copy the file path of your current folder or the folder that contains your newly created subl.exe file
+        %br/
+        %li Right click on "My Computer", click on "Advanced System Settings", click on "Environment Variables", scroll down to the system variables on the bottom and find a variable called "Path", click "Edit". Now type a semicolon ";" and paste the path that you copied earlier. Now exit out of everything by clicking "OK" and restart your Command Line Prompt
+        %br/
+        %li You can now visit the folder of your rails application and open your new rails app with Sublime Text
+        %br/
+        %ul
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} $ cd railsinstaller_demo
+        %br/
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} $ subl .
+        %br/
+        %li
+          Now that you have your rails demo app open in the text editor edit the
+          %tt /config/routes.rb
+          file using the navigation panel. Once you're there uncomment the following line of code by removing the "#" sign in front of it. Be sure to to SAVE that file after the change
+        %br/
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} root :to => 'welcome#index'
+        %br/
+        %li Next you'll need to visit the command line prompt and create a welcome controller for the index action.
+        %br/
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} $ rails g controller welcome index
+        %br/
+        %li
+          Now lets edit the welcome index.html which can be found under
+          = succeed "," do
+            %tt app/views/welcome/index.html.erb
+          and change the content to say something like the following:
+        %br/
+        %pre{:style => "border:dashed black 1px; font-style:italic;"} &lt;h1&gt;Welcome to the Rails Installer Demo!!!&lt;/h1&gt;
+        %br/
+        %p Remember to SAVE that file after change.
+        %p
+          If you restart Rails server and visit
+          %a{:href => "http://localhost:3000", :style => "color: #0000FF;"} http://localhost:3000
+          you'll see the exact same page because Rails is still serving your index.html file in the public folder. You'll need to remove the file at
+          %tt /public/index.html
+          by right clicking on it in Sublime Text. Then when you refresh the browser you should see your new page!
+        %li
+          Now for the FINAL step, committing your changes to Github. First let's visit your Github account at
+          = succeed "," do
+            %a{:href => "https://github.com/", :style => "color: #0000FF;"} https://github.com/username
+          sign up if you don't have one. Create a new repository and call it whatever you want. Then follow the command prompt steps below to connect your computer to the git repo.
+        %br/
+        %strong Command Prompt:
+        %br/
+        %br/
+        %ul
+          %li
+            %pre{:style => "border:dashed black 1px; font-style:italic;"} $ git init
+            %br/
+        %br/
+        %li
+          %pre{:style => "border:dashed black 1px; font-style:italic;"} $ git add .
+          %br/
+        %br/
+        %li
+          %pre{:style => "border:dashed black 1px; font-style:italic;"} $ git commit -m "first commit"
+          %br/
+        %br/
+        %li
+          %pre{:style => "border:dashed black 1px; font-style:italic;"} $ git remote add origin git@github.com:accountname/railsinstaller_demo.git
+          %br/
+        %br/
+        %li
+          %pre{:style => "border:dashed black 1px; font-style:italic;"} $ publickey
+          %br/
+        %p This command will copy your public key which was generated from earlier, visit your Account Settings on Github.com and click "SSH Keys" and paste in the key you just copied
+        %li
+          %pre{:style => "border:dashed black 1px; font-style:italic;"} $ git push origin master
+          %br/
+        %h1{:style => "font-size: 48px; text-align:right;"} It's OFFICIAL, You've created your first Rails Project!

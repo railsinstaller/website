@@ -2,23 +2,22 @@
   %div.hero-unit.logo
     %p
       = image_tag 'ri-logo.png', alt: 'RailsInstaller Logo'
-    %h1.tagline Get to work.
+    %h1.tagline
+      = t('.get_to_work')
 %div.row-fluid.space
   %div.span6
-    %h2 What is it? 
+    %h2
+      = t('.what')
     %p
-      RailsInstaller is the quickest way to go from zero to developing
-      Ruby on Rails applications. Whether you're on Windows or Mac,
-      RailsInstaller has you covered.
+      = t('.what_description')
   %div.span6
-    %h2 Who is it for?
+    %h2
+      = t('.who')
     %p
-      Have you ever started a new job with a fresh computer? Setting everything
-      up to be able to start creating can take hours. RailsInstaller streamlines
-      the process for Rails developers to enable them to be successful.
+      = t('.who_description')
 %div.row-fluid.space
   %div.span8.offset2.video_container
-    %iframe.img-polaroid{ src: "http://www.youtube.com/embed/InKZOPylUSQ", frameborder: "0", allowfullscreen: true }
+    %iframe.img-polaroid{ src: 'http://www.youtube.com/embed/InKZOPylUSQ', frameborder: '0', allowfullscreen: true }
 %div.row-fluid
   %div.span12
     /
@@ -28,143 +27,153 @@
           = link_to 'RailsInstaller Windows 2.2.1', 'https://github.com/railsinstaller/railsinstaller-windows/releases/v2.2.1/2925/railsinstaller-2.2.1.exe'
     %div.row-fluid
       %div.span6
-        %h2 Windows Downloads
+        %h2
+          = t('.win_downloads')
       %div.span6
-        %h2 Mac Downloads
+        %h2
+          = t('.mac_downloads')
     %div.row-fluid
       %div.span3
         %p.downloadlink
           %a.btn.btn-success.btn-block{ href: 'http://rubyforge.org/frs/download.php/76862/railsinstaller-2.2.1.exe' }
             %span.font-icon.down-btn-icon{ style: 'font-size:1.5em;' }
               download
-            Windows
+            = t('.win')
             %br/
-            Ruby 1.9
+            %font{ size: '3px'}
+              = t('.ruby_19')
       %div.span3
         %p.downloadlink
           %a.btn.btn-success.btn-block{ href: 'http://rubyforge.org/frs/download.php/75114/railsinstaller-1.3.0.exe' }
             %span.font-icon.down-btn-icon{ style: 'font-size:1.5em;' }
               download
-            Windows
+            = t('.win')
             %br/
-            Ruby 1.8
+            %font{ size: '3px'}
+              = t('.ruby_18')
       %div.span3
         %p.downloadlink
-          %a.btn.btn-success.btn-block{ href: 'http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz' } 
+          %a.btn.btn-success.btn-block{ href: 'http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz' }
             %span.font-icon.down-btn-icon{ style: 'font-size:1.5em;' }
               download
-            Mac OSX
+            = t('.mac')
             %br/
-            10.7 &amp; 10.8
+            %font{ size: '3px'}
+              = t('.mac_ver_new')
       %div.span3
         %p.downloadlink
-          %a.btn.btn-success.btn-block{ href: 'http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz' } 
+          %a.btn.btn-success.btn-block{ href: 'http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz' }
             %span.font-icon.down-btn-icon{ style: 'font-size:1.5em;' }
               download
-            Mac OSX
+            = t('.mac')
             %br/
-            10.6
+            %font{ size: '3px'}
+              = t('.mac_ver_old')
       %div.row-fluid
         %div.span3
           %div.packages
-            %small Packages included are
+            %small
+              = t('.packages_included')
             %ul.unstyled
               %li
-                = link_to 'Ruby', 'http://www.ruby-lang.org/'
-                1.9.3-p392
+                = link_to t('.ruby'), 'http://www.ruby-lang.org/'
+                = t('.ruby_ver_new')
               %li
-                = link_to 'Rails', 'http://rubyonrails.org/'
-                3.2
+                = link_to t('.rails'), 'http://rubyonrails.org/'
+                = t('.rails_ver_new')
               %li
-                = link_to 'Bundler', 'http://gembundler.com/'
+                = link_to t('.bundler'), 'http://gembundler.com/'
               %li
-                = link_to 'Git', 'http://git-scm.com/'
+                = link_to t('.git'), 'http://git-scm.com/'
               %li
-                = link_to 'Sqlite', 'http://sqlite.org/'
+                = link_to t('.sqlite'), 'http://sqlite.org/'
               %li
-                = link_to 'TinyTDS', 'https://github.com/rails-sqlserver/tiny_tds'
+                = link_to t('.tinyTDS'), 'https://github.com/rails-sqlserver/tiny_tds'
               %li
-                = link_to 'SQL Server Support', 'https://github.com/rails-sqlserver/activerecord-sqlserver-adapter'
+                = link_to t('.sql_support'), 'https://github.com/rails-sqlserver/activerecord-sqlserver-adapter'
               %li
-                = link_to 'DevKit', 'https://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
+                = link_to t('.devkit'), 'https://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
         %div.span3
           %div.packages
-            %small Packages included are
+            %small
+              = t('.packages_included')
             %ul.unstyled
               %li
-                = link_to 'Ruby', 'http://www.ruby-lang.org/'
-                1.8.7-p352
+                = link_to t('.ruby'), 'http://www.ruby-lang.org/'
+                = t('.ruby_ver_old')
               %li
-                = link_to 'Rails', 'http://rubyonrails.org/'
-                3.0.7
+                = link_to t('.rails'), 'http://rubyonrails.org/'
+                = t('.rails_ver_old')
               %li
-                = link_to 'Bundler', 'http://gembundler.com/'
+                = link_to t('.bundler'), 'http://gembundler.com/'
               %li
-                = link_to 'Git', 'http://git-scm.com/'
+                = link_to t('.git'), 'http://git-scm.com/'
               %li
-                = link_to 'Sqlite', 'http://sqlite.org/'
+                = link_to t('.sqlite'), 'http://sqlite.org/'
               %li
-                = link_to 'TinyTDS', 'https://github.com/rails-sqlserver/tiny_tds'
+                = link_to t('.tinyTDS'), 'https://github.com/rails-sqlserver/tiny_tds'
               %li
-                = link_to 'SQL Server Support', 'https://github.com/rails-sqlserver/activerecord-sqlserver-adapter'
+                = link_to t('.sql_support'), 'https://github.com/rails-sqlserver/activerecord-sqlserver-adapter'
               %li
-                = link_to 'DevKit', 'https://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
+                = link_to t('.devkit'), 'https://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
         %div.span6
           %div.packages
-            %small Packages included are
+            %small
+              = t('.packages_included')
             %ul.unstyled
               %li
-                = link_to 'Ruby', 'http://www.ruby-lang.org/'
-                1.9.3-p392
+                = link_to t('.ruby'), 'http://www.ruby-lang.org/'
+                = t('.ruby_ver_new')
               %li
-                = link_to 'Rails', 'http://rubyonrails.org/'
-                3.2
+                = link_to t('.rails'), 'http://rubyonrails.org/'
+                = t('.rails_ver_new')
               %li
-                = link_to 'Bundler', 'http://gembundler.com/'
+                = link_to t('.bundler'), 'http://gembundler.com/'
               %li
-                = link_to 'Git', 'http://git-scm.com/'
+                = link_to t('.git'), 'http://git-scm.com/'
               %li
-                = link_to 'Sqlite', 'http://sqlite.org/'
+                = link_to t('.sqlite'), 'http://sqlite.org/'
               %li
-                = link_to 'osx-gcc-installer', 'https://github.com/kennethreitz/osx-gcc-installer'
+                = link_to t('.osx_gcc_installer'), 'https://github.com/kennethreitz/osx-gcc-installer'
               %li
-                = link_to 'JewelryBox', 'http://unfiniti.com/software/mac/jewelrybox'
+                = link_to t('.jewerlybox'), 'http://unfiniti.com/software/mac/jewelrybox'
               %li
-                = link_to 'RVM', 'https://rvm.io/'
+                = link_to t('.rvm'), 'https://rvm.io/'
               %li
-                = link_to 'SM Framework', 'https://smf.sh/'
+                = link_to t('.sm_framework'), 'https://smf.sh/'
       %div.row-fluid
         %div.span12.alert.alert-info
-          %strong Please note:
-          OSX 10.6 installer is for 64-bit only. This will likely break on 32-bit computers.
+          %strong
+            = t('.osx_note')
+          = t('.osx_note_description')
       %div.row-fluid
         %div.span12.alert.alert-light.alert-shadow
-          Want to live on the edge?
-          = link_to 'Download', 'http://rubyforge.org/frs/?group_id=5288&release_id=47210', style: 'color: rgb(75, 179, 209);'
-          railsinstaller-windows 3.0.0-alpha1 with Ruby 2.0.0!
+          = t('.last_version_download_preffix')
+          = link_to t('.last_version_download'), 'http://rubyforge.org/frs/?group_id=5288&release_id=47210', style: 'color: rgb(75, 179, 209);'
+          = t('.last_version_download_suffix')
 %div.row-fluid.space
   %div.span12
-    %h2 What's next
+    %h2
+      = t('.next')
     %p
-      After installing the kit, check out the
-      = link_to 'Rails Guides', 'http://guides.rubyonrails.org'
-      for information about developing Ruby on Rails applications.
+      = t('.rails_guides_preffix')
+      = link_to t('.rails_guides'), 'http://guides.rubyonrails.org'
+      = t('.rails_guides_suffix')
     %p
-      Another great resource is the
-      = link_to 'Ruby on Rails Tutorial', 'http://ruby.railstutorial.org'
-      by Michael Hartl. While the tutorial is Mac-focused, it does provide
-      great value and insight for Windows users as well. Additionally, there is
-      about 15 hours of accompanying video to in case you're more visually-oriented.
+      = t('.rails_tutorial_preffix')
+      = link_to t('.rails_tutorial'), 'http://ruby.railstutorial.org'
+      = t('.rails_tutorial_suffix')
     %p
-      If you need assistance with RailsInstaller, please see our
-      = link_to 'Google Group', 'http://groups.google.com/group/railsinstaller'
-      where you can view posts from other users as well as ask questions. Any
-      bugs with the installer should be reported on
-      = link_to 'Github', 'http://github.com/railsinstaller'
-      in the respective repositories (
-      = link_to 'railsinstaller-windows', 'http://github.com/railsinstaller/railsinstaller-windows/issues'
-      or
-      = link_to 'railsinstaller-nix', 'http://github.com/railsinstaller/railsinstaller-nix/issues'
-      ). There is also a
-      = link_to '#railsinstaller', 'http://webchat.freenode.net/#railsinstaller'
-      room on Freenode where you can get help in real-time chat.
+      = t('.google_group_preffix')
+      = link_to t('.google_group'), 'http://groups.google.com/group/railsinstaller'
+      = t('.google_group_suffix')
+      = t('.github_preffix')
+      = link_to t('.github'), 'http://github.com/railsinstaller'
+      = t('.repositories_preffix')
+      = link_to t('.win_repository'), 'http://github.com/railsinstaller/railsinstaller-windows/issues'
+      = t('.or')
+      = link_to t('.nix_repository'), 'http://github.com/railsinstaller/railsinstaller-nix/issues'
+      = t('.repositories_suffix')
+      = t('.freenode_preffix')
+      = link_to t('.freenode'), 'http://webchat.freenode.net/#railsinstaller'
+      = t('.freenode_suffix')

@@ -1,8 +1,10 @@
-//= require jquery
-//= require jquery_ujs
-//= require entourage
-//= require_self
-//= require_tree .
+/*
+ *= require jquery
+ *= require jquery_ujs
+ *= require entourage
+ *= require_self
+ *= require_tree .
+ */
 $(function() {
 
   if(navigator.platform.indexOf('Mac') != -1) {

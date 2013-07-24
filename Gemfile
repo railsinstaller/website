@@ -7,7 +7,6 @@ gem 'rake', '~> 10.0.3'
 gem 'puma', '~> 1.6.3'
 gem 'newrelic_rpm'
 gem 'ey_config'
-gem 'honeybadger'
 
 group :assets do
   gem 'sass-rails', '~> 3.2.5'

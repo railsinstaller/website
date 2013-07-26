@@ -7,6 +7,7 @@ gem 'rake', '~> 10.0.3'
 gem 'puma', '~> 1.6.3'
 gem 'newrelic_rpm'
 gem 'ey_config'
+gem 'gh_contributors'
 
 group :assets do
   gem 'sass-rails', '~> 3.2.5'
@@ -19,7 +20,6 @@ gem 'jquery-rails'
 gem 'http_accept_language'
 
 group :development do
-  gem 'gh_contributors'
   gem 'hpricot'
   gem 'therubyracer'
 end

@@ -5,9 +5,7 @@ namespace :update do
   task :contributors do
     data = GhContributors.for_org('railsinstaller').data
     File.open('app/views/shared/_contributors.html', 'w') do |file|
-      data.each do |row|
-        username = row[0]
-        info = row[1]
+      data.each do |username, info|
         file.puts "<a href='https://github.com/#{username}' " +
         "title='#{username} - #{info['contributions']}'>\n" +
         "  <img alt='#{username} - #{info['contributions']}' " +

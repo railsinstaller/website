@@ -30,7 +30,7 @@ en:
       jewerlybox: JewelryBox
       last_version_download: Download
       last_version_download_preffix: Want to live on the edge?
-      last_version_download_suffix: railsinstaller-windows 3.0.0-alpha1 with Ruby 2.0.0!
+      last_version_download_suffix: railsinstaller-windows 3.0.0-alpha2 with Ruby 2.0.0!
       mac: Mac OSX
       mac_downloads: Mac Downloads
       mac_ver_new: 10.7 & 10.8
@@ -56,7 +56,7 @@ en:
       ruby: Ruby
       ruby_18: Ruby 1.8
       ruby_19: Ruby 1.9
-      ruby_ver_new: 1.9.3-p392
+      ruby_ver_new: 1.9.3-p429
       ruby_ver_old: 1.8.7-p352
       rvm: RVM
       sm_framework: SM Framework

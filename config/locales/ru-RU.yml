@@ -1,0 +1,72 @@
+ru-RU:
+  layouts:
+    application:
+      description: RailsInstaller. Самый быстрый способ начать разрабатывать Ruby on Rails приложения. Неважно используете вы Windows или Mac, RailsInstaller работает на обеих платформах.
+      engine_yard: Engine Yard
+      project_by: Проект от
+      share_email_body: Перейти на railsinstaller.org
+      share_email_subject: Попробуйте RailsInstaller
+      share_email_title: Отправить друзьям email о RailsInstaller
+  register:
+    index:
+      register: Зарегистрироваться для получения новостей
+  team:
+    index:
+      team: Команда RailsInstaller
+  welcome:
+    index:
+      bundler: Bundler
+      devkit: DevKit
+      freenode: "#railsinstaller"
+      freenode_preffix: У нас также есть канал
+      freenode_suffix: на Freenode, где вы можете получить помощь в онлайн чате
+      get_to_work: За работу!
+      git: Git
+      github: Github
+      github_preffix: Любые баги инсталлера должны быть зарепорчены на
+      google_group: Google Group
+      google_group_preffix: Если вам нужна помощь с RailsInstaller, пожалуйста, зайдите на нашу
+      google_group_suffix: где вы можете найти посты от других пользователей и задать вопросы.
+      jewerlybox: JewelryBox
+      last_version_download: Скачайте
+      last_version_download_preffix: Хотите самую последнюю версию, которую еще дорабатывают?
+      last_version_download_suffix: railsinstaller-windows 3.0.0-alpha1 c Ruby 2.0.0!
+      mac: Mac OSX
+      mac_downloads: Для Mac
+      mac_ver_new: 10.7 & 10.8
+      mac_ver_old: '10.6'
+      next: Что дальше?
+      nix_repository: railsinstaller-nix
+      or: или
+      osx_gcc_installer: osx-gcc-installer
+      osx_note: "Заметьте:"
+      osx_note_description: установщик для OSX 10.6 только 64-битный. Скорее всего он не будет работать на 32-битном компьютере.
+      packages_included: "Включает в себя:"
+      rails: Rails
+      rails_guides: Rails Guides
+      rails_guides_preffix: После установки обратитесь к
+      rails_guides_suffix: за информацией о разработке Ruby on Rails приложений.
+      rails_tutorial: Ruby on Rails Tutorial
+      rails_tutorial_preffix: Еще один великолепный ресурс это
+      rails_tutorial_suffix: от Michael Hartl. Несмотря на то, что в этих инструкциях используется Mac, они содержат очень ценную информацию и для Windows пользователей. Кроме того, там около 15 часов сопроводительного видео, что будет очень полезным тем, кто больше любит учиться по видео-урокам.
+      rails_ver_new: 3.2
+      rails_ver_old: 3.0.7
+      repositories_preffix: в соответствующий репозиторий (
+      repositories_suffix: ).
+      ruby: Ruby
+      ruby_18: Ruby 1.8
+      ruby_19: Ruby 1.9
+      ruby_ver_new: 1.9.3-p392
+      ruby_ver_old: 1.8.7-p352
+      rvm: RVM
+      sm_framework: SM Framework
+      sql_support: SQL Server Support
+      sqlite: Sqlite
+      tinyTDS: TinyTDS
+      what: Что это?
+      what_description: RailsInstaller — это самый быстрый способ начать разрабатывать Ruby on Rails приложения. Неважно используете вы Windows или Mac, RailsInstaller работает на обеих платформах.
+      who: Для кого это?
+      who_description: Вы когда-нибудь начинали работу на новом компьютере? Могут уйти часы чтобы установить и настроить все необходимое для разработки. RailsInstaller упрощает и ускоряет этот процесс для Rails-разработчиков, чтобы они могли быть успешными.
+      win: Windows
+      win_downloads: Для Windows
+      win_repository: railsinstaller-windows

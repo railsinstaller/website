@@ -35,6 +35,7 @@ class ApplicationController < ActionController::Base
       return AVAILABLE_LOCALES_HASH if AVAILABLE_LOCALES_HASH.any?
       I18n.available_locales.each do |locale|
         AVAILABLE_LOCALES_HASH[locale.downcase] = locale
+        AVAILABLE_LOCALES_HASH[locale[0..1].downcase.to_sym] = locale
       end
       return AVAILABLE_LOCALES_HASH
     end

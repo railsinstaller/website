@@ -1,4 +1,4 @@
-ru:
+ru-RU:
   layouts:
     application:
       description: RailsInstaller. Самый быстрый способ начать разрабатывать Ruby on Rails приложения. Неважно используете вы Windows или Mac, RailsInstaller работает на обеих платформах.

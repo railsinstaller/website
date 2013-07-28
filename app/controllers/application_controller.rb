@@ -6,27 +6,27 @@ class ApplicationController < ActionController::Base
   private
     def set_locale
       if params[:locale].present?
-        I18n.locale = params[:locale]
+        set_i18n_locale params[:locale]
       else
-        I18n.locale = extract_locale_from_header || I18n.default_locale
-        Rails.application.routes.default_url_options[:locale] = I18n.locale
+        set_i18n_locale extract_locale_from_header || I18n.default_locale
         redirect_to :root
       end
+    end
+
+    def set_i18n_locale(locale)
+      I18n.locale = locale
       Rails.application.routes.default_url_options[:locale] = I18n.locale
     end
 
     def extract_locale_from_header
-      return nil unless request.env['HTTP_ACCEPT_LANGUAGE']
+      return nil unless accept_language = request.env['HTTP_ACCEPT_LANGUAGE']
       begin
-        preferred_langs = request.env['HTTP_ACCEPT_LANGUAGE'].split(/,|;/).
-        grep(/^([a-z]{2}(-[a-z]{2})?)$/).map(&:to_sym).map(&:downcase)
+        preferred_langs = accept_language.split(/,|;/).
+          grep(/^([a-z]{2}(-[a-z]{2})?)$/).map(&:to_sym).map(&:downcase)
         match = preferred_langs & available_locales_hash.keys
-        if match.first
-          return available_locales_hash[match.first]
-        end
+        return available_locales_hash[match.first] if match.first
       rescue
         logger.error $!
-        return nil
       end
       return nil
     end
@@ -39,5 +39,4 @@ class ApplicationController < ActionController::Base
       end
       return AVAILABLE_LOCALES_HASH
     end
-
 end

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.12'
+gem 'rails', '~> 3.2.14'
 gem 'haml', '>= 3.0.0'
 gem 'haml-rails'
 gem 'rake', '~> 10.0.3'

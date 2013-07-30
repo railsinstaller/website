@@ -13,7 +13,7 @@ works properly. Check out `config/locales/en.yml` for strings to localize.
 #### Current Translations
 
 - English (en)
-- Portuegese - Brazil (pt-BR)
+- Brazilian portuguese (pt-BR)
 - Russian (ru-RU)
 
 ### Testing

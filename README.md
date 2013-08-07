@@ -13,8 +13,13 @@ works properly. Check out `config/locales/en.yml` for strings to localize.
 #### Current Translations
 
 - English (en)
+<<<<<<< HEAD:README.md
 - Portuguese - Brazil (pt-BR)
 - French - France (fr-FR)
+=======
+- Portuegese - Brazil (pt-BR)
+- Russian (ru-RU)
+>>>>>>> 9fdacfb... Russian localization.:README.md
 
 ### Testing
 

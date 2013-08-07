@@ -14,10 +14,14 @@ works properly. Check out `config/locales/en.yml` for strings to localize.
 
 - English (en)
 <<<<<<< HEAD:README.md
+<<<<<<< HEAD:README.md
 - Portuguese - Brazil (pt-BR)
 - French - France (fr-FR)
 =======
 - Portuegese - Brazil (pt-BR)
+=======
+- Brazilian portuguese (pt-BR)
+>>>>>>> ddc9524... Correcting little typo:README.md
 - Russian (ru-RU)
 >>>>>>> 9fdacfb... Russian localization.:README.md
 

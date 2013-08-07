@@ -1,4 +1,4 @@
-fr:
+fr-FR:
   layouts:
     application:
       description: RailsInstaller. Le moyen le plus rapide, partant de zéro jusqu'à votre appli Ruby on Rails. Windows ? Mac ? Pas de problème, RailsInstaller est là.
@@ -30,7 +30,7 @@ fr:
       jewerlybox: JewelryBox
       last_version_download: Télécharger
       last_version_download_preffix: Vous voulez tester la version alpha ?
-      last_version_download_suffix: railsinstaller-windows 3.0.0-alpha1 avec Ruby 2.0.0!
+      last_version_download_suffix: railsinstaller-windows 3.0.0-alpha2 avec Ruby 2.0.0!
       mac: Mac OSX
       mac_downloads: Téléchargements Mac
       mac_ver_new: 10.7 & 10.8

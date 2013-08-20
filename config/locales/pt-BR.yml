@@ -56,8 +56,8 @@ pt-BR:
       ruby: Ruby
       ruby_18: Ruby 1.8
       ruby_19: Ruby 1.9
-      ruby_ver_new: 1.9.3-p392
-      ruby_ver_old: 1.8.7-p352
+      ruby_ver_new: 1.9.3
+      ruby_ver_old: 1.8.7
       rvm: RVM
       sm_framework: Framework SM
       sql_support: Suporte do SQL Server

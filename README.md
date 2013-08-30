@@ -1,5 +1,7 @@
 # RailsInstaller Web
 
+![Codeship Status](https://www.codeship.io/projects/cda693e0-f3e1-0130-c6a1-6e039e15cc73/status)
+
 Web application for http://railsinstaller.org
 
 ### Contributing

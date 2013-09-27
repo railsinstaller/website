@@ -21,13 +21,14 @@ gem 'http_accept_language'
 
 group :development do
   gem 'hpricot'
-  gem 'therubyracer'
+  gem 'therubyracer', platform: 'ruby'
+  gem 'therubyrhino', platform: 'jruby'
 end
 
 group :test do
   gem 'cucumber-rails', require: false
   gem 'capybara'
-  gem 'ruby-debug19'
+  gem 'ruby-debug19', platform: 'ruby'
   gem 'webrat'
   gem 'rspec-rails', '~> 2.4'
   gem 'omniauth', '~> 0.2.6'

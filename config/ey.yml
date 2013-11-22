@@ -27,3 +27,6 @@ environments:
     migrate: false
   production_puma_clone:
     migrate: false
+  sourceforge: {}
+defaults:
+  migrate: false

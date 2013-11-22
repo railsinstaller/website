@@ -35,8 +35,13 @@ h2 {
   }
 }
 
-.downloadlink .btn-block {
-  font-size: 1.5em;
+.downloadlink {
+  a:visited {
+    color: #fff;
+  }
+  .btn-block {
+    font-size: 1.5em;
+  }
 }
 
 .packages a, .packages a:visited {

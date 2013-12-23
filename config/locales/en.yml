@@ -39,6 +39,7 @@ en:
       nix_repository: railsinstaller-nix
       or: or
       osx_gcc_installer: osx-gcc-installer
+      osx_warning: 'Please do not run the installer on OSX Mavericks until further notice.'
       osx_note: "Please note:"
       osx_note_description: OSX 10.6 installer is for 64-bit only. This will likely break on 32-bit computers.
       packages_included: Packages included are

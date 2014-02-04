@@ -1,4 +1,7 @@
 RailsinstallerWeb::Application.configure do
+  # Uncomment the new i18n load path setting if you have prepared your locale files to be served from PhraseApp
+  # config.i18n.load_path = Dir[Rails.root.join('phrase', 'locales', '*.{yml}').to_s]
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # The production environment is meant for finished, "live" apps.

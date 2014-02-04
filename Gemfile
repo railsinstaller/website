@@ -8,6 +8,7 @@ gem 'puma', '~> 1.6.3'
 gem 'newrelic_rpm'
 gem 'ey_config'
 gem 'gh_contributors'
+gem 'phrase'
 
 group :assets do
   gem 'sass-rails', '~> 3.2.5'

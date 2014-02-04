@@ -48,6 +48,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.1)
+    colorize (0.6.0)
     columnize (0.3.6)
     cucumber (1.0.6)
       builder (>= 2.1.2)
@@ -142,6 +143,10 @@ GEM
       oa-more (= 0.2.6)
       oa-oauth (= 0.2.6)
       oa-openid (= 0.2.6)
+    phrase (0.4.19)
+      colorize
+      i18n
+      json
     polyglot (0.3.3)
     puma (1.6.3)
       rack (~> 1.2)
@@ -257,6 +262,7 @@ DEPENDENCIES
   jquery-rails
   newrelic_rpm
   omniauth (~> 0.2.6)
+  phrase
   puma (~> 1.6.3)
   rails (~> 3.2.14)
   rake (~> 10.0.3)

@@ -27,7 +27,6 @@ end
 group :test do
   gem 'cucumber-rails', require: false
   gem 'capybara'
-  gem 'ruby-debug19'
   gem 'webrat'
   gem 'rspec-rails', '~> 2.4'
   gem 'omniauth', '~> 0.2.6'

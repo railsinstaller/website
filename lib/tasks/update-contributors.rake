@@ -9,7 +9,8 @@ namespace :update do
         file.puts "<a href='https://github.com/#{username}' " +
         "title='#{username} - #{info['contributions']}'>\n" +
         "  <img alt='#{username} - #{info['contributions']}' " +
-        "class='img-rounded' src='#{info['avatar_url']}'>\n</a>"
+        "class='img-rounded' src='#{info['avatar_url']}' " +
+        "width='29px' height='29px'>\n</a>"
       end
     end
   end

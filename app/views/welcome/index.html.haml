@@ -139,7 +139,7 @@
       = t('.next')
     %p
       = t('.rails_guides_preffix')
-      = link_to t('.rails_guides'), 'http://guides.rubyonrails.org'
+      = link_to t('.rails_guides'), t('.rails_guides_url', default: 'http://guides.rubyonrails.org')
       = t('.rails_guides_suffix')
     %p
       = t('.rails_tutorial_preffix')

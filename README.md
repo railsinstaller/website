@@ -18,6 +18,7 @@ works properly. Check out `config/locales/en.yml` for strings to localize.
 - Brazilian portuguese (pt-BR)
 - Russian (ru-RU)
 - French - France (fr-FR)
+- Czech (cs)
 
 ### Testing
 

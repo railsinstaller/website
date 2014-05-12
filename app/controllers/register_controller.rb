@@ -1,2 +1,0 @@
-class RegisterController < ApplicationController
-end

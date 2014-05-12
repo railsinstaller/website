@@ -1,0 +1,7 @@
+.span3
+  %p.downloadlink
+    %a.btn.btn-success.btn-block( href="#{down_link}")
+      %span.font-icon.down-btn-icon{ style: 'font-size:1.5em;' } download
+      = t("welcome.index.#{platform}")
+      %br/
+      %font{ size: '3px' }= t("welcome.index.#{down_version}")

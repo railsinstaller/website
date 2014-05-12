@@ -26,6 +26,7 @@ GEM
     execjs (2.0.2)
     ffi (1.9.3)
     fssm (0.2.10)
+    gh_contributors (0.8.0)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -85,6 +86,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.3.1)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.4)
       ffi (>= 0.5.0)
@@ -114,8 +116,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  gh_contributors
   haml
   middleman (~> 3.3.2)
   middleman-livereload (~> 3.1.0)
+  rake (~> 10.3)
   tzinfo-data
   wdm (~> 0.1.0)

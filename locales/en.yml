@@ -1,74 +1,66 @@
 ---
 en:
-  layouts:
-    application:
-      description: RailsInstaller. The quickest way to go from zero to developing Ruby on Rails applications. Whether you're on Windows or Mac, RailsInstaller has you covered.
-      engine_yard: Engine Yard
-      project_by: Project by
-      share_email_body: Go to railsinstaller.org
-      share_email_subject: Check out RailsInstaller
-      share_email_title: Email friends about RailsInstaller
-  register:
-    index:
-      register: Register for news and updates
-  team:
-    index:
-      team: RailsInstaller Team
-  welcome:
-    index:
-      bundler: Bundler
-      devkit: DevKit
-      freenode: "#railsinstaller"
-      freenode_preffix: There is also
-      freenode_suffix: room on Freenode where you can get help in real-time chat
-      get_to_work: Get to work.
-      git: Git
-      github: Github
-      github_preffix: Any bugs with the installer should be reported on
-      google_group: Google Group
-      google_group_preffix: If you need assistance with RailsInstaller, please see our
-      google_group_suffix: where you can view posts from other users as well as ask questions.
-      jewerlybox: JewelryBox
-      last_version_download: Download
-      last_version_download_preffix: Want to live on the edge?
-      last_version_download_suffix: railsinstaller-windows 3.0.0-alpha2 with Ruby 2.0.0!
-      mac: Mac OSX
-      mac_downloads: Mac Downloads
-      mac_ver_new: 10.7 & 10.8
-      mac_ver_old: '10.6'
-      next: What's next
-      nix_repository: railsinstaller-nix
-      or: or
-      osx_gcc_installer: osx-gcc-installer
-      osx_warning: 'Please do not run the installer on OSX Mavericks until further notice.'
-      osx_note: "Please note:"
-      osx_note_description: OSX 10.6 installer is for 64-bit only. This will likely break on 32-bit computers.
-      packages_included: Packages included are
-      rails: Rails
-      rails_guides: Rails Guides
-      rails_guides_preffix: After installing the kit, check out the
-      rails_guides_suffix: for information about developing Ruby on Rails applications.
-      rails_tutorial: Ruby on Rails Tutorial
-      rails_tutorial_preffix: Another great resource is the
-      rails_tutorial_suffix: by Michael Hartl. While the tutorial is Mac-focused, it does provide great value and insight for Windows users as well. Additionally, there is about 15 hours of accompanying video to in case you're more visually-oriented.
-      rails_ver_new: 3.2
-      rails_ver_old: 3.0.7
-      repositories_preffix: in the respective repositories (
-      repositories_suffix: ).
-      ruby: Ruby
-      ruby_18: Ruby 1.8
-      ruby_19: Ruby 1.9
-      ruby_ver_new: 1.9.3
-      ruby_ver_old: 1.8.7
-      rvm: RVM
-      sm_framework: SM Framework
-      sql_support: SQL Server Support
-      sqlite: Sqlite
-      tinyTDS: TinyTDS
-      what: What is it?
-      what_description: RailsInstaller is the quickest way to go from zero to developing Ruby on Rails applications. Whether you're on Windows or Mac, RailsInstaller has you covered.
-      who: Who is it for?
-      who_description: Have you ever started a new job with a fresh computer? Setting everything up to be able to start creating can take hours. RailsInstaller streamlines the process for Rails developers to enable them to be successful.
-      win: Windows
-      win_downloads: Windows Downloads
-      win_repository: railsinstaller-windows
+  description: "RailsInstaller. The quickest way to go from zero to developing Ruby on Rails applications. Whether you're on Windows or Mac, RailsInstaller has you covered."
+  engine_yard: Engine Yard
+  project_by: Project by
+  share_email_body: Go to railsinstaller.org
+  share_email_subject: Check out RailsInstaller
+  share_email_title: Email friends about RailsInstaller
+  register: Register for news and updates
+  team: RailsInstaller Team
+  bundler: Bundler
+  devkit: DevKit
+  freenode: "#railsinstaller"
+  freenode_preffix: There is also
+  freenode_suffix: room on Freenode where you can get help in real-time chat
+  get_to_work: Get to work.
+  git: Git
+  github: Github
+  github_preffix: Any bugs with the installer should be reported on
+  google_group: Google Group
+  google_group_preffix: If you need assistance with RailsInstaller, please see our
+  google_group_suffix: where you can view posts from other users as well as ask questions.
+  jewerlybox: JewelryBox
+  last_version_download: Download
+  last_version_download_preffix: Want to live on the edge?
+  last_version_download_suffix: railsinstaller-windows 3.0.0-alpha2 with Ruby 2.0.0!
+  mac: Mac OSX
+  mac_downloads: Mac Downloads
+  mac_ver_new: 10.7 & 10.8
+  mac_ver_old: '10.6'
+  next: What's next
+  nix_repository: railsinstaller-nix
+  or: or
+  osx_gcc_installer: osx-gcc-installer
+  osx_warning: 'Please do not run the installer on OSX Mavericks until further notice.'
+  osx_note: "Please note:"
+  osx_note_description: OSX 10.6 installer is for 64-bit only. This will likely break on 32-bit computers.
+  packages_included: Packages included are
+  rails: Rails
+  rails_guides: Rails Guides
+  rails_guides_preffix: After installing the kit, check out the
+  rails_guides_suffix: for information about developing Ruby on Rails applications.
+  rails_tutorial: Ruby on Rails Tutorial
+  rails_tutorial_preffix: Another great resource is the
+  rails_tutorial_suffix: by Michael Hartl. While the tutorial is Mac-focused, it does provide great value and insight for Windows users as well. Additionally, there is about 15 hours of accompanying video to in case you're more visually-oriented.
+  rails_ver_new: 3.2
+  rails_ver_old: 3.0.7
+  repositories_preffix: in the respective repositories (
+  repositories_suffix: ).
+  ruby: Ruby
+  ruby_18: Ruby 1.8
+  ruby_19: Ruby 1.9
+  ruby_ver_new: 1.9.3
+  ruby_ver_old: 1.8.7
+  rvm: RVM
+  sm_framework: SM Framework
+  sql_support: SQL Server Support
+  sqlite: Sqlite
+  tinyTDS: TinyTDS
+  what: What is it?
+  what_description: RailsInstaller is the quickest way to go from zero to developing Ruby on Rails applications. Whether you're on Windows or Mac, RailsInstaller has you covered.
+  who: Who is it for?
+  who_description: Have you ever started a new job with a fresh computer? Setting everything up to be able to start creating can take hours. RailsInstaller streamlines the process for Rails developers to enable them to be successful.
+  win: Windows
+  win_downloads: Windows Downloads
+  win_repository: railsinstaller-windows

@@ -60,6 +60,7 @@ activate :i18n, mount_at_root: :en
 # Build-specific configuration
 configure :build do
   activate :directory_indexes
+  set :build_dir, 'public'
 
   # For example, change the Compass output style for deployment
   # activate :minify_css

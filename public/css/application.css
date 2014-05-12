@@ -1,0 +1,4686 @@
+@charset "UTF-8";
+@import url(reset.css);
+/* Modular Scale
+ *----------------------
+ *  15px @ 1:1.26
+ *    ---------------------- */
+/* line 153, /Users/evanmachnic/Work/ri_website/source/css/_ey-mixins.scss */
+.blocktext {
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 162, /Users/evanmachnic/Work/ri_website/source/css/_ey-mixins.scss */
+.thintext {
+  letter-spacing: -0.025em;
+  font-weight: 200; }
+
+/* line 178, /Users/evanmachnic/Work/ri_website/source/css/_ey-mixins.scss */
+.circled {
+  -moz-border-radius-topleft: 50%;
+  -moz-border-radius-topright: 50%;
+  -moz-border-radius-bottomright: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  text-align: center;
+  color: white;
+  width: 1.5em;
+  display: inline-block;
+  margin: 0 0.25em;
+  line-height: 1.4;
+  padding-top: 0.1em;
+  background-color: #595857; }
+  /* line 181, /Users/evanmachnic/Work/ri_website/source/css/_ey-mixins.scss */
+  .circled.font-icon {
+    font-size: 0.925em !important;
+    padding-top: 0.2em;
+    line-height: 1.3; }
+  /* line 187, /Users/evanmachnic/Work/ri_website/source/css/_ey-mixins.scss */
+  .circled.circled-blue {
+    background-color: #4bb3d1; }
+  /* line 191, /Users/evanmachnic/Work/ri_website/source/css/_ey-mixins.scss */
+  .circled.circled-green {
+    background-color: #97cc5a; }
+  /* line 195, /Users/evanmachnic/Work/ri_website/source/css/_ey-mixins.scss */
+  .circled.circled-white {
+    background-color: white;
+    color: #595857; }
+
+/*!
+ * Engine Yard Style Guide core styles built on Bootstrap v2.2.2
+ * 
+ * Copyright 2013 Engine Yard, Inc
+ *
+ * Designed and built with all the coffee @engineyard by @flynnduism and @cloudsteph
+ *
+ * Bootstrap Nod: 
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+/* line 28, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+/* line 34, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 40, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+audio:not([controls]) {
+  display: none; }
+
+/* line 44, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 50, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+body {
+  /*@include proximaLight;*/
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #1a1919 !important;
+  background-color: #f2eeed; }
+
+/* line 61, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row {
+  margin-left: -20px;
+  *zoom: 1; }
+
+/* line 67, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 73, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row:after {
+  clear: both; }
+
+/* line 77, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px; }
+
+/* line 86, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px; }
+
+/* line 90, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span12 {
+  width: 940px; }
+
+/* line 94, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span11 {
+  width: 860px; }
+
+/* line 98, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span10 {
+  width: 780px; }
+
+/* line 102, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span9 {
+  width: 700px; }
+
+/* line 106, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span8 {
+  width: 620px; }
+
+/* line 110, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span7 {
+  width: 540px; }
+
+/* line 114, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span6 {
+  width: 460px; }
+
+/* line 118, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span5 {
+  width: 380px; }
+
+/* line 122, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span4 {
+  width: 300px; }
+
+/* line 126, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span3 {
+  width: 220px; }
+
+/* line 130, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span2 {
+  width: 140px; }
+
+/* line 134, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.span1 {
+  width: 60px; }
+
+/* line 138, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset12 {
+  margin-left: 980px; }
+
+/* line 142, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset11 {
+  margin-left: 900px; }
+
+/* line 146, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset10 {
+  margin-left: 820px; }
+
+/* line 150, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset9 {
+  margin-left: 740px; }
+
+/* line 154, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset8 {
+  margin-left: 660px; }
+
+/* line 158, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset7 {
+  margin-left: 580px; }
+
+/* line 162, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset6 {
+  margin-left: 500px; }
+
+/* line 166, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset5 {
+  margin-left: 420px; }
+
+/* line 170, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset4 {
+  margin-left: 340px; }
+
+/* line 174, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset3 {
+  margin-left: 260px; }
+
+/* line 178, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset2 {
+  margin-left: 180px; }
+
+/* line 182, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.offset1 {
+  margin-left: 100px; }
+
+/* line 186, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid {
+  width: 100%;
+  *zoom: 1; }
+
+/* line 192, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid:before,
+.row-fluid:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 198, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid:after {
+  clear: both; }
+
+/* line 202, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 214, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0; }
+
+/* line 218, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.127659574468085%; }
+
+/* line 222, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span12 {
+  width: 100%;
+  *width: 99.94680851063829%; }
+
+/* line 227, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span11 {
+  width: 91.48936170212765%;
+  *width: 91.43617021276594%; }
+
+/* line 232, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span10 {
+  width: 82.97872340425532%;
+  *width: 82.92553191489361%; }
+
+/* line 237, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span9 {
+  width: 74.46808510638297%;
+  *width: 74.41489361702126%; }
+
+/* line 242, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span8 {
+  width: 65.95744680851064%;
+  *width: 65.90425531914893%; }
+
+/* line 247, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span7 {
+  width: 57.44680851063829%;
+  *width: 57.39361702127659%; }
+
+/* line 252, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span6 {
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%; }
+
+/* line 257, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span5 {
+  width: 40.42553191489362%;
+  *width: 40.37234042553192%; }
+
+/* line 262, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span4 {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%; }
+
+/* line 267, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span3 {
+  width: 23.404255319148934%;
+  *width: 23.351063829787233%; }
+
+/* line 272, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span2 {
+  width: 14.893617021276595%;
+  *width: 14.840425531914894%; }
+
+/* line 277, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .span1 {
+  width: 6.382978723404255%;
+  *width: 6.329787234042553%; }
+
+/* line 282, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset12 {
+  margin-left: 104.25531914893617%;
+  *margin-left: 104.14893617021275%; }
+
+/* line 287, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset12:first-child {
+  margin-left: 102.12765957446808%;
+  *margin-left: 102.02127659574467%; }
+
+/* line 292, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset11 {
+  margin-left: 95.74468085106382%;
+  *margin-left: 95.6382978723404%; }
+
+/* line 297, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset11:first-child {
+  margin-left: 93.61702127659574%;
+  *margin-left: 93.51063829787232%; }
+
+/* line 302, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset10 {
+  margin-left: 87.23404255319149%;
+  *margin-left: 87.12765957446807%; }
+
+/* line 307, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset10:first-child {
+  margin-left: 85.1063829787234%;
+  *margin-left: 84.99999999999999%; }
+
+/* line 312, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset9 {
+  margin-left: 78.72340425531914%;
+  *margin-left: 78.61702127659572%; }
+
+/* line 317, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset9:first-child {
+  margin-left: 76.59574468085106%;
+  *margin-left: 76.48936170212764%; }
+
+/* line 322, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset8 {
+  margin-left: 70.2127659574468%;
+  *margin-left: 70.10638297872339%; }
+
+/* line 327, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset8:first-child {
+  margin-left: 68.08510638297872%;
+  *margin-left: 67.9787234042553%; }
+
+/* line 332, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset7 {
+  margin-left: 61.70212765957446%;
+  *margin-left: 61.59574468085106%; }
+
+/* line 337, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset7:first-child {
+  margin-left: 59.574468085106375%;
+  *margin-left: 59.46808510638297%; }
+
+/* line 342, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset6 {
+  margin-left: 53.191489361702125%;
+  *margin-left: 53.085106382978715%; }
+
+/* line 347, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset6:first-child {
+  margin-left: 51.063829787234035%;
+  *margin-left: 50.95744680851063%; }
+
+/* line 352, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset5 {
+  margin-left: 44.68085106382979%;
+  *margin-left: 44.57446808510638%; }
+
+/* line 357, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset5:first-child {
+  margin-left: 42.5531914893617%;
+  *margin-left: 42.4468085106383%; }
+
+/* line 362, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset4 {
+  margin-left: 36.170212765957444%;
+  *margin-left: 36.06382978723405%; }
+
+/* line 367, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset4:first-child {
+  margin-left: 34.04255319148936%;
+  *margin-left: 33.93617021276596%; }
+
+/* line 372, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset3 {
+  margin-left: 27.659574468085104%;
+  *margin-left: 27.5531914893617%; }
+
+/* line 377, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset3:first-child {
+  margin-left: 25.53191489361702%;
+  *margin-left: 25.425531914893618%; }
+
+/* line 382, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset2 {
+  margin-left: 19.148936170212764%;
+  *margin-left: 19.04255319148936%; }
+
+/* line 387, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset2:first-child {
+  margin-left: 17.02127659574468%;
+  *margin-left: 16.914893617021278%; }
+
+/* line 392, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset1 {
+  margin-left: 10.638297872340425%;
+  *margin-left: 10.53191489361702%; }
+
+/* line 397, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .offset1:first-child {
+  margin-left: 8.51063829787234%;
+  *margin-left: 8.404255319148938%; }
+
+/* line 403, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+[class*="span"].hide,
+.row-fluid [class*="span"].hide {
+  display: none; }
+
+/* line 408, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right; }
+
+/* line 412, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1; }
+
+/* line 419, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.container:before,
+.container:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 425, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.container:after {
+  clear: both; }
+
+/* line 429, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1; }
+
+/* line 436, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.container-fluid:before,
+.container-fluid:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 442, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.container-fluid:after {
+  clear: both; }
+
+/*
+ * GRID ENDS 
+ */
+/* line 450, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a:focus {
+  outline: thin dotted #4bb3d1;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+/* line 457, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a:hover,
+a:active {
+  outline: 0; }
+
+/* line 462, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+/* line 469, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+sup {
+  top: -0.5em; }
+
+/* line 473, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 477, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* line 487, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+#map_canvas img,
+.google-maps img {
+  max-width: none; }
+
+/* line 494, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle; }
+
+/* line 501, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+button,
+input {
+  *overflow: visible;
+  line-height: normal; }
+
+/* line 507, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* line 515, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+/* line 527, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer; }
+
+/* line 531, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield; }
+
+/* line 539, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/* line 543, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* line 549, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* line 554, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 560, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 564, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* line 572, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 581, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a {
+  color: #4bb3d1;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  /* line 587, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  a [class^="icon-"],
+  a [class*=" icon-"] {
+    margin-top: 3px;
+    margin-right: 5px; }
+
+/* line 593, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a:hover {
+  color: #4bb3d1;
+  text-decoration: none; }
+
+/* line 598, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.img-rounded {
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px; }
+
+/* line 602, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #e6e2e1;
+  border: 1px solid rgba(230, 226, 225, 0.2);
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px; }
+
+/* line 610, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.img-circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px; }
+
+/* line 617, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+p {
+  margin: 0;
+  padding: 1em 0; }
+  /* line 620, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  p + p {
+    padding: .5em 0; }
+  /* line 624, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  p a {
+    border-bottom: 1px dotted #4bb3d1; }
+    /* line 627, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+    p a:hover {
+      border-color: transparent; }
+
+/* line 633, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.lead {
+  margin-bottom: 1em;
+  color: #333232;
+  font-size: 1.333em; }
+
+/* line 639, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+small {
+  font-size: 0.86667em; }
+
+/* line 643, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+strong {
+  /*@include proximaSemibold;*/ }
+
+/* line 647, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+em {
+  font-style: italic; }
+
+/* line 651, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.muted {
+  color: #a6a3a2; }
+
+/* line 655, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a.muted:hover {
+  color: #808080; }
+
+/* line 659, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.text-warning {
+  color: #f1644e; }
+
+/* line 663, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a.text-warning:hover {
+  color: #a47e3c; }
+
+/* line 667, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.text-error {
+  color: #bf1a2e; }
+
+/* line 671, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a.text-error:hover {
+  color: #953b39; }
+
+/* line 675, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.text-info {
+  color: #4bb3d1; }
+
+/* line 679, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a.text-info:hover {
+  color: #2d6987; }
+
+/* line 683, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.text-success {
+  color: #97cc5a; }
+
+/* line 687, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a.text-success:hover {
+  color: #356635; }
+
+/* line 696, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*@include proximaLight;*/
+  line-height: 1.3;
+  color: inherit;
+  text-rendering: optimizelegibility;
+  padding: .5em 0; }
+  /* line 703, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  h1 + p, h1 + ol, h1 + ul,
+  h2 + p,
+  h2 + ol,
+  h2 + ul,
+  h3 + p,
+  h3 + ol,
+  h3 + ul,
+  h4 + p,
+  h4 + ol,
+  h4 + ul,
+  h5 + p,
+  h5 + ol,
+  h5 + ul,
+  h6 + p,
+  h6 + ol,
+  h6 + ul {
+    padding: 0 0 1em 0; }
+
+/* line 713, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #333232; }
+
+/* line 721, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h1,
+h2,
+h3 {
+  padding: 1em 0; }
+
+/* line 725, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h1 {
+  font-size: 2em; }
+
+/* line 729, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h2 {
+  font-size: 1.75em; }
+
+/* line 733, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h3 {
+  font-size: 1.5em;
+  color: #333232; }
+
+/* line 738, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h4 {
+  font-size: 1.333em;
+  color: #333232; }
+
+/* line 743, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h5 {
+  font-size: 1.1667em;
+  color: #333232; }
+
+/* line 748, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+h6 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #333232; }
+
+/* line 753, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.page-header {
+  padding: 1em 0; }
+
+/* line 760, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+ul,
+ol {
+  padding: 1em 0;
+  margin: 0 0 10px 20px;
+  list-style-position: outside; }
+  /* line 765, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  ul li,
+  ol li {
+    line-height: 1.3;
+    padding: 0.333em 0; }
+  /* line 769, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  ul ul, ul ol,
+  ol ul,
+  ol ol {
+    margin: 0 0 0 20px;
+    padding: 1em 0 0 0; }
+
+/* line 777, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none; }
+  /* line 781, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  ul.unstyled ul, ul.unstyled ol,
+  ol.unstyled ul,
+  ol.unstyled ol {
+    list-style: none; }
+
+/* line 787, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+ul.inline,
+ol.inline {
+  margin-left: 0;
+  list-style: none; }
+
+/* line 793, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+ul.inline > li,
+ol.inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px; }
+
+/* line 799, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+dl {
+  margin-bottom: 1em; }
+
+/* line 803, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+dt {
+  font-weight: bold; }
+
+/* line 807, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+dd {
+  padding: 0 0 .5em 0;
+  margin: 0; }
+
+/* line 812, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.dl-horizontal {
+  *zoom: 1; }
+  /* line 815, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  /* line 825, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .dl-horizontal dd {
+    margin-left: 180px; }
+
+/* line 832, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.dl-horizontal:before,
+.dl-horizontal:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 838, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.dl-horizontal:after {
+  clear: both; }
+
+/* line 845, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #e6e2e1; }
+  /* line 850, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  blockquote p {
+    margin-bottom: 0; }
+  /* line 854, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  blockquote small {
+    display: block;
+    color: #595857;
+    padding-bottom: .5em; }
+  /* line 860, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  blockquote small:before {
+    content: '\2014 \00A0'; }
+  /* line 864, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  blockquote cite {
+    color: #a6a3a2; }
+
+/* line 871, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #e6e2e1;
+  border-left: 0; }
+  /* line 878, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  blockquote.pull-right p, blockquote.pull-right small {
+    text-align: right; }
+  /* line 882, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  blockquote.pull-right :before {
+    content: ''; }
+  /* line 886, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  blockquote.pull-right :after {
+    content: '\00A0 \2014'; }
+
+/* line 894, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: ""; }
+
+/* line 900, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #f2eeed;
+  border-bottom: 1px solid #fff; }
+
+/* line 908, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #1a1919; }
+
+/* line 913, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+abbr.initialism {
+  font-size: 0.9167em;
+  text-transform: uppercase; }
+
+/* line 918, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+address {
+  display: block; }
+
+/* line 923, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+code,
+pre {
+  padding: 0 3px 2px;
+  font-size: 0.86667em;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 932, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+code {
+  padding: 2px 4px;
+  color: #bf1a2e;
+  white-space: nowrap;
+  background-color: #e6e2e1;
+  border: 1px solid #a6a3a2; }
+
+/* line 940, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+pre {
+  display: block;
+  padding: 15px;
+  margin: 0 0 10px;
+  font-size: 0.86667em;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #e6e2e1;
+  border: 1px solid #595857;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  /* line 956, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  pre code {
+    padding: 0;
+    color: inherit;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0; }
+  /* line 964, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  pre .prettyprint {
+    margin-bottom: 20px; }
+
+/* line 969, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll; }
+
+/* line 976, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1em; }
+
+/* line 984, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table {
+  width: 100%;
+  margin-bottom: 20px; }
+  /* line 988, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .table th, .table td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #e6e2e1; }
+  /* line 995, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .table th {
+    font-weight: bold; }
+  /* line 999, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .table thead th {
+    vertical-align: bottom; }
+  /* line 1003, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .table tbody + tbody {
+    border-top: 2px solid #e6e2e1; }
+  /* line 1007, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .table tbody + tbody {
+    border-top: 2px solid #e6e2e1; }
+
+/* line 1018, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0; }
+
+/* line 1023, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px; }
+
+/* line 1027, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered {
+  border: 1px solid #e6e2e1;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px; }
+  /* line 1034, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .table-bordered th, .table-bordered td {
+    border-left: 1px solid #e6e2e1; }
+
+/* line 1047, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0; }
+
+/* line 1052, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px; }
+
+/* line 1059, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered thead:first-child tr:first-child > th:last-child,
+.table-bordered tbody:first-child tr:first-child > td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px; }
+
+/* line 1067, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered thead:last-child tr:last-child > th:first-child,
+.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table-bordered tfoot:last-child tr:last-child > td:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px; }
+
+/* line 1075, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered thead:last-child tr:last-child > th:last-child,
+.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table-bordered tfoot:last-child tr:last-child > td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px; }
+
+/* line 1081, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0; }
+
+/* line 1087, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0; }
+
+/* line 1096, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px; }
+
+/* line 1105, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px; }
+
+/* line 1112, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #e6e2e1; }
+
+/* line 1117, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #f5f5f5; }
+
+/* line 1124, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+table td[class*="span"],
+table th[class*="span"],
+.row-fluid table td[class*="span"],
+.row-fluid table th[class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0; }
+
+/* line 1131, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span1,
+.table th.span1 {
+  float: none;
+  width: 44px;
+  margin-left: 0; }
+
+/* line 1138, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span2,
+.table th.span2 {
+  float: none;
+  width: 124px;
+  margin-left: 0; }
+
+/* line 1145, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span3,
+.table th.span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0; }
+
+/* line 1152, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span4,
+.table th.span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0; }
+
+/* line 1159, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span5,
+.table th.span5 {
+  float: none;
+  width: 364px;
+  margin-left: 0; }
+
+/* line 1166, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span6,
+.table th.span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0; }
+
+/* line 1173, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span7,
+.table th.span7 {
+  float: none;
+  width: 524px;
+  margin-left: 0; }
+
+/* line 1180, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span8,
+.table th.span8 {
+  float: none;
+  width: 604px;
+  margin-left: 0; }
+
+/* line 1187, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span9,
+.table th.span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0; }
+
+/* line 1194, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span10,
+.table th.span10 {
+  float: none;
+  width: 764px;
+  margin-left: 0; }
+
+/* line 1201, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span11,
+.table th.span11 {
+  float: none;
+  width: 844px;
+  margin-left: 0; }
+
+/* line 1208, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table td.span12,
+.table th.span12 {
+  float: none;
+  width: 924px;
+  margin-left: 0; }
+
+/* line 1214, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table tbody tr.success td {
+  background-color: rgba(151, 204, 90, 0.2); }
+
+/* line 1218, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table tbody tr.error td {
+  background-color: rgba(241, 100, 78, 0.1); }
+
+/* line 1222, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table tbody tr.warning td {
+  background-color: rgba(191, 26, 46, 0.2); }
+
+/* line 1226, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table tbody tr.info td {
+  background-color: rgba(75, 179, 209, 0.2); }
+
+/* line 1230, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-hover tbody tr.success:hover td {
+  background-color: rgba(151, 204, 90, 0.4); }
+
+/* line 1234, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-hover tbody tr.error:hover td {
+  background-color: rgba(241, 100, 78, 0.3); }
+
+/* line 1238, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-hover tbody tr.warning:hover td {
+  background-color: rgba(191, 26, 46, 0.4); }
+
+/* line 1242, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.table-hover tbody tr.info:hover td {
+  background-color: rgba(75, 179, 209, 0.3); }
+
+/* line 1247, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.typeahead {
+  z-index: 1051;
+  margin-top: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+/* line 1255, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.well {
+  min-height: 20px;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #f2eeed;
+  border: 1px solid #e6e2e1;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
+
+/* line 1267, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.well blockquote {
+  border-color: #e6e2e1;
+  border-color: rgba(0, 0, 0, 0.15); }
+
+/* line 1272, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.well-large {
+  padding: 1.5em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+/* line 1279, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.well-small {
+  padding: .5em;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px; }
+
+/* line 1284, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear; }
+
+/* line 1292, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.fade.in {
+  opacity: 1; }
+
+/* line 1296, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
+
+/* line 1306, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.collapse.in {
+  height: auto; }
+
+/* line 1311, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.thumbnails {
+  margin-left: -20px;
+  list-style: none;
+  *zoom: 1; }
+
+/* line 1318, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.thumbnails:before,
+.thumbnails:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 1324, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.thumbnails:after {
+  clear: both; }
+
+/* line 1328, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.row-fluid .thumbnails {
+  margin-left: 0; }
+
+/* line 1332, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.thumbnails > li {
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 20px; }
+
+/* line 1338, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 20px;
+  border: 1px solid #f2eeed;
+  background: #fff;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-box-shadow: 0 0px 3px rgba(170, 170, 170, 0.3) ;
+  -moz-box-shadow: 0 0px 3px rgba(170, 170, 170, 0.3) ;
+  box-shadow: 0 0px 3px rgba(170, 170, 170, 0.3) ;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  /* line 1351, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .thumbnail > img {
+    display: block;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto; }
+  /* line 1358, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .thumbnail .caption {
+    padding: 9px;
+    color: #555555; }
+  /* line 1363, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .thumbnail h3 {
+    padding: .5em 0; }
+
+/* line 1369, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a.thumbnail:hover {
+  border-color: #e6e2e1;
+  -webkit-box-shadow: 0 0px 1px rgba(170, 170, 170, 0.4) ;
+  -moz-box-shadow: 0 0px 1px rgba(170, 170, 170, 0.4) ;
+  box-shadow: 0 0px 1px rgba(170, 170, 170, 0.4) ; }
+
+/* line 1375, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media,
+.media-body {
+  overflow: hidden;
+  *overflow: visible;
+  zoom: 1;
+  padding: 1em 0; }
+
+/* line 1383, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media,
+.media .media {
+  padding: 1em 0; }
+
+/* line 1387, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media:first-child {
+  margin-top: 0; }
+
+/* line 1391, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media-object {
+  display: block; }
+
+/* line 1395, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media-heading {
+  padding: 0 0 .5em 0;
+  margin: 0; }
+
+/* line 1400, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media .pull-left {
+  margin-right: 20px;
+  border: none; }
+
+/* line 1405, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media .pull-right {
+  margin-left: 20px;
+  border: none; }
+
+/* line 1410, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.media-list {
+  margin-left: 0;
+  list-style: none; }
+
+/* line 1416, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label,
+.badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 0.86667em;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #333232; }
+
+/* line 1430, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 1436, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.badge {
+  padding-right: 9px;
+  padding-left: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px; }
+
+/* line 1445, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label:empty,
+.badge:empty {
+  display: none; }
+
+/* line 1450, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+a.label:hover,
+a.badge:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* line 1457, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-important,
+.badge-important {
+  background-color: #bf1a2e; }
+
+/* line 1462, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-important[href],
+.badge-important[href] {
+  background-color: #bf1a2e; }
+
+/* line 1467, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-warning,
+.badge-warning {
+  background-color: #f1644e; }
+
+/* line 1472, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #f1644e; }
+
+/* line 1477, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-success,
+.badge-success {
+  background-color: #97cc5a; }
+
+/* line 1482, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-success[href],
+.badge-success[href] {
+  background-color: #97cc5a; }
+
+/* line 1487, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-info,
+.badge-info {
+  background-color: #4bb3d1; }
+
+/* line 1492, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-info[href],
+.badge-info[href] {
+  background-color: #4bb3d1; }
+
+/* line 1497, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-inverse,
+.badge-inverse {
+  background-color: #fff;
+  color: #333232;
+  text-shadow: none; }
+
+/* line 1504, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.label-inverse[href],
+.badge-inverse[href] {
+  background-color: #fff;
+  color: #333232; }
+
+/* line 1510, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.btn .label,
+.btn .badge {
+  position: relative;
+  top: -1px; }
+
+/* line 1516, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.btn-mini .label,
+.btn-mini .badge {
+  top: 0; }
+
+/* line 1520, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.hero-unit {
+  padding: 1em 3em;
+  margin-bottom: 30px;
+  font-weight: 200;
+  color: inherit;
+  background-color: #e6e2e1;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px; }
+  /* line 1528, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .hero-unit h1 {
+    font-size: 2em;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: inherit; }
+  /* line 1535, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+  .hero-unit li {
+    line-height: 1.5; }
+
+/* line 1543, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.pull-right {
+  float: right; }
+
+/* line 1547, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.pull-left {
+  float: left; }
+
+/* line 1551, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.hide {
+  display: none; }
+
+/* line 1555, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.show {
+  display: block; }
+
+/* line 1559, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.invisible {
+  visibility: hidden; }
+
+/* line 1563, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
+.affix {
+  position: fixed; }
+
+/*
+BUTTONS
+*/
+/* line 6, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #333232;
+  display: inline-block;
+  *display: inline;
+  padding: 0.836em 1.425em;
+  margin-bottom: 0;
+  *margin-left: 0.3em;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  *zoom: 1;
+  border: none;
+  line-height: 1;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-image: linear-gradient(bottom, #e2e2e2 2%, #ffffff 50%, #ffffff 98%);
+  background-image: -o-linear-gradient(bottom, #e2e2e2 2%, white 50%, white 98%);
+  background-image: -moz-linear-gradient(bottom, #e2e2e2 2%, white 50%, white 98%);
+  background-image: -webkit-linear-gradient(bottom, #e2e2e2 2%, white 50%, white 98%);
+  background-image: -ms-linear-gradient(bottom, #e2e2e2 2%, white 50%, white 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #e2e2e2), color-stop(50%, white), color-stop(98%, white));
+  background-color: white;
+  -webkit-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -moz-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  background-color: white; }
+  /* line 26, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn:hover {
+    text-decoration: none;
+    background-image: linear-gradient(bottom, #d9d9d9 2%, #f6f6f6 50%, #ffffff 98%);
+    background-image: -o-linear-gradient(bottom, #d9d9d9 2%, #f6f6f6 50%, white 98%);
+    background-image: -moz-linear-gradient(bottom, #d9d9d9 2%, #f6f6f6 50%, white 98%);
+    background-image: -webkit-linear-gradient(bottom, #d9d9d9 2%, #f6f6f6 50%, white 98%);
+    background-image: -ms-linear-gradient(bottom, #d9d9d9 2%, #f6f6f6 50%, white 98%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #d9d9d9), color-stop(50%, #f6f6f6), color-stop(98%, white));
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+    -moz-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+    box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ; }
+  /* line 31, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn [class^="icon-"],
+  .btn [class*=" icon-"] {
+    margin: 0.125em 0.425em 0 -0.2em; }
+
+/* line 36, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-icon {
+  margin-left: 0;
+  margin-right: 0; }
+  /* line 44, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-icon .icon,
+  .btn-icon .font-icon,
+  .btn-icon .ss-icon,
+  .btn-icon [class^="ss-"],
+  .btn-icon [class*="ss-"] {
+    margin-left: -0.5em !important;
+    margin-right: -0.5em !important; }
+
+/* line 50, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-cancel {
+  color: #f1644e;
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none; }
+  /* line 59, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-cancel:hover, .btn-cancel:active, .btn-cancel:focus {
+    background-image: none;
+    background-color: transparent !important;
+    color: #bf1a2e !important;
+    box-shadow: none; }
+
+/* line 71, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #333232; }
+
+/* line 76, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9; }
+
+/* line 80, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn:first-child {
+  *margin-left: 0; }
+
+/* line 84, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+/* line 91, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn.active,
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+/* line 100, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+/* line 110, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-large {
+  font-size: 1.35em;
+  line-height: 0.8; }
+
+/* line 119, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-small {
+  font-size: .9333em; }
+
+/* line 126, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-mini {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  padding: 0.325em 1em 0.333em !important;
+  height: 1.75em;
+  text-transform: uppercase; }
+
+/* line 139, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 155, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%; }
+
+/* line 164, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75); }
+
+/* line 168, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-primary {
+  color: #ffffff;
+  background-image: linear-gradient(bottom, #2e96b3 2%, #4bb3d1 50%, #7ec8de 98%);
+  background-image: -o-linear-gradient(bottom, #2e96b3 2%, #4bb3d1 50%, #7ec8de 98%);
+  background-image: -moz-linear-gradient(bottom, #2e96b3 2%, #4bb3d1 50%, #7ec8de 98%);
+  background-image: -webkit-linear-gradient(bottom, #2e96b3 2%, #4bb3d1 50%, #7ec8de 98%);
+  background-image: -ms-linear-gradient(bottom, #2e96b3 2%, #4bb3d1 50%, #7ec8de 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #2e96b3), color-stop(50%, #4bb3d1), color-stop(98%, #7ec8de));
+  background-color: #4bb3d1;
+  -webkit-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -moz-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ; }
+
+/* line 177, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(bottom, #2a8aa5 2%, #3dadcd 50%, #70c2da 98%);
+  background-image: -o-linear-gradient(bottom, #2a8aa5 2%, #3dadcd 50%, #70c2da 98%);
+  background-image: -moz-linear-gradient(bottom, #2a8aa5 2%, #3dadcd 50%, #70c2da 98%);
+  background-image: -webkit-linear-gradient(bottom, #2a8aa5 2%, #3dadcd 50%, #70c2da 98%);
+  background-image: -ms-linear-gradient(bottom, #2a8aa5 2%, #3dadcd 50%, #70c2da 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #2a8aa5), color-stop(50%, #3dadcd), color-stop(98%, #70c2da));
+  background-color: #3dadcd;
+  -webkit-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  -moz-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ; }
+
+/* line 183, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399 \9; }
+
+/* line 187, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-warning {
+  color: #ffffff;
+  background-color: #f1644e;
+  background-image: linear-gradient(bottom, #ed3418 2%, #f1644e 50%, #f69889 98%);
+  background-image: -o-linear-gradient(bottom, #ed3418 2%, #f1644e 50%, #f69889 98%);
+  background-image: -moz-linear-gradient(bottom, #ed3418 2%, #f1644e 50%, #f69889 98%);
+  background-image: -webkit-linear-gradient(bottom, #ed3418 2%, #f1644e 50%, #f69889 98%);
+  background-image: -ms-linear-gradient(bottom, #ed3418 2%, #f1644e 50%, #f69889 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #ed3418), color-stop(50%, #f1644e), color-stop(98%, #f69889));
+  background-color: #f1644e;
+  -webkit-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -moz-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+/* line 198, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(bottom, #e12e12 2%, #f0563d 50%, #f48979 98%);
+  background-image: -o-linear-gradient(bottom, #e12e12 2%, #f0563d 50%, #f48979 98%);
+  background-image: -moz-linear-gradient(bottom, #e12e12 2%, #f0563d 50%, #f48979 98%);
+  background-image: -webkit-linear-gradient(bottom, #e12e12 2%, #f0563d 50%, #f48979 98%);
+  background-image: -ms-linear-gradient(bottom, #e12e12 2%, #f0563d 50%, #f48979 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #e12e12), color-stop(50%, #f0563d), color-stop(98%, #f48979));
+  background-color: #f0563d;
+  -webkit-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  -moz-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ; }
+
+/* line 204, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605 \9; }
+
+/* line 208, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-danger {
+  color: #ffffff;
+  background-color: #bf1a2e;
+  background-image: linear-gradient(bottom, #8b1322 2%, #bf1a2e 50%, #e4354a 98%);
+  background-image: -o-linear-gradient(bottom, #8b1322 2%, #bf1a2e 50%, #e4354a 98%);
+  background-image: -moz-linear-gradient(bottom, #8b1322 2%, #bf1a2e 50%, #e4354a 98%);
+  background-image: -webkit-linear-gradient(bottom, #8b1322 2%, #bf1a2e 50%, #e4354a 98%);
+  background-image: -ms-linear-gradient(bottom, #8b1322 2%, #bf1a2e 50%, #e4354a 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #8b1322), color-stop(50%, #bf1a2e), color-stop(98%, #e4354a));
+  background-color: #bf1a2e;
+  -webkit-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -moz-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+/* line 219, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: linear-gradient(bottom, #7c111e 2%, #af182a 50%, #e1263c 98%);
+  background-image: -o-linear-gradient(bottom, #7c111e 2%, #af182a 50%, #e1263c 98%);
+  background-image: -moz-linear-gradient(bottom, #7c111e 2%, #af182a 50%, #e1263c 98%);
+  background-image: -webkit-linear-gradient(bottom, #7c111e 2%, #af182a 50%, #e1263c 98%);
+  background-image: -ms-linear-gradient(bottom, #7c111e 2%, #af182a 50%, #e1263c 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #7c111e), color-stop(50%, #af182a), color-stop(98%, #e1263c));
+  background-color: #af182a;
+  -webkit-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  -moz-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ; }
+
+/* line 225, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25 \9; }
+
+/* line 229, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-success {
+  color: #ffffff;
+  background-color: #97cc5a;
+  background-image: linear-gradient(bottom, #7ab438 2%, #97cc5a 50%, #b6db8b 98%);
+  background-image: -o-linear-gradient(bottom, #7ab438 2%, #97cc5a 50%, #b6db8b 98%);
+  background-image: -moz-linear-gradient(bottom, #7ab438 2%, #97cc5a 50%, #b6db8b 98%);
+  background-image: -webkit-linear-gradient(bottom, #7ab438 2%, #97cc5a 50%, #b6db8b 98%);
+  background-image: -ms-linear-gradient(bottom, #7ab438 2%, #97cc5a 50%, #b6db8b 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #7ab438), color-stop(50%, #97cc5a), color-stop(98%, #b6db8b));
+  background-color: #97cc5a;
+  -webkit-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -moz-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+/* line 240, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: linear-gradient(bottom, #71a633 2%, #8ec84c 50%, #add77d 98%);
+  background-image: -o-linear-gradient(bottom, #71a633 2%, #8ec84c 50%, #add77d 98%);
+  background-image: -moz-linear-gradient(bottom, #71a633 2%, #8ec84c 50%, #add77d 98%);
+  background-image: -webkit-linear-gradient(bottom, #71a633 2%, #8ec84c 50%, #add77d 98%);
+  background-image: -ms-linear-gradient(bottom, #71a633 2%, #8ec84c 50%, #add77d 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #71a633), color-stop(50%, #8ec84c), color-stop(98%, #add77d));
+  background-color: #8ec84c;
+  -webkit-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  -moz-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ; }
+
+/* line 246, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9; }
+
+/* line 250, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-info {
+  color: #ffffff;
+  background-color: #a6a3a2;
+  background-image: linear-gradient(bottom, #898584 2%, #a6a3a2 50%, #c5c3c3 98%);
+  background-image: -o-linear-gradient(bottom, #898584 2%, #a6a3a2 50%, #c5c3c3 98%);
+  background-image: -moz-linear-gradient(bottom, #898584 2%, #a6a3a2 50%, #c5c3c3 98%);
+  background-image: -webkit-linear-gradient(bottom, #898584 2%, #a6a3a2 50%, #c5c3c3 98%);
+  background-image: -ms-linear-gradient(bottom, #898584 2%, #a6a3a2 50%, #c5c3c3 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #898584), color-stop(50%, #a6a3a2), color-stop(98%, #c5c3c3));
+  background-color: #a6a3a2;
+  -webkit-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -moz-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+/* line 261, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: linear-gradient(bottom, #817c7b 2%, #9d9a99 50%, #bcbab9 98%);
+  background-image: -o-linear-gradient(bottom, #817c7b 2%, #9d9a99 50%, #bcbab9 98%);
+  background-image: -moz-linear-gradient(bottom, #817c7b 2%, #9d9a99 50%, #bcbab9 98%);
+  background-image: -webkit-linear-gradient(bottom, #817c7b 2%, #9d9a99 50%, #bcbab9 98%);
+  background-image: -ms-linear-gradient(bottom, #817c7b 2%, #9d9a99 50%, #bcbab9 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #817c7b), color-stop(50%, #9d9a99), color-stop(98%, #bcbab9));
+  background-color: #9d9a99;
+  -webkit-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  -moz-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ; }
+
+/* line 267, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9; }
+
+/* line 271, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-inverse {
+  color: #f2eeed;
+  background-color: #333232;
+  background-image: linear-gradient(bottom, #151515 2%, #333232 50%, #535252 98%);
+  background-image: -o-linear-gradient(bottom, #151515 2%, #333232 50%, #535252 98%);
+  background-image: -moz-linear-gradient(bottom, #151515 2%, #333232 50%, #535252 98%);
+  background-image: -webkit-linear-gradient(bottom, #151515 2%, #333232 50%, #535252 98%);
+  background-image: -ms-linear-gradient(bottom, #151515 2%, #333232 50%, #535252 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #151515), color-stop(50%, #333232), color-stop(98%, #535252));
+  background-color: #333232;
+  -webkit-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -moz-box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  box-shadow: 0 0 3px rgba(180, 180, 180, 0.7) ;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+/* line 282, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: linear-gradient(bottom, #0c0c0c 2%, #2a2929 50%, #4a4949 98%);
+  background-image: -o-linear-gradient(bottom, #0c0c0c 2%, #2a2929 50%, #4a4949 98%);
+  background-image: -moz-linear-gradient(bottom, #0c0c0c 2%, #2a2929 50%, #4a4949 98%);
+  background-image: -webkit-linear-gradient(bottom, #0c0c0c 2%, #2a2929 50%, #4a4949 98%);
+  background-image: -ms-linear-gradient(bottom, #0c0c0c 2%, #2a2929 50%, #4a4949 98%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #0c0c0c), color-stop(50%, #2a2929), color-stop(98%, #4a4949));
+  background-color: #2a2929;
+  -webkit-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  -moz-box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ;
+  box-shadow: 0 0 5px rgba(180, 180, 180, 0.825) ; }
+
+/* line 288, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808 \9; }
+
+/* line 293, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+  height: 2.7em;
+  padding-top: 0.925em; }
+
+/* line 301, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* line 307, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px; }
+
+/* line 313, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px; }
+
+/* line 319, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px; }
+
+/* line 326, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+/* line 334, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-link {
+  color: #4bb3d1;
+  text-decoration: none;
+  border-bottom: 1px dotted #4bb3d1;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+/* line 347, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-link:hover {
+  color: #257991;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+
+/* line 357, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-link[disabled]:hover {
+  color: #595857;
+  text-decoration: none; }
+
+/* line 362, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *margin-left: .3em;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  *zoom: 1; }
+  /* line 372, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group:first-child {
+    *margin-left: 0; }
+  /* line 376, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group + .btn-group {
+    margin-left: 5px; }
+  /* line 380, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn {
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  /* line 387, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn + .btn {
+    margin-left: -1px; }
+  /* line 393, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn,
+  .btn-group .dropdown-menu,
+  .btn-group .popover {
+    font-size: 15px; }
+  /* line 397, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn-mini {
+    font-size: 11px; }
+  /* line 401, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn-small {
+    font-size: 13px; }
+  /* line 405, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn-large {
+    font-size: 18px; }
+  /* line 409, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn:first-child {
+    margin-left: 0;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-topleft: 4px; }
+  /* line 420, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn:last-child,
+  .btn-group .dropdown-toggle {
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px; }
+  /* line 429, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn.large:first-child {
+    margin-left: 0;
+    -webkit-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-topleft: 6px; }
+  /* line 440, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn.large:last-child,
+  .btn-group .large.dropdown-toggle {
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px; }
+  /* line 452, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn:hover,
+  .btn-group .btn:focus,
+  .btn-group .btn:active,
+  .btn-group .btn.active {
+    z-index: 2; }
+  /* line 457, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+    outline: 0; }
+  /* line 461, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn + .dropdown-toggle {
+    *padding-top: 5px;
+    padding-right: 0.825em;
+    *padding-bottom: 5px;
+    padding-left: 0.425em;
+    -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-left: 0 !important; }
+  /* line 472, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn-mini + .dropdown-toggle {
+    *padding-top: 2px;
+    *padding-bottom: 2px; }
+  /* line 479, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn-small + .dropdown-toggle {
+    *padding-top: 5px;
+    *padding-bottom: 4px; }
+  /* line 484, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group .btn-large + .dropdown-toggle {
+    *padding-top: 7px;
+    *padding-bottom: 7px; }
+  /* line 491, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .dropdown-toggle {
+    background-image: none;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+  /* line 498, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .btn.dropdown-toggle {
+    background-color: #e6e6e6; }
+  /* line 502, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .btn-primary.dropdown-toggle {
+    background-color: #32a1c2; }
+  /* line 506, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .btn-warning.dropdown-toggle {
+    background-color: #ee4328; }
+  /* line 510, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .btn-danger.dropdown-toggle {
+    background-color: #bd362f; }
+  /* line 514, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .btn-success.dropdown-toggle {
+    background-color: #51a351; }
+  /* line 518, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .btn-info.dropdown-toggle {
+    background-color: #2f96b4; }
+  /* line 522, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-group.open .btn-inverse.dropdown-toggle {
+    background-color: #222222; }
+
+/* line 527, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-toolbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0; }
+  /* line 533, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+  .btn-toolbar .btn-group + .btn,
+  .btn-toolbar .btn + .btn-group {
+    margin-left: 5px; }
+
+/* line 539, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn .caret {
+  margin: 0.375em -0.125em 0 0.425em; }
+
+/* line 549, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn.dropdown-toggle .ss-dropdown,
+.btn.dropdown-toggle .ss-directup,
+.btn .dropdown-toggle .ss-dropdown,
+.btn .dropdown-toggle .ss-directup,
+.dropdown.dropdown-toggle .ss-dropdown,
+.dropdown.dropdown-toggle .ss-directup,
+.dropdown .dropdown-toggle .ss-dropdown,
+.dropdown .dropdown-toggle .ss-directup {
+  margin: 0.225em -1em 0 1.5em;
+  font-size: 0.5em;
+  display: inline-block; }
+/* line 554, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn.dropdown-toggle .ss-directup,
+.btn .dropdown-toggle .ss-directup,
+.dropdown.dropdown-toggle .ss-directup,
+.dropdown .dropdown-toggle .ss-directup {
+  margin: 0.225em 0.25em 0 0.5em; }
+
+/* line 563, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group.dropdown-toggle .ss-dropdown,
+.btn-group.dropdown-toggle .ss-directup {
+  margin: 0.225em 0.125em 0 0.5375em;
+  font-size: 0.5em; }
+
+/* line 576, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-large .caret {
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 5px; }
+
+/* line 582, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.dropup .btn-large .caret {
+  border-bottom-width: 5px; }
+
+/* line 591, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-primary .caret,
+.btn-warning .caret,
+.btn-danger .caret,
+.btn-info .caret,
+.btn-success .caret,
+.btn-inverse .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff; }
+
+/* line 596, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group-vertical {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1; }
+
+/* line 604, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group-vertical > .btn {
+  display: block;
+  float: none;
+  max-width: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+/* line 613, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group-vertical > .btn + .btn {
+  margin-top: -1px;
+  margin-left: 0; }
+
+/* line 618, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group-vertical > .btn:first-child {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0; }
+
+/* line 624, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group-vertical > .btn:last-child {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px; }
+
+/* line 630, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group-vertical > .btn-large:first-child {
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0; }
+
+/* line 636, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group-vertical > .btn-large:last-child {
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px; }
+
+/* line 641, /Users/evanmachnic/Work/ri_website/source/css/_ey-buttons.scss */
+.btn-group .dropdown-menu li {
+  font-size: 1em; }
+
+@-ms-viewport {
+  width: device-width; }
+
+/* line 9, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* line 14, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 20, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 24, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* line 32, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 41, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* line 46, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.visible-phone {
+  display: none !important; }
+
+/* line 50, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.visible-tablet {
+  display: none !important; }
+
+/* line 54, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.hidden-desktop {
+  display: none !important; }
+
+/* line 58, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+.visible-desktop {
+  display: inherit !important; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 63, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .hidden-desktop {
+    display: inherit !important; }
+
+  /* line 66, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .visible-desktop {
+    display: none !important; }
+
+  /* line 69, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .visible-tablet {
+    display: inherit !important; }
+
+  /* line 72, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .hidden-tablet {
+    display: none !important; } }
+@media (max-width: 767px) {
+  /* line 78, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .hidden-desktop {
+    display: inherit !important; }
+
+  /* line 81, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .visible-desktop {
+    display: none !important; }
+
+  /* line 84, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .visible-phone {
+    display: inherit !important; }
+
+  /* line 87, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .hidden-phone {
+    display: none !important; } }
+@media (min-width: 1200px) {
+  /* line 93, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row {
+    margin-left: -30px;
+    *zoom: 1; }
+
+  /* line 98, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row:before,
+  .row:after {
+    display: table;
+    line-height: 0;
+    content: ""; }
+
+  /* line 103, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row:after {
+    clear: both; }
+
+  /* line 106, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px; }
+
+  /* line 114, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 1170px; }
+
+  /* line 117, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span12 {
+    width: 1170px; }
+
+  /* line 120, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span11 {
+    width: 1070px; }
+
+  /* line 123, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span10 {
+    width: 970px; }
+
+  /* line 126, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span9 {
+    width: 870px; }
+
+  /* line 129, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span8 {
+    width: 770px; }
+
+  /* line 132, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span7 {
+    width: 670px; }
+
+  /* line 135, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span6 {
+    width: 570px; }
+
+  /* line 138, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span5 {
+    width: 470px; }
+
+  /* line 141, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span4 {
+    width: 370px; }
+
+  /* line 144, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span3 {
+    width: 270px; }
+
+  /* line 147, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span2 {
+    width: 170px; }
+
+  /* line 150, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span1 {
+    width: 70px; }
+
+  /* line 153, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset12 {
+    margin-left: 1230px; }
+
+  /* line 156, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset11 {
+    margin-left: 1130px; }
+
+  /* line 159, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset10 {
+    margin-left: 1030px; }
+
+  /* line 162, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset9 {
+    margin-left: 930px; }
+
+  /* line 165, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset8 {
+    margin-left: 830px; }
+
+  /* line 168, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset7 {
+    margin-left: 730px; }
+
+  /* line 171, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset6 {
+    margin-left: 630px; }
+
+  /* line 174, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset5 {
+    margin-left: 530px; }
+
+  /* line 177, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset4 {
+    margin-left: 430px; }
+
+  /* line 180, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset3 {
+    margin-left: 330px; }
+
+  /* line 183, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset2 {
+    margin-left: 230px; }
+
+  /* line 186, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset1 {
+    margin-left: 130px; }
+
+  /* line 189, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1; }
+
+  /* line 194, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    line-height: 0;
+    content: ""; }
+
+  /* line 199, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid:after {
+    clear: both; }
+
+  /* line 202, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid [class*="span"] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 2.564102564102564%;
+    *margin-left: 2.5109110747408616%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 213, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0; }
+
+  /* line 216, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.564102564102564%; }
+
+  /* line 219, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94680851063829%; }
+
+  /* line 223, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span11 {
+    width: 91.45299145299145%;
+    *width: 91.39979996362975%; }
+
+  /* line 227, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span10 {
+    width: 82.90598290598291%;
+    *width: 82.8527914166212%; }
+
+  /* line 231, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span9 {
+    width: 74.35897435897436%;
+    *width: 74.30578286961266%; }
+
+  /* line 235, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span8 {
+    width: 65.81196581196582%;
+    *width: 65.75877432260411%; }
+
+  /* line 239, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span7 {
+    width: 57.26495726495726%;
+    *width: 57.21176577559556%; }
+
+  /* line 243, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span6 {
+    width: 48.717948717948715%;
+    *width: 48.664757228587014%; }
+
+  /* line 247, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span5 {
+    width: 40.17094017094017%;
+    *width: 40.11774868157847%; }
+
+  /* line 251, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span4 {
+    width: 31.623931623931625%;
+    *width: 31.570740134569924%; }
+
+  /* line 255, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span3 {
+    width: 23.076923076923077%;
+    *width: 23.023731587561375%; }
+
+  /* line 259, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span2 {
+    width: 14.52991452991453%;
+    *width: 14.476723040552828%; }
+
+  /* line 263, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span1 {
+    width: 5.982905982905983%;
+    *width: 5.929714493544281%; }
+
+  /* line 267, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset12 {
+    margin-left: 105.12820512820512%;
+    *margin-left: 105.02182214948171%; }
+
+  /* line 271, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset12:first-child {
+    margin-left: 102.56410256410257%;
+    *margin-left: 102.45771958537915%; }
+
+  /* line 275, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset11 {
+    margin-left: 96.58119658119658%;
+    *margin-left: 96.47481360247316%; }
+
+  /* line 279, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.01709401709402%;
+    *margin-left: 93.91071103837061%; }
+
+  /* line 283, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset10 {
+    margin-left: 88.03418803418803%;
+    *margin-left: 87.92780505546462%; }
+
+  /* line 287, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.47008547008548%;
+    *margin-left: 85.36370249136206%; }
+
+  /* line 291, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset9 {
+    margin-left: 79.48717948717949%;
+    *margin-left: 79.38079650845607%; }
+
+  /* line 295, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset9:first-child {
+    margin-left: 76.92307692307693%;
+    *margin-left: 76.81669394435352%; }
+
+  /* line 299, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset8 {
+    margin-left: 70.94017094017094%;
+    *margin-left: 70.83378796144753%; }
+
+  /* line 303, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.37606837606839%;
+    *margin-left: 68.26968539734497%; }
+
+  /* line 307, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset7 {
+    margin-left: 62.393162393162385%;
+    *margin-left: 62.28677941443899%; }
+
+  /* line 311, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset7:first-child {
+    margin-left: 59.82905982905982%;
+    *margin-left: 59.72267685033642%; }
+
+  /* line 315, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset6 {
+    margin-left: 53.84615384615384%;
+    *margin-left: 53.739770867430444%; }
+
+  /* line 319, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.28205128205128%;
+    *margin-left: 51.175668303327875%; }
+
+  /* line 323, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset5 {
+    margin-left: 45.299145299145295%;
+    *margin-left: 45.1927623204219%; }
+
+  /* line 327, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.73504273504273%;
+    *margin-left: 42.62865975631933%; }
+
+  /* line 331, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset4 {
+    margin-left: 36.75213675213675%;
+    *margin-left: 36.645753773413354%; }
+
+  /* line 335, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.18803418803419%;
+    *margin-left: 34.081651209310785%; }
+
+  /* line 339, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset3 {
+    margin-left: 28.205128205128204%;
+    *margin-left: 28.0987452264048%; }
+
+  /* line 343, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.641025641025642%;
+    *margin-left: 25.53464266230224%; }
+
+  /* line 347, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset2 {
+    margin-left: 19.65811965811966%;
+    *margin-left: 19.551736679396257%; }
+
+  /* line 351, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.094017094017094%;
+    *margin-left: 16.98763411529369%; }
+
+  /* line 355, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset1 {
+    margin-left: 11.11111111111111%;
+    *margin-left: 11.004728132387708%; }
+
+  /* line 359, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.547008547008547%;
+    *margin-left: 8.440625568285142%; }
+
+  /* line 365, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input,
+  textarea,
+  .uneditable-input {
+    margin-left: 0; }
+
+  /* line 368, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 30px; }
+
+  /* line 373, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 1156px; }
+
+  /* line 378, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 1056px; }
+
+  /* line 383, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 956px; }
+
+  /* line 388, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 856px; }
+
+  /* line 393, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 756px; }
+
+  /* line 398, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 656px; }
+
+  /* line 403, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 556px; }
+
+  /* line 408, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 456px; }
+
+  /* line 413, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 356px; }
+
+  /* line 418, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 256px; }
+
+  /* line 423, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 156px; }
+
+  /* line 428, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 56px; }
+
+  /* line 431, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .thumbnails {
+    margin-left: -30px; }
+
+  /* line 434, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .thumbnails > li {
+    margin-left: 30px; }
+
+  /* line 437, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .thumbnails {
+    margin-left: 0; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 443, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row {
+    margin-left: -20px;
+    *zoom: 1; }
+
+  /* line 448, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row:before,
+  .row:after {
+    display: table;
+    line-height: 0;
+    content: ""; }
+
+  /* line 453, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row:after {
+    clear: both; }
+
+  /* line 456, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px; }
+
+  /* line 464, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 724px; }
+
+  /* line 467, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span12 {
+    width: 724px; }
+
+  /* line 470, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span11 {
+    width: 662px; }
+
+  /* line 473, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span10 {
+    width: 600px; }
+
+  /* line 476, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span9 {
+    width: 538px; }
+
+  /* line 479, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span8 {
+    width: 476px; }
+
+  /* line 482, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span7 {
+    width: 414px; }
+
+  /* line 485, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span6 {
+    width: 352px; }
+
+  /* line 488, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span5 {
+    width: 290px; }
+
+  /* line 491, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span4 {
+    width: 228px; }
+
+  /* line 494, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span3 {
+    width: 166px; }
+
+  /* line 497, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span2 {
+    width: 104px; }
+
+  /* line 500, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span1 {
+    width: 42px; }
+
+  /* line 503, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset12 {
+    margin-left: 764px; }
+
+  /* line 506, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset11 {
+    margin-left: 702px; }
+
+  /* line 509, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset10 {
+    margin-left: 640px; }
+
+  /* line 512, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset9 {
+    margin-left: 578px; }
+
+  /* line 515, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset8 {
+    margin-left: 516px; }
+
+  /* line 518, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset7 {
+    margin-left: 454px; }
+
+  /* line 521, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset6 {
+    margin-left: 392px; }
+
+  /* line 524, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset5 {
+    margin-left: 330px; }
+
+  /* line 527, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset4 {
+    margin-left: 268px; }
+
+  /* line 530, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset3 {
+    margin-left: 206px; }
+
+  /* line 533, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset2 {
+    margin-left: 144px; }
+
+  /* line 536, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .offset1 {
+    margin-left: 82px; }
+
+  /* line 539, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1; }
+
+  /* line 544, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    line-height: 0;
+    content: ""; }
+
+  /* line 549, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid:after {
+    clear: both; }
+
+  /* line 552, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid [class*="span"] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 2.7624309392265194%;
+    *margin-left: 2.709239449864817%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 563, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0; }
+
+  /* line 566, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.7624309392265194%; }
+
+  /* line 569, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94680851063829%; }
+
+  /* line 573, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span11 {
+    width: 91.43646408839778%;
+    *width: 91.38327259903608%; }
+
+  /* line 577, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span10 {
+    width: 82.87292817679558%;
+    *width: 82.81973668743387%; }
+
+  /* line 581, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span9 {
+    width: 74.30939226519337%;
+    *width: 74.25620077583166%; }
+
+  /* line 585, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span8 {
+    width: 65.74585635359117%;
+    *width: 65.69266486422946%; }
+
+  /* line 589, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span7 {
+    width: 57.18232044198895%;
+    *width: 57.12912895262725%; }
+
+  /* line 593, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span6 {
+    width: 48.61878453038674%;
+    *width: 48.56559304102504%; }
+
+  /* line 597, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span5 {
+    width: 40.05524861878453%;
+    *width: 40.00205712942283%; }
+
+  /* line 601, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span4 {
+    width: 31.491712707182323%;
+    *width: 31.43852121782062%; }
+
+  /* line 605, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span3 {
+    width: 22.92817679558011%;
+    *width: 22.87498530621841%; }
+
+  /* line 609, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span2 {
+    width: 14.3646408839779%;
+    *width: 14.311449394616199%; }
+
+  /* line 613, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .span1 {
+    width: 5.801104972375691%;
+    *width: 5.747913483013988%; }
+
+  /* line 617, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset12 {
+    margin-left: 105.52486187845304%;
+    *margin-left: 105.41847889972962%; }
+
+  /* line 621, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset12:first-child {
+    margin-left: 102.76243093922652%;
+    *margin-left: 102.6560479605031%; }
+
+  /* line 625, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset11 {
+    margin-left: 96.96132596685082%;
+    *margin-left: 96.8549429881274%; }
+
+  /* line 629, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.1988950276243%;
+    *margin-left: 94.09251204890089%; }
+
+  /* line 633, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset10 {
+    margin-left: 88.39779005524862%;
+    *margin-left: 88.2914070765252%; }
+
+  /* line 637, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.6353591160221%;
+    *margin-left: 85.52897613729868%; }
+
+  /* line 641, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset9 {
+    margin-left: 79.8342541436464%;
+    *margin-left: 79.72787116492299%; }
+
+  /* line 645, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset9:first-child {
+    margin-left: 77.07182320441989%;
+    *margin-left: 76.96544022569647%; }
+
+  /* line 649, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset8 {
+    margin-left: 71.2707182320442%;
+    *margin-left: 71.16433525332079%; }
+
+  /* line 653, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.50828729281768%;
+    *margin-left: 68.40190431409427%; }
+
+  /* line 657, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset7 {
+    margin-left: 62.70718232044199%;
+    *margin-left: 62.600799341718584%; }
+
+  /* line 661, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset7:first-child {
+    margin-left: 59.94475138121547%;
+    *margin-left: 59.838368402492065%; }
+
+  /* line 665, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset6 {
+    margin-left: 54.14364640883978%;
+    *margin-left: 54.037263430116376%; }
+
+  /* line 669, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.38121546961326%;
+    *margin-left: 51.27483249088986%; }
+
+  /* line 673, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset5 {
+    margin-left: 45.58011049723757%;
+    *margin-left: 45.47372751851417%; }
+
+  /* line 677, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.81767955801105%;
+    *margin-left: 42.71129657928765%; }
+
+  /* line 681, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset4 {
+    margin-left: 37.01657458563536%;
+    *margin-left: 36.91019160691196%; }
+
+  /* line 685, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.25414364640884%;
+    *margin-left: 34.14776066768544%; }
+
+  /* line 689, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset3 {
+    margin-left: 28.45303867403315%;
+    *margin-left: 28.346655695309746%; }
+
+  /* line 693, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.69060773480663%;
+    *margin-left: 25.584224756083227%; }
+
+  /* line 697, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset2 {
+    margin-left: 19.88950276243094%;
+    *margin-left: 19.783119783707537%; }
+
+  /* line 701, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.12707182320442%;
+    *margin-left: 17.02068884448102%; }
+
+  /* line 705, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset1 {
+    margin-left: 11.32596685082873%;
+    *margin-left: 11.219583872105325%; }
+
+  /* line 709, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.56353591160221%;
+    *margin-left: 8.457152932878806%; }
+
+  /* line 715, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input,
+  textarea,
+  .uneditable-input {
+    margin-left: 0; }
+
+  /* line 718, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 20px; }
+
+  /* line 723, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 710px; }
+
+  /* line 728, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 648px; }
+
+  /* line 733, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 586px; }
+
+  /* line 738, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 524px; }
+
+  /* line 743, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 462px; }
+
+  /* line 748, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 400px; }
+
+  /* line 753, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 338px; }
+
+  /* line 758, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 276px; }
+
+  /* line 763, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 214px; }
+
+  /* line 768, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 152px; }
+
+  /* line 773, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 90px; }
+
+  /* line 778, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 28px; } }
+@media (max-width: 767px) {
+  /* line 784, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  body {
+    padding-right: 20px;
+    padding-left: 20px; }
+
+  /* line 790, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: -20px;
+    margin-left: -20px; }
+
+  /* line 794, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .container-fluid {
+    padding: 0; }
+
+  /* line 797, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .dl-horizontal dt {
+    float: none;
+    width: auto;
+    clear: none;
+    text-align: left; }
+
+  /* line 803, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .dl-horizontal dd {
+    margin-left: 0; }
+
+  /* line 806, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .container {
+    width: auto; }
+
+  /* line 809, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid {
+    width: 100%; }
+
+  /* line 813, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row,
+  .thumbnails {
+    margin-left: 0; }
+
+  /* line 816, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .thumbnails > li {
+    float: none;
+    margin-left: 0; }
+
+  /* line 822, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  [class*="span"],
+  .uneditable-input[class*="span"],
+  .row-fluid [class*="span"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 832, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .span12,
+  .row-fluid .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 838, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0; }
+
+  /* line 847, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .input-large,
+  .input-xlarge,
+  .input-xxlarge,
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 858, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .input-prepend input,
+  .input-append input,
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    display: inline-block;
+    width: auto; }
+
+  /* line 862, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0; }
+
+  /* line 865, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    margin: 0; }
+
+  /* line 873, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .modal.fade {
+    top: -100px; }
+
+  /* line 876, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .modal.fade.in {
+    top: 20px; } }
+@media (max-width: 480px) {
+  /* line 882, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0); }
+
+  /* line 885, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .page-header h1 small {
+    display: block;
+    line-height: 20px; }
+
+  /* line 890, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc; }
+
+  /* line 893, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .form-horizontal .control-label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left; }
+
+  /* line 899, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .form-horizontal .controls {
+    margin-left: 0; }
+
+  /* line 902, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .form-horizontal .control-list {
+    padding-top: 0; }
+
+  /* line 905, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .form-horizontal .form-actions {
+    padding-right: 10px;
+    padding-left: 10px; }
+
+  /* line 910, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .media .pull-left,
+  .media .pull-right {
+    display: block;
+    float: none;
+    margin-bottom: 10px; }
+
+  /* line 915, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .media-object {
+    margin-right: 0;
+    margin-left: 0; }
+
+  /* line 919, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .modal {
+    top: 10px;
+    right: 10px;
+    left: 10px; }
+
+  /* line 924, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px; }
+
+  /* line 928, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .carousel-caption {
+    position: static; } }
+@media (max-width: 979px) {
+  /* line 934, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  body {
+    padding-top: 0; }
+
+  /* line 938, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: static; }
+
+  /* line 941, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-fixed-top {
+    margin-bottom: 20px; }
+
+  /* line 944, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-fixed-bottom {
+    margin-top: 20px; }
+
+  /* line 948, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
+    padding: 5px; }
+
+  /* line 951, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar .container {
+    width: auto;
+    padding: 0; }
+
+  /* line 955, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar .brand {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 0 0 -5px; }
+
+  /* line 960, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse {
+    clear: both; }
+
+  /* line 963, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav {
+    float: none;
+    margin: 0 0 10px; }
+
+  /* line 967, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav > li {
+    float: none; }
+
+  /* line 970, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav > li > a {
+    margin-bottom: 2px; }
+
+  /* line 973, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav > .divider-vertical {
+    display: none; }
+
+  /* line 976, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav .nav-header {
+    color: #777777;
+    text-shadow: none; }
+
+  /* line 981, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a {
+    padding: 9px 15px;
+    font-weight: bold;
+    color: #777777;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+
+  /* line 989, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .btn {
+    padding: 4px 10px 4px;
+    font-weight: normal;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+
+  /* line 996, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .dropdown-menu li + li a {
+    margin-bottom: 2px; }
+
+  /* line 1000, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .dropdown-menu a:hover {
+    background-color: #f2f2f2; }
+
+  /* line 1004, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-inverse .nav-collapse .nav > li > a,
+  .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: #999999; }
+
+  /* line 1008, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-inverse .nav-collapse .nav > li > a:hover,
+  .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    background-color: #111111; }
+
+  /* line 1011, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse.in .btn-group {
+    padding: 0;
+    margin-top: 5px; }
+
+  /* line 1015, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    display: none;
+    float: none;
+    max-width: none;
+    padding: 0;
+    margin: 0 15px;
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+  /* line 1033, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .open > .dropdown-menu {
+    display: block; }
+
+  /* line 1037, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .dropdown-menu:before,
+  .nav-collapse .dropdown-menu:after {
+    display: none; }
+
+  /* line 1040, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .dropdown-menu .divider {
+    display: none; }
+
+  /* line 1044, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .nav > li > .dropdown-menu:before,
+  .nav-collapse .nav > li > .dropdown-menu:after {
+    display: none; }
+
+  /* line 1048, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse .navbar-form,
+  .nav-collapse .navbar-search {
+    float: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  /* line 1059, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-inverse .nav-collapse .navbar-form,
+  .navbar-inverse .nav-collapse .navbar-search {
+    border-top-color: #111111;
+    border-bottom-color: #111111; }
+
+  /* line 1063, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar .nav-collapse .nav.pull-right {
+    float: none;
+    margin-left: 0; }
+
+  /* line 1068, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse,
+  .nav-collapse.collapse {
+    height: 0;
+    overflow: hidden; }
+
+  /* line 1072, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar .btn-navbar {
+    display: block; }
+
+  /* line 1075, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .navbar-static .navbar-inner {
+    padding-right: 10px;
+    padding-left: 10px; } }
+@media (min-width: 980px) {
+  /* line 1082, /Users/evanmachnic/Work/ri_website/source/css/_ey-responsive.scss */
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important; } }
+/* line 3, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert {
+  padding: .5em 35px .5em 14px;
+  margin-bottom: 1em;
+  color: #fff;
+  text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #a6a3a2;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px; }
+  /* line 11, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+  .alert h4 {
+    color: #fff;
+    margin: 0; }
+  /* line 16, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+  .alert a {
+    color: white;
+    border-bottom: 1px dotted white; }
+  /* line 21, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+  .alert .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    line-height: 20px;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    opacity: .5; }
+  /* line 31, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+  .alert .close:hover {
+    opacity: 0.8; }
+
+/* line 36, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-success {
+  background-color: #97cc5a;
+  border-color: #d6e9c6; }
+
+/* line 43, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-danger,
+.alert-error {
+  background-color: #bf1a2e; }
+
+/* line 47, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-info {
+  background-color: #4bb3d1; }
+
+/* line 51, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-light {
+  background-color: #fff;
+  color: #333232; }
+  /* line 55, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+  .alert-light .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    line-height: 20px;
+    color: #000;
+    text-shadow: none;
+    opacity: .5; }
+
+/* line 66, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-block {
+  padding-top: .5em;
+  padding-bottom: .5em; }
+
+/* line 72, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0; }
+
+/* line 76, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-block p + p {
+  margin-top: 5px; }
+
+/* line 80, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+.alert-shadow {
+  -webkit-box-shadow: 0 0px 3px rgba(170, 170, 170, 0.3) ;
+  -moz-box-shadow: 0 0px 3px rgba(170, 170, 170, 0.3) ;
+  box-shadow: 0 0px 3px rgba(170, 170, 170, 0.3) ; }
+  /* line 83, /Users/evanmachnic/Work/ri_website/source/css/_ey-alerts.scss */
+  .alert-shadow .close {
+    text-shadow: none; }
+
+@font-face {
+  font-family: "SSStandard";
+  src: url("/fonts/ss-standard.eot");
+  src: url("/fonts/ss-standard.eot?#iefix") format("embedded-opentype"), url("/fonts/ss-standard.woff") format("woff"), url("/fonts/ss-standard.ttf") format("truetype"), url("/fonts/ss-standard.svg#SSStandard") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+/* line 13, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1; }
+
+/* line 15, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.font-icon {
+  font-family: 'SS Standard';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+/* line 40, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-icon,
+.ss-icon.ss-standard,
+.font-icon,
+[class^="ss-"]:before,
+[class*=" ss-"]:before,
+[class^="ss-"].ss-standard:before,
+[class*=" ss-"].ss-standard:before,
+[class^="ss-"].right:after,
+[class*=" ss-"].right:after,
+[class^="ss-"].ss-standard.right:after,
+[class*=" ss-"].ss-standard.right:after {
+  font-family: "SSStandard";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased; }
+
+/* line 57, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before {
+  display: none;
+  content: ''; }
+
+/* line 64, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.btn .font-icon,
+.btn .ss-icon,
+.btn [class^="ss-"],
+.btn [class*="ss-"] {
+  margin: 0.225em 0.425em 0 -0.5em;
+  font-size: 0.825em;
+  display: inline-block; }
+  /* line 69, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+  .btn .font-icon + *,
+  .btn .ss-icon + *,
+  .btn [class^="ss-"] + *,
+  .btn [class*="ss-"] + * {
+    margin-left: 0.75em; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-cursor:before, .ss-cursor.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-crosshair:before, .ss-crosshair.right:after {
+  content: '⌖'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-search:before, .ss-search.right:after {
+  content: '🔎'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-zoomin:before, .ss-zoomin.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-zoomout:before, .ss-zoomout.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-view:before, .ss-view.right:after {
+  content: '👀'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-attach:before, .ss-attach.right:after {
+  content: '📎'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-link:before, .ss-link.right:after {
+  content: '🔗'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-move:before, .ss-move.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-write:before, .ss-write.right:after {
+  content: '✎'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-writingdisabled:before, .ss-writingdisabled.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-erase:before, .ss-erase.right:after {
+  content: '✐'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-compose:before, .ss-compose.right:after {
+  content: '📝'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-lock:before, .ss-lock.right:after {
+  content: '🔒'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-unlock:before, .ss-unlock.right:after {
+  content: '🔓'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-key:before, .ss-key.right:after {
+  content: '🔑'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-backspace:before, .ss-backspace.right:after {
+  content: '⌫'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-ban:before, .ss-ban.right:after {
+  content: '🚫'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-trash:before, .ss-trash.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-target:before, .ss-target.right:after {
+  content: '◎'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-tag:before, .ss-tag.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-bookmark:before, .ss-bookmark.right:after {
+  content: '🔖'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-flag:before, .ss-flag.right:after {
+  content: '⚑'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-like:before, .ss-like.right:after {
+  content: '👍'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-dislike:before, .ss-dislike.right:after {
+  content: '👎'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-heart:before, .ss-heart.right:after {
+  content: '♥'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-halfheart:before, .ss-halfheart.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-star:before, .ss-star.right:after {
+  content: '⋆'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-halfstar:before, .ss-halfstar.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-sample:before, .ss-sample.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-crop:before, .ss-crop.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-layers:before, .ss-layers.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-fill:before, .ss-fill.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-stroke:before, .ss-stroke.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-phone:before, .ss-phone.right:after {
+  content: '📞'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-phonedisabled:before, .ss-phonedisabled.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-rss:before, .ss-rss.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-facetime:before, .ss-facetime.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-reply:before, .ss-reply.right:after {
+  content: '↩'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-send:before, .ss-send.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-mail:before, .ss-mail.right:after {
+  content: '✉'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-inbox:before, .ss-inbox.right:after {
+  content: '📥'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-chat:before, .ss-chat.right:after {
+  content: '💬'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-ellipsischat:before, .ss-ellipsischat.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-ellipsis:before, .ss-ellipsis.right:after {
+  content: '…'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-user:before, .ss-user.right:after {
+  content: '👤'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-femaleuser:before, .ss-femaleuser.right:after {
+  content: '👧'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-users:before, .ss-users.right:after {
+  content: '👥'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-cart:before, .ss-cart.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-creditcard:before, .ss-creditcard.right:after {
+  content: '💳'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-dollarsign:before, .ss-dollarsign.right:after {
+  content: '💲'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-barchart:before, .ss-barchart.right:after {
+  content: '📊'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-piechart:before, .ss-piechart.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-box:before, .ss-box.right:after {
+  content: '📦'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-home:before, .ss-home.right:after {
+  content: '⌂'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-buildings:before, .ss-buildings.right:after {
+  content: '🏢'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-warehouse:before, .ss-warehouse.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-globe:before, .ss-globe.right:after {
+  content: '🌎'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-navigate:before, .ss-navigate.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-compass:before, .ss-compass.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-signpost:before, .ss-signpost.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-map:before, .ss-map.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-location:before, .ss-location.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-pin:before, .ss-pin.right:after {
+  content: '📍'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-database:before, .ss-database.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-hdd:before, .ss-hdd.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-music:before, .ss-music.right:after {
+  content: '♫'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-mic:before, .ss-mic.right:after {
+  content: '🎤'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-volume:before, .ss-volume.right:after {
+  content: '🔈'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-lowvolume:before, .ss-lowvolume.right:after {
+  content: '🔉'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-highvolume:before, .ss-highvolume.right:after {
+  content: '🔊'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-airplay:before, .ss-airplay.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-camera:before, .ss-camera.right:after {
+  content: '📷'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-picture:before, .ss-picture.right:after {
+  content: '🌄'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-video:before, .ss-video.right:after {
+  content: '📹'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-play:before, .ss-play.right:after {
+  content: '▶'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-pause:before, .ss-pause.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-stop:before, .ss-stop.right:after {
+  content: '■'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-record:before, .ss-record.right:after {
+  content: '●'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-rewind:before, .ss-rewind.right:after {
+  content: '⏪'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-fastforward:before, .ss-fastforward.right:after {
+  content: '⏩'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-skipback:before, .ss-skipback.right:after {
+  content: '⏮'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-skipforward:before, .ss-skipforward.right:after {
+  content: '⏭'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-eject:before, .ss-eject.right:after {
+  content: '⏏'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-repeat:before, .ss-repeat.right:after {
+  content: '🔁'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-replay:before, .ss-replay.right:after {
+  content: '↺'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-shuffle:before, .ss-shuffle.right:after {
+  content: '🔀'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-book:before, .ss-book.right:after {
+  content: '📕'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-openbook:before, .ss-openbook.right:after {
+  content: '📖'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-notebook:before, .ss-notebook.right:after {
+  content: '📓'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-newspaper:before, .ss-newspaper.right:after {
+  content: '📰'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-grid:before, .ss-grid.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-rows:before, .ss-rows.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-columns:before, .ss-columns.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-thumbnails:before, .ss-thumbnails.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-filter:before, .ss-filter.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-desktop:before, .ss-desktop.right:after {
+  content: '💻'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-laptop:before, .ss-laptop.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-tablet:before, .ss-tablet.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-cell:before, .ss-cell.right:after {
+  content: '📱'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-battery:before, .ss-battery.right:after {
+  content: '🔋'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-highbattery:before, .ss-highbattery.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-mediumbattery:before, .ss-mediumbattery.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-lowbattery:before, .ss-lowbattery.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-emptybattery:before, .ss-emptybattery.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-lightbulb:before, .ss-lightbulb.right:after {
+  content: '💡'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-downloadcloud:before, .ss-downloadcloud.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-download:before, .ss-download.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-uploadcloud:before, .ss-uploadcloud.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-upload:before, .ss-upload.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-fork:before, .ss-fork.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-merge:before, .ss-merge.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-transfer:before, .ss-transfer.right:after {
+  content: '⇆'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-refresh:before, .ss-refresh.right:after {
+  content: '↻'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-sync:before, .ss-sync.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-loading:before, .ss-loading.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-wifi:before, .ss-wifi.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-connection:before, .ss-connection.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-file:before, .ss-file.right:after {
+  content: '📄'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-folder:before, .ss-folder.right:after {
+  content: '📁'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-quote:before, .ss-quote.right:after {
+  content: '“'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-text:before, .ss-text.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-font:before, .ss-font.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-print:before, .ss-print.right:after {
+  content: '⎙'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-fax:before, .ss-fax.right:after {
+  content: '📠'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-list:before, .ss-list.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-layout:before, .ss-layout.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-action:before, .ss-action.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-redirect:before, .ss-redirect.right:after {
+  content: '↪'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-expand:before, .ss-expand.right:after {
+  content: '⤢'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-contract:before, .ss-contract.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-help:before, .ss-help.right:after {
+  content: '❓'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-info:before, .ss-info.right:after {
+  content: 'ℹ'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-alert:before, .ss-alert.right:after {
+  content: '⚠'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-caution:before, .ss-caution.right:after {
+  content: '⛔'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-logout:before, .ss-logout.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-plus:before, .ss-plus.right:after {
+  content: '+'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-hyphen:before, .ss-hyphen.right:after {
+  content: '-'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-check:before, .ss-check.right:after {
+  content: '✓'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-delete:before, .ss-delete.right:after {
+  content: '␡'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-settings:before, .ss-settings.right:after {
+  content: '⚙'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-dashboard:before, .ss-dashboard.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-notifications:before, .ss-notifications.right:after {
+  content: '🔔'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-notificationsdisabled:before, .ss-notificationsdisabled.right:after {
+  content: '🔕'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-clock:before, .ss-clock.right:after {
+  content: '⏲'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-stopwatch:before, .ss-stopwatch.right:after {
+  content: '⏱'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-calendar:before, .ss-calendar.right:after {
+  content: '📅'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-addcalendar:before, .ss-addcalendar.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-removecalendar:before, .ss-removecalendar.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-checkcalendar:before, .ss-checkcalendar.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-deletecalendar:before, .ss-deletecalendar.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-briefcase:before, .ss-briefcase.right:after {
+  content: '💼'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-cloud:before, .ss-cloud.right:after {
+  content: '☁'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-droplet:before, .ss-droplet.right:after {
+  content: '💧'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-flask:before, .ss-flask.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-up:before, .ss-up.right:after {
+  content: '⬆'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-upright:before, .ss-upright.right:after {
+  content: '⬈'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-right:before, .ss-right.right:after {
+  content: '➡'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-downright:before, .ss-downright.right:after {
+  content: '⬊'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-down:before, .ss-down.right:after {
+  content: '⬇'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-downleft:before, .ss-downleft.right:after {
+  content: '⬋'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-left:before, .ss-left.right:after {
+  content: '⬅'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-upleft:before, .ss-upleft.right:after {
+  content: '⬉'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-navigateup:before, .ss-navigateup.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-navigateright:before, .ss-navigateright.right:after {
+  content: '▻'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-navigatedown:before, .ss-navigatedown.right:after {
+  content: ''; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-navigateleft:before, .ss-navigateleft.right:after {
+  content: '◅'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-directup:before, .ss-directup.right:after {
+  content: '▴'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-directright:before, .ss-directright.right:after {
+  content: '▹'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-dropdown:before, .ss-dropdown.right:after {
+  content: '▾'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-directleft:before, .ss-directleft.right:after {
+  content: '◃'; }
+
+/* line 75, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-retweet:before, .ss-retweet.right:after {
+  content: ''; }
+
+/* Legacy classes */
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-volumelow:before, .ss-volumelow.right:after {
+  content: '🔉'; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-volumehigh:before, .ss-volumehigh.right:after {
+  content: '🔊'; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-batteryhigh:before, .ss-batteryhigh.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-batterymedium:before, .ss-batterymedium.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-batterylow:before, .ss-batterylow.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-batteryempty:before, .ss-batteryempty.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-clouddownload:before, .ss-clouddownload.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-cloudupload:before, .ss-cloudupload.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-calendaradd:before, .ss-calendaradd.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-calendarremove:before, .ss-calendarremove.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-calendarcheck:before, .ss-calendarcheck.right:after {
+  content: ''; }
+
+/* line 78, /Users/evanmachnic/Work/ri_website/source/css/_symbolset.scss */
+.ss-calendardelete:before, .ss-calendardelete.right:after {
+  content: ''; }
+
+/* global site header... */
+/* line 2, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+#global-header {
+  background: white;
+  border-bottom: 5px solid #bf1a2e;
+  margin-bottom: 6em;
+  overflow: hidden; }
+  /* line 7, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header a {
+    color: #bf1a2e;
+    text-decoration: none; }
+  /* line 11, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header .inner {
+    width: 90%;
+    margin: 0 auto; }
+  /* line 15, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header h1 {
+    float: left;
+    padding: .5em 0;
+    font: normal 1.4em helvetica, arial, sans-serif;
+    text-transform: none; }
+  /* line 21, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header .logo {
+    display: inline-block;
+    height: 29px;
+    width: 97px;
+    background: transparent url("/img/ey-logo.png") 0 0 no-repeat;
+    text-indent: -999em;
+    vertical-align: middle; }
+  /* line 29, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header .contributors img {
+    height: 29px;
+    width: 29px;
+    vertical-align: middle; }
+  /* line 34, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header ul {
+    float: right;
+    margin: .6em 0 0 0;
+    padding-bottom: 0; }
+  /* line 39, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header li {
+    float: left;
+    margin-right: 10px;
+    list-style-type: none; }
+  /* line 44, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header li:last-child {
+    margin-right: 0; }
+  /* line 47, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+  #global-header .share-email {
+    display: inline-block;
+    height: 20px;
+    width: 32px;
+    text-indent: -999em;
+    background: transparent url("/img/email-small.png") 0 0 no-repeat;
+    overflow: hidden; }
+
+/* line 56, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+#ey-promo {
+  clear: both;
+  font-size: 12px;
+  margin-left: 20px; }
+
+/* line 62, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
+#ey-promo a {
+  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #83020A; }
+
+/* ...global site header */
+/* line 1, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+#main {
+  max-width: 960px;
+  margin: 0 auto; }
+
+/* line 5, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.space {
+  margin-bottom: 5em; }
+
+/* line 8, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.logo {
+  margin: 0 auto;
+  text-align: center; }
+  /* line 11, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+  .logo img {
+    padding-top: 1em;
+    width: 37.8125em; }
+  /* line 14, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+  .logo .tagline {
+    font-size: 2.5em;
+    margin-top: -1em; }
+
+/* line 18, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+h2 {
+  color: #4bb3d1; }
+
+/* line 21, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.video_container {
+  position: relative;
+  padding-bottom: 56.25%; }
+  /* line 24, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+  .video_container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+
+/* line 32, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.downloadlink a:visited {
+  color: white; }
+/* line 34, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.downloadlink .btn-block {
+  font-size: 1.5em; }
+
+/* line 37, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.packages a, .packages a:visited {
+  color: #1a1919;
+  font-weight: bold;
+  text-decoration: underline; }
+
+/* line 42, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.packages a:hover {
+  color: #333232;
+  text-decoration: none; }
+
+/* line 46, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
+.down-btn-icon {
+  float: left;
+  padding: 0.1em 0 0 1.4em; }

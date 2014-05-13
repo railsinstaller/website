@@ -1,0 +1,67 @@
+/* global site header... */
+#global-header {
+  background: white;
+  border-bottom: 5px solid $darkRed;
+  margin-bottom: 6em;
+  overflow: hidden;
+  a {
+    color: $darkRed;
+    text-decoration: none;
+  }
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h1 {
+    float: left;
+    padding: .5em 0;
+    font: normal 1.4em helvetica, arial, sans-serif;
+    text-transform: none;
+  }
+  .logo {
+    display: inline-block;
+    height: 29px;
+    width: 97px;
+    background: transparent image-url('ey-logo.png') 0 0 no-repeat;
+    text-indent: -999em;
+    vertical-align: middle;
+  }
+  .contributors img {
+    height: 29px;
+    width: 29px;
+    vertical-align: middle;
+  }
+  ul {
+    float: right;
+    margin: .6em 0 0 0;
+    padding-bottom: 0;
+  }
+  li {
+    float: left;
+    margin-right: 10px;
+    list-style-type: none;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+  .share-email {
+    display: inline-block;
+    height: 20px;
+    width: 32px;
+    text-indent: -999em;
+    background: transparent image-url('email-small.png') 0 0 no-repeat;
+    overflow: hidden;
+  }
+}
+#ey-promo {
+  clear: both;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+#ey-promo a {
+  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #83020A;
+}
+/* ...global site header */

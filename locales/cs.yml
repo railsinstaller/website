@@ -1,0 +1,66 @@
+cs:
+  description: RailsInstaller. Nejrychlejší cesta jak nainstalovat vývojové prostředí pro vyvíjení Ruby on Rails aplikací pro Windows a Mac.
+  engine_yard: Engine Yard
+  project_by: Projekt od
+  share_email_body: Jdi na railsinstaller.org
+  share_email_subject: Koukni na RailsInstaller
+  share_email_title: Napište email o RailsInstalleru kamarádům
+  register: Register for news and updates
+  team: RailsInstaller Team
+  bundler: Bundler
+  devkit: DevKit
+  freenode: "#railsinstaller"
+  freenode_preffix: Existuje také
+  freenode_suffix: místnost na Freenode IRC, kde vám můžeme pomoct.
+  get_to_work: Dej se do práce.
+  git: Git
+  github: Github
+  github_preffix: Všechny chyby v instalátoru by měly být nahlášeny na
+  google_group: Google Group
+  google_group_preffix: Pokud potřebujete pomoc s RailsInstallerem, prosím zavítejte na naši
+  google_group_suffix: ', kde si můžete přečíst příspěvky od ostatních uživatelů nebo položit otázku.'
+  jewerlybox: JewelryBox
+  last_version_download: Stáhněte
+  last_version_download_preffix: Chcete zkusit vývojovou verzi?
+  last_version_download_suffix: si railsinstaller-windows 3.0.0-alpha2 obsahující Ruby 2.0.0!
+  mac: Mac OSX
+  mac_downloads: Mac soubory
+  mac_ver_new: 10.7 & 10.8
+  mac_ver_old: '10.6'
+  next: Kam dál
+  nix_repository: railsinstaller-nix
+  or: nebo
+  osx_gcc_installer: osx-gcc-installer
+  osx_warning: 'Prosím, nespouštějte instalační program na OSX Mavericks až do dalšího oznámení.'
+  osx_note: "Upozornění:"
+  osx_note_description: OSX 10.6 verze je pouze pro 64bitový systém. Pravděpodobně nebude fungovat na 32bitovém systému.
+  packages_included: Obsažené balíčky
+  rails: Rails
+  rails_guides: Rails Guides
+  rails_guides_preffix: Po instalaci se podívejte na
+  rails_guides_suffix: pro více informací o vývoji Ruby on Rails aplikací.
+  rails_guides_url: http://guides.rubyonrails.cz/
+  rails_tutorial: Ruby on Rails Tutorial (anglicky)
+  rails_tutorial_preffix: Další skvělý zdroj je
+  rails_tutorial_suffix: od Michaela Hartla. Přestože je tutorial zaměřený na Mac, je hodnotný i pro uživatele Windows. Navíc obsahuje 15 hodin doprovodného videa pro případ, že jste více vizuálně orientovaní.
+  rails_ver_new: 3.2
+  rails_ver_old: 3.0.7
+  repositories_preffix: do správných repozitářů (
+  repositories_suffix: ).
+  ruby: Ruby
+  ruby_18: Ruby 1.8
+  ruby_19: Ruby 1.9
+  ruby_ver_new: 1.9.3
+  ruby_ver_old: 1.8.7
+  rvm: RVM
+  sm_framework: SM Framework
+  sql_support: podpora SQL Server
+  sqlite: Sqlite
+  tinyTDS: TinyTDS
+  what: Co je to?
+  what_description: RailsInstaller je nejrychlejší cesta jak nainstalovat prostředí pro vývoj Ruby on Rails aplikací. Nezáleží jestli používáte Windows nebo Mac, RailsInstaller funguje na obou systémech.
+  who: Pro koho to je?
+  who_description: Začínali jste někdy v nové práci s novým počítačem? Nastavení počítače, než budete moci začít tvořit, může trvat hodiny. RailsInstaller urychluje tento proces pro Rails vývojáře, aby mohli být úspěšní.
+  win: Windows
+  win_downloads: Windows soubory
+  win_repository: railsinstaller-windows

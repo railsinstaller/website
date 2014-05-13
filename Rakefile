@@ -1,7 +1,18 @@
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
-
-require File.expand_path('../config/application', __FILE__)
 require 'rake'
+require 'gh_contributors'
 
-RailsinstallerWeb::Application.load_tasks
+namespace :update do
+  desc "Update list of contributors"
+  task :contributors do
+    data = GhContributors.for_org('railsinstaller').data
+    File.open('source/_contributors.erb', 'w') do |file|
+      data.each do |username, info|
+        file.puts "<a href='https://github.com/#{username}' " +
+        "title='#{username} - #{info['contributions']}'>\n" +
+        "  <img alt='#{username} - #{info['contributions']}' " +
+        "class='img-rounded' src='#{info['avatar_url']}' " +
+        "width='29px' height='29px'>\n</a>"
+      end
+    end
+  end
+end

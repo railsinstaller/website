@@ -55,7 +55,7 @@ set :images_dir, 'img'
 
 set :haml, { format: :html5 }
 
-activate :i18n, mount_at_root: :en
+activate :i18n, mount_at_root: false
 
 # Build-specific configuration
 configure :build do

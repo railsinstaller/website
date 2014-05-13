@@ -26,16 +26,15 @@ works properly. Check out `locales/en.yml` for strings to localize.
 
 ### Testing
 
-```bash
-cp config/database.yml.template config/database.yml
-bundle install --without="production test"
-rails s
-```
+Tests for the site are written using Capybara and in the `spec`
+directory. To run them, do the following:
 
-And visit http://localhost:3000
+```
+$ bundle exec rspec
+```
 
 ### Updating contributor list
 
 ```bash
-rake update:contributors
+$ rake update:contributors
 ```

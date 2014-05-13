@@ -14,6 +14,10 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem 'haml'
-gem 'gh_contributors'
-gem 'rake', '~> 10.3'
+group :development, :test do
+  gem 'gh_contributors'
+  gem 'rake', '~> 10.3'
+  gem 'rspec'
+  gem 'capybara'
+end
 

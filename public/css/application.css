@@ -48,12 +48,12 @@
 
 /*!
  * Engine Yard Style Guide core styles built on Bootstrap v2.2.2
- * 
+ *
  * Copyright 2013 Engine Yard, Inc
  *
  * Designed and built with all the coffee @engineyard by @flynnduism and @cloudsteph
  *
- * Bootstrap Nod: 
+ * Bootstrap Nod:
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -486,7 +486,7 @@ body {
   clear: both; }
 
 /*
- * GRID ENDS 
+ * GRID ENDS
  */
 /* line 450, /Users/evanmachnic/Work/ri_website/source/css/_ey-bootstrap.scss */
 a:focus {
@@ -4564,7 +4564,7 @@ html:hover [class^="ss-"] {
   overflow: hidden; }
   /* line 7, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
   #global-header a {
-    color: #bf1a2e;
+    color: #ea222a;
     text-decoration: none; }
   /* line 11, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
   #global-header .inner {
@@ -4580,7 +4580,7 @@ html:hover [class^="ss-"] {
   #global-header .logo {
     display: inline-block;
     height: 29px;
-    width: 97px;
+    width: 150px;
     background: transparent url("/img/ey-logo.png") 0 0 no-repeat;
     text-indent: -999em;
     vertical-align: middle; }

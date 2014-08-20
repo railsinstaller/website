@@ -18,18 +18,27 @@
     font: normal 1.4em helvetica, arial, sans-serif;
     text-transform: none;
   }
-  .logo {
-    display: inline-block;
-    height: 29px;
-    width: 97px;
-    background: transparent image-url('ey-logo.png') 0 0 no-repeat;
-    text-indent: -999em;
-    vertical-align: middle;
+  .project-by {
+    position: relative;
+    top: 4px;
+    color: #ea222a;
+    .logo {
+      position: relative;
+      display: inline-block;
+      top: -3px;
+      left: 2px;
+      height: 29px;
+      width: 150px;
+      background: transparent image-url('ey-logo.png') 0 0 no-repeat;
+      text-indent: -999em;
+      vertical-align: middle;
+    }
   }
   .contributors img {
     height: 29px;
     width: 29px;
     vertical-align: middle;
+    margin-bottom: 4px;
   }
   ul {
     float: right;

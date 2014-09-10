@@ -42,7 +42,7 @@ cs:
   rails_guides_url: http://guides.rubyonrails.cz/
   rails_tutorial: Ruby on Rails Tutorial (anglicky)
   rails_tutorial_preffix: Další skvělý zdroj je
-  rails_tutorial_suffix: od Michaela Hartla. Přestože je tutorial zaměřený na Mac, je hodnotný i pro uživatele Windows. Navíc obsahuje 15 hodin doprovodného videa pro případ, že jste více vizuálně orientovaní.
+  rails_tutorial_suffix: od Michaela Hartla. Přestože je tutorial zaměřený na Mac, je hodnotný i pro uživatele Windows.
   rails_ver_new: 3.2
   rails_ver_old: 3.0.7
   repositories_preffix: do správných repozitářů (

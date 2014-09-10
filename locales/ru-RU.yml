@@ -40,7 +40,7 @@ ru-RU:
   rails_guides_suffix: за информацией о разработке Ruby on Rails приложений.
   rails_tutorial: Ruby on Rails Tutorial
   rails_tutorial_preffix: Еще один великолепный ресурс это
-  rails_tutorial_suffix: от Michael Hartl. Несмотря на то, что в этих инструкциях используется Mac, они содержат очень ценную информацию и для Windows пользователей. Кроме того, там около 15 часов сопроводительного видео, что будет очень полезным тем, кто больше любит учиться по видео-урокам.
+  rails_tutorial_suffix: от Michael Hartl. Несмотря на то, что в этих инструкциях используется Mac, они содержат очень ценную информацию и для Windows пользователей.
   rails_ver_new: 3.2
   rails_ver_old: 3.0.7
   repositories_preffix: в соответствующий репозиторий (

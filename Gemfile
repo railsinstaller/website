@@ -15,7 +15,10 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem 'haml'
 
-gem 'unicorn', group: :production
+group :production do
+  gem 'unicorn'
+  gem 'puma'
+end
 
 group :development, :test do
   gem 'gh_contributors'

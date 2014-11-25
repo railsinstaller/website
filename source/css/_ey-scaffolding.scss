@@ -1,0 +1,327 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Reset the box-sizing
+
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+  font-size: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  color: $dark1;
+  background-color: #fff;
+  height: 100%;
+  @include helvetica;
+  line-height: $baseLineHeight;
+  margin: 0;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darken($blue, 10);
+    text-decoration: none;
+  }
+
+  &.external {
+    position: relative;
+
+    span {
+      opacity: 0;
+      position: absolute;
+      top: 0.25em;
+      right: -1.5em;
+      font-size: 0.825em;
+    }
+
+    &:hover > span {
+      opacity: 1;
+      color: $light3;
+    }
+  }
+}
+
+// DIVIDERS
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid $light1;
+  border-bottom: 1px solid #fff;
+}
+
+// Headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  text-rendering: optimizelegibility;
+  margin: 0;
+  padding: 0;
+
+    + p, + ol, + ul {
+          padding-top: 0;
+  }
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+}
+
+h1 {
+        @include textLayout($textSize:($baseFontSize * $scalex6), $lineHeight: 1.3);
+        @include AvenirLight;
+}
+
+h2 {
+        @include textLayout($textSize:($baseFontSize * $scalex5), $lineHeight: 1.3);
+        @include AvenirLight;
+}
+
+h3 {
+        @include textLayout($textSize:($baseFontSize * $scalex4), $lineHeight: 1.3);
+        @include AvenirLight;
+}
+
+h4 {
+        @include textLayout($textSize:($baseFontSize * $scalex3), $lineHeight: 1.3);
+        @include AvenirRoman;
+}
+
+h5 {
+        @include textLayout($textSize:($baseFontSize * $scalex2));
+        @include AvenirRoman;
+}
+
+h6 {
+        @include textLayout($textSize:($baseFontSize * $scalex1));
+        @include AvenirRoman;
+}
+
+// Paragraphs
+// -------------------------
+p {
+    font-size: $baseFontSize;
+    margin: 0;
+    padding-top: $baseFontSize / $scalex1;
+    padding-bottom: $baseFontSize / $scalex1;
+    line-height: $baseLineHeight;
+}
+
+// Emphasis classes
+// -------------------------
+small {
+  font-size: $smallText;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.muted {
+  color: $light3;
+}
+
+a.muted:hover {
+  color: #808080;
+}
+
+.text-warning {
+  color: $lightRed;
+}
+
+a.text-warning:hover {
+  color: #a47e3c;
+}
+
+.text-error {
+  color: $darkRed;
+}
+
+a.text-error:hover {
+  color: #953b39;
+}
+
+.text-info {
+  color: $blue;
+}
+
+a.text-info:hover {
+  color: #2d6987;
+}
+
+.text-success {
+  color: $green;
+}
+
+a.text-success:hover {
+  color: #356635;
+}
+
+// Lists
+// -------------------------
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 20px;
+  list-style-position: outside;
+
+  li {
+          line-height: 1.3;
+           @include textLayout($lineHeight: 1.3);
+  }
+  ul, ol {
+          margin: 0 0 0 20px;
+          padding: 1em 0 0 0;
+  }
+
+}
+
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+
+  ul, ol {
+          list-style: none;
+  }
+}
+
+ul.inline,
+ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.inline > li,
+ol.inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+dl {
+  margin-bottom: 1em;
+  @include textLayout();
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding: 0 0 .5em 0;
+  margin: 0;
+}
+
+// Alignment classes
+.text-left {
+  text-align: left;
+}
+.text-center, .center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.table {
+  width: 100%;
+    tr {
+        background: lighten($blue,40%);
+    }
+    tr:nth-of-type(even) {
+        background: white;    
+    }
+    tr:nth-of-type(odd) {
+        td {
+        }
+    }
+    th, td {
+        padding: 10px 20px;
+    }
+    th {
+        background: $light3;
+        color: #fff;
+        text-align: left;
+        a, a:hover {
+          color: $dark2;
+        }
+    }
+    td {
+        vertical-align: top;
+        a, a:hover {
+          color: $blue;
+        }
+    }
+    
+    &.table-condensed {
+        th, td {
+            padding: 5px 10px;
+        }
+    }
+    
+    tr.success td {
+      background-color: rgba($green, .2);
+    }
+    
+    tr.error td {
+      background-color: rgba($lightRed, .1);
+    }
+    
+    tr.warning td {
+      background-color: rgba($darkRed, .2);
+    }
+    
+    tr.info td {
+      background-color: rgba($light3, .2);
+    }
+    
+}
+

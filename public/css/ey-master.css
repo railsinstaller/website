@@ -1,10 +1,12 @@
 @charset "UTF-8";
 /*  Engine Yard Style Guide
- * Built on Bootstrap v3.0.3
- * Maintained lovingly by the UX team {{{ ux@engineyard.com }}} */
-/*  ----------------------
- * BEGIN LOADING PARTIALS
- * ---------------------- */
+    Built on Bootstrap v3.0.3
+    Maintained lovingly by the UX team {{{ ux@engineyard.com }}}
+/*
+    ----------------------
+    BEGIN LOADING PARTIALS
+    ----------------------
+*/
 /* line 18, /Users/evanmachnic/Work/ri_website/source/css/_ey-color.scss */
 #colors div[class^="color-"] {
   padding-left: 1em; }
@@ -9280,149 +9282,3 @@ td.visible-print {
       /* line 69, /Users/evanmachnic/Work/ri_website/source/css/_ey-addons.scss */
       .addon-thumb .panel .panel-footer .price .starting-at {
         font-size: 12px; }
-
-/* global site header... */
-/* line 2, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-#global-header {
-  background: white;
-  border-bottom: 5px solid #b1111c;
-  margin-bottom: 6em;
-  overflow: hidden; }
-  /* line 7, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header a {
-    color: #b1111c;
-    text-decoration: none; }
-  /* line 11, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header .inner {
-    width: 90%;
-    margin: 0 auto; }
-  /* line 15, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header h1 {
-    float: left;
-    padding: .5em 0;
-    font: normal 1.4em helvetica, arial, sans-serif;
-    text-transform: none; }
-  /* line 21, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header .project-by {
-    position: relative;
-    top: 4px;
-    color: #ea222a; }
-    /* line 25, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-    #global-header .project-by .logo {
-      position: relative;
-      display: inline-block;
-      top: -3px;
-      left: 2px;
-      height: 29px;
-      width: 150px;
-      background: transparent url("/img/ey-logo.png") 0 0 no-repeat;
-      text-indent: -999em;
-      vertical-align: middle; }
-  /* line 37, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header .contributors img {
-    height: 29px;
-    width: 29px;
-    vertical-align: middle;
-    margin-bottom: 4px; }
-  /* line 43, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header ul {
-    float: right;
-    margin: .6em 0 0 0;
-    padding-bottom: 0; }
-  /* line 48, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header li {
-    float: left;
-    margin-right: 10px;
-    list-style-type: none; }
-  /* line 53, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header li:last-child {
-    margin-right: 0; }
-  /* line 56, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-  #global-header .share-email {
-    display: inline-block;
-    height: 20px;
-    width: 32px;
-    text-indent: -999em;
-    background: transparent url("/img/email-small.png") 0 0 no-repeat;
-    overflow: hidden; }
-
-/* line 65, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-#ey-promo {
-  clear: both;
-  font-size: 12px;
-  margin-left: 20px; }
-
-/* line 71, /Users/evanmachnic/Work/ri_website/source/css/_global_header.scss */
-#ey-promo a {
-  text-decoration: underline;
-  text-decoration: none;
-  border-bottom: 1px solid #83020A; }
-
-/* ...global site header */
-/* line 1, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-#main {
-  max-width: 960px;
-  margin: 0 auto; }
-
-/* line 5, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.space {
-  margin-bottom: 5em; }
-
-/* line 8, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.logo {
-  margin: 0 auto;
-  text-align: center; }
-  /* line 11, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-  .logo img {
-    padding-top: 1em;
-    width: 37.8125em; }
-  /* line 14, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-  .logo .tagline {
-    font-size: 2.5em;
-    margin-top: -1em; }
-
-/* line 18, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-h2 {
-  color: #40badc; }
-
-/* line 21, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.video_container {
-  position: relative;
-  padding-bottom: 56.25%; }
-  /* line 24, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-  .video_container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; }
-
-/* line 32, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.downloadlink a:visited, .downloadlink a:active, .downloadlink a:focus {
-  color: #fff; }
-/* line 34, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.downloadlink .btn-block {
-  font-size: 1.5em; }
-
-/* line 37, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.packages a, .packages a:visited {
-  color: #0d2134;
-  font-weight: bold;
-  text-decoration: underline; }
-
-/* line 42, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.packages a:hover {
-  color: #233546;
-  text-decoration: none; }
-
-/* line 46, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.down-btn-icon {
-  float: left;
-  padding: 0.1em 0 0 1.4em; }
-
-/* line 51, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.alert-light a {
-  color: #40BADC; }
-/* line 53, /Users/evanmachnic/Work/ri_website/source/css/_ri_style.sass */
-.alert-light a:hover {
-  color: #24A2C5; }

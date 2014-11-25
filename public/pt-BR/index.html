@@ -98,7 +98,7 @@
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
     <div class='container-fluid' id='main'>
-      <div class='row-fluid space'>
+      <div class='row space'>
         <div class='hero-unit logo'>
           <p>
             <img alt="RailsInstaller logo" src="/img/ri-logo.png" />
@@ -106,74 +106,83 @@
           <h1 class='tagline'>Ao trabalho.</h1>
         </div>
       </div>
-      <div class='row-fluid space'>
-        <div class='span6'>
+      <div class='row space'>
+        <div class='col-md-6'>
           <h2>O que é?</h2>
           <p>RailsInstaller é a maneira mais rápida para desenvolver aplicações com Ruby on Rails do zero. Se você tem Windows ou Mac, RailsInstaller te dá cobertura.</p>
         </div>
-        <div class='span6'>
+        <div class='col-md-6'>
           <h2>Pra quem é?</h2>
           <p>Você algum dia já iniciou um novo trabalho com um computador novo? Configurando tudo para poder começar a produzir pode demorar horas. O RailsInstaller agiliza o processo para desenvolvedores Rails para permitir o seu sucesso.</p>
         </div>
       </div>
-      <div class='row-fluid space'>
-        <div class='span8 offset2 video_container'>
+      <div class='row space'>
+        <div class='col-md-8 col-md-offset-2 video_container'>
           <iframe allowfullscreen class='img-polaroid' frameborder='0' src='http://www.youtube.com/embed/InKZOPylUSQ'></iframe>
         </div>
       </div>
-      <div class='row-fluid'>
-        <div class='span12'>
-          <div class='row-fluid'>
-            <div class='span12 alert alert-error'>Please do not run the installer on OSX Mavericks until further notice.</div>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='row'>
+            <div class='col-md-12 alert alert-error'>Please do not run the installer on OSX Mavericks until further notice.</div>
           </div>
-          <div class='row-fluid'>
-            <div class='span6'>
+          <div class='row'>
+            <div class='col-md-6'>
               <h2>Downloads para Windows</h2>
             </div>
-            <div class='span6'>
+            <div class='col-md-6'>
               <h2>Downloads para Mac</h2>
             </div>
           </div>
-          <div class='row-fluid'>
-            <div class='span3'>
+          <div class='row'>
+            <div class='col-md-3'>
               <p class='downloadlink'>
-                <a class='btn btn-success btn-block' href='https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-2.2.4.exe'>
-                  <span class='font-icon down-btn-icon' style='font-size:1.5em;'>download</span>
+                <a class='btn btn-success btn-block' href='https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.0.0.exe'>
+                  <span class='font-icon'>download</span>
                   Windows
                   <br>
-                  <font size='3px'>Ruby 1.9</font>
+                  <font size='3px'>Ruby 2.0</font>
                 </a>
               </p>
             </div>
-            <div class='span3'></div>
-            <div class='span3'>
+            <div class='col-md-3'>
+              <p class='downloadlink'>
+                <a class='btn btn-success btn-block' href='https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.1.0.exe'>
+                  <span class='font-icon'>download</span>
+                  Windows
+                  <br>
+                  <font size='3px'>Ruby 2.1</font>
+                </a>
+              </p>
+            </div>
+            <div class='col-md-3'>
               <p class='downloadlink'>
                 <a class='btn btn-success btn-block' href='https://s3.amazonaws.com/railsinstaller/OSX/RailsInstaller-1.0.4-osx-10.7.app.tgz'>
-                  <span class='font-icon down-btn-icon' style='font-size:1.5em;'>download</span>
+                  <span class='font-icon'>download</span>
                   Mac OSX
                   <br>
                   <font size='3px'>10.7 & 10.8</font>
                 </a>
               </p>
             </div>
-            <div class='span3'>
+            <div class='col-md-3'>
               <p class='downloadlink'>
                 <a class='btn btn-success btn-block' href='https://s3.amazonaws.com/railsinstaller/OSX/RailsInstaller-1.0.4-osx-10.6.app.tgz'>
-                  <span class='font-icon down-btn-icon' style='font-size:1.5em;'>download</span>
+                  <span class='font-icon'>download</span>
                   Mac OSX
                   <br>
                   <font size='3px'>10.6</font>
                 </a>
               </p>
             </div>
-            <div class='row-fluid'>
-              <div class='span3'>
+            <div class='row'>
+              <div class='col-md-3'>
                 <div class='packages'>
                   <small>Os pacotes incluídos são</small>
                   <ul class='unstyled'>
                     <li>
                       <a href="http://www.ruby-lang.org">Ruby</a>
-                      1.9.3
+                      2.0.0
                     </li>
                     <li>
                       <a href="http://rubyonrails.org/">Rails</a>
@@ -188,8 +197,28 @@
                   </ul>
                 </div>
               </div>
-              <div class='span3'></div>
-              <div class='span6'>
+              <div class='col-md-3'>
+                <div class='packages'>
+                  <small>Os pacotes incluídos são</small>
+                  <ul class='unstyled'>
+                    <li>
+                      <a href="http://www.ruby-lang.org">Ruby</a>
+                      2.1.5
+                    </li>
+                    <li>
+                      <a href="http://rubyonrails.org/">Rails</a>
+                      3.2
+                    </li>
+                    <li><a href="http://gembundler.com">Bundler</a></li>
+                    <li><a href="http://git-scm.com">Git</a></li>
+                    <li><a href="http://sqlite.org">Sqlite</a></li>
+                    <li><a href="https://github.com/rails-sqlserver/tiny_tds">TinyTDS</a></li>
+                    <li><a href="https://github.com/rails-sqlserver/activerecord-sqlserver-adapter">Suporte do SQL Server</a></li>
+                    <li><a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">DevKit</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class='col-md-6'>
                 <div class='packages'>
                   <small>Os pacotes incluídos são</small>
                   <ul class='unstyled'>
@@ -212,23 +241,27 @@
                 </div>
               </div>
             </div>
-            <div class='row-fluid'>
-              <div class='span12 alert alert-info'>
+            <div class='row'>
+              <div class='col-md-12 alert alert-info'>
                 <strong>Observação:</strong>
                 O instalador para OSX 10.6 é apenas 64 bits. Por isso provavelmente não irá funcionar em computadores 32 bits.
               </div>
             </div>
-            <div class='row-fluid'>
-              <div class='span12 alert alert-light alert-shadow'>
-                Quer viver no limite?
-                <a style="color: rgb(75, 179, 209);" href="https://github.com/railsinstaller/railsinstaller-windows/releases/download/3.0.0-alpha.2/railsinstaller-3.0.0.exe">Baixe</a>
-                o railsinstaller-windows 3.0.0-alpha2 com Ruby 2.0.0!
+            <div class='row'>
+              <!-- .col-md-12.alert.alert-light.alert-shadow -->
+              <!-- = t '.last_version_download_preffix' -->
+              <!-- = link_to t('.last_version_download'), 'https://github.com/railsinstaller/railsinstaller-windows/releases/download/3.0.0-alpha.2/railsinstaller-3.0.0.exe', style: 'color: rgb(75, 179, 209);' -->
+              <!-- = t '.last_version_download_suffix' -->
+              <div class='col-md-12 alert alert-light alert-shadow'>
+                Still need Ruby 1.9?
+                <a href="https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-2.2.5.exe">Download</a>
+                railsinstaller-windows with Ruby 1.9.3
               </div>
             </div>
           </div>
         </div>
-        <div class='row-fluid space'>
-          <div class='span12'>
+        <div class='row space'>
+          <div class='col-md-12'>
             <h2>E agora</h2>
             <p>
               Após instalar o kit, dê uma olhada no

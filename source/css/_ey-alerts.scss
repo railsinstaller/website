@@ -4,10 +4,9 @@
 	padding: .5em 35px .5em 14px;
 	margin-bottom: 1em;
 	color: #fff;
-	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.1);
-	background-color: $lightGray3;
+	background-color: $light3;
 	@include borderRadius;
-	
+
 	h4 {
 		color: #fff;
 		margin: 0;
@@ -16,19 +15,38 @@
 	a {
 		color: white;
 		border-bottom: 1px dotted white;
+
+		&.btn {
+			border-bottom: none;
+			color: $dark3;
+		}
+		&.btn-info,
+		&.btn-primary,
+		&.btn-danger,
+		&.btn-warning,
+		&.btn-success,
+		&.btn-inverse,
+		&.btn-link {
+			color: white;
+		}
 	}
-	
-	.close {
+
+	.close,
+	button.ss-delete {
 		position: relative;
 		top: -2px;
 		right: -21px;
 		line-height: 20px;
-		color: #fff;
-		text-shadow: 0 1px 0 #000;
+		color: white;
 		opacity: .5;
 	}
-	
-	.close:hover {
+
+	button.ss-delete {
+		top: 0.225em;
+	}
+
+	.close:hover,
+	button.ss-delete:hover {
 		opacity: .8
 	}
 }
@@ -41,7 +59,7 @@
 
 .alert-danger,
 .alert-error {
-	background-color: $darkRed;
+	background-color: $lightRed;
 }
 
 .alert-info {
@@ -50,9 +68,10 @@
 
 .alert-light {
 	background-color: #fff;
-	color: $darkGray2;
-	
-	.close {
+	color: $dark2;
+
+	.close,
+	button.ss-delete {
 		position: relative;
 		top: -2px;
 		right: -21px;
@@ -79,9 +98,16 @@
 
 .alert-shadow {
 	@include boxShadowRegular;
-	
-	.close {
+
+	.close,
+	button.ss-delete {
 		text-shadow: none;
 	}
 }
 
+.highlight {
+  background: lighten(yellow, 42.5%);
+  color: $dark3;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}

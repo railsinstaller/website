@@ -1,0 +1,115 @@
+// EY Master Stylesheet loading in partials only as required
+$radius: 4px;
+
+// TYPOGRAPHIC SCALE
+
+$baseFontSize: 0.9375em;
+$baseLineHeight: 1.5;
+$smallText: 0.866666em;
+$avenirFamily: "Avenir W02", Avenir, Futura, "Gill Sans", Calibri, "Century Gothic", "AppleGothic",  Helvetica, Arial, sans-serif;
+
+/*  Modular Scale of Typography
+    ----------------------
+    15px @ 1:1.2
+    See ey-master.scss for variables
+    ----------------------
+*/
+
+$scalex1: 1.2;
+$scalex2: 1.44;
+$scalex3: 1.728;
+$scalex4: 2.074;
+$scalex5: 2.488;
+$scalex6: 2.986;
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+// Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+// Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+$grid-columns:              12 !default;
+// Padding, to be divided by two and applied to the left and right of all columns
+$grid-gutter-width:         30px !default;
+
+// Navbar collapse
+
+// Point at which the navbar becomes uncollapsed
+$grid-float-breakpoint:     $screen-sm-min !default;
+// Point at which the navbar begins collapsing
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+$container-tablet:             ((720px + $grid-gutter-width)) !default;
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((940px + $grid-gutter-width)) !default;
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
+$container-lg:                 $container-large-desktop !default;
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+
+// Modals
+// -------------------------
+$modal-inner-padding:         20px !default;
+
+$modal-title-padding:         1em !default;
+$modal-title-line-height:     $baseLineHeight !default;
+
+$modal-content-bg:                             #fff !default;
+$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$modal-content-fallback-border-color:          #999 !default;
+
+$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-opacity:      .5 !default;
+$modal-header-border-color:   #e5e5e5 !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+
+$modal-lg:                    900px !default;
+$modal-sm:                    300px !default;
+

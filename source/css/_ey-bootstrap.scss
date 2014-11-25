@@ -52,8 +52,8 @@ body {
   margin: 0;
   font-size: 1em;
   line-height: 1.5;
-  color: $darkGray3 !important;
-  background-color: $lightGray1; 
+  color: $dark3 !important;
+  background-color: $light1; 
 }
  
 // GRID BEGINS 
@@ -602,8 +602,8 @@ a:hover {
 .img-polaroid {
 	padding: 4px;
 	background-color: #fff;
-	border: 1px solid $lightGray2;
-	border: 1px solid rgba($lightGray2, 0.2);
+	border: 1px solid $light2;
+	border: 1px solid rgba($light2, 0.2);
 	@include borderRadius;
 }
 
@@ -632,7 +632,7 @@ p {
 
 .lead {
 	margin-bottom: 1em;
-	color: $darkGray2;
+	color: $dark2;
 	font-size: 1.333em;
 }
 
@@ -649,7 +649,7 @@ em {
 }
 
 .muted {
-  color: $lightGray3;
+  color: $light3;
 }
 
 a.muted:hover {
@@ -713,7 +713,7 @@ h5 small,
 h6 small {
   font-weight: normal;
   line-height: 1;
-  color: $darkGray2;
+  color: $dark2;
 }
 
 h1,
@@ -732,22 +732,22 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  color: $darkGray2;
+  color: $dark2;
 }
 
 h4 {
   font-size: 1.333em;
-  color: $darkGray2;
+  color: $dark2;
 }
 
 h5 {
   font-size: 1.1667em;
-  color: $darkGray2;
+  color: $dark2;
 }
 
 h6 {
   font-size: 1em; text-transform: uppercase;
-  color: $darkGray2;
+  color: $dark2;
 }  
 
 .page-header {
@@ -845,7 +845,7 @@ dd {
 blockquote {
 	padding: 0 0 0 15px;
 	margin: 0 0 20px;
-	border-left: 5px solid $lightGray2;
+	border-left: 5px solid $light2;
   
 	p {
 		margin-bottom: 0;
@@ -853,7 +853,7 @@ blockquote {
 	
 	small {
 		display: block;
-		color: $darkGray1;
+		color: $dark1;
 		padding-bottom: .5em;
 	}
 	
@@ -862,7 +862,7 @@ blockquote {
 	}
 	
 	cite {
-		color: $lightGray3;
+		color: $light3;
 	}
 
 
@@ -872,7 +872,7 @@ blockquote.pull-right {
 	float: right;
 	padding-right: 15px;
 	padding-left: 0;
-	border-right: 5px solid $lightGray2;
+	border-right: 5px solid $light2;
 	border-left: 0;
   
 	p, small {
@@ -900,14 +900,14 @@ blockquote:after {
 hr {
 	margin: 20px 0;
 	border: 0;
-	border-top: 1px solid $lightGray1;
+	border-top: 1px solid $light1;
 	border-bottom: 1px solid #fff;
 }
 
 abbr[title],
 abbr[data-original-title] {
 	cursor: help;
-	border-bottom: 1px dotted $darkGray3;
+	border-bottom: 1px dotted $dark3;
 }
 
 abbr.initialism {
@@ -933,8 +933,8 @@ code {
 	padding: 2px 4px;
 	color: $darkRed;
 	white-space: nowrap;
-	background-color: $lightGray2;
-	border: 1px solid $lightGray3;
+	background-color: $light2;
+	border: 1px solid $light3;
 }
 
 pre {
@@ -946,8 +946,8 @@ pre {
 	word-wrap: break-word;
 	white-space: pre;
 	white-space: pre-wrap;
-	background-color: $lightGray2;
-	border: 1px solid $darkGray1;
+	background-color: $light2;
+	border: 1px solid $dark1;
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	-webkit-border-radius: 4px;
 	 -moz-border-radius: 4px;
@@ -989,7 +989,7 @@ table {
 		padding: 8px;
 		text-align: left;
 		vertical-align: top;
-		border-top: 1px solid $lightGray2;
+		border-top: 1px solid $light2;
 	}
 	
 	th {
@@ -1001,11 +1001,11 @@ table {
 	}
 	
 	tbody + tbody {
-		border-top: 2px solid $lightGray2;
+		border-top: 2px solid $light2;
 	}
 	
 	tbody + tbody {
-		border-top: 2px solid $lightGray2;
+		border-top: 2px solid $light2;
 	}
 
 }
@@ -1025,14 +1025,14 @@ table {
 }
 
 .table-bordered {
-	border: 1px solid $lightGray2;
+	border: 1px solid $light2;
 	border-collapse: separate;
 	*border-collapse: collapse;
 	border-left: 0;
 	@include borderRadius;
   
 	th, td {
-		border-left: 1px solid $lightGray2;
+		border-left: 1px solid $light2;
 	}
 }
 
@@ -1110,7 +1110,7 @@ table {
 
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
-  background-color: $lightGray2;
+  background-color: $light2;
 }
 
 .table-hover tbody tr:hover td,
@@ -1256,8 +1256,8 @@ table th[class*="span"],
 	min-height: 20px;
 	padding: 1em;
 	margin-bottom: 1em;
-	background-color: $lightGray1;
-	border: 1px solid $lightGray2;
+	background-color: $light1;
+	border: 1px solid $light2;
 	@include borderRadius;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -1265,7 +1265,7 @@ table th[class*="span"],
 }
 
 .well blockquote {
-	border-color: $lightGray2;
+	border-color: $light2;
 	border-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -1339,7 +1339,7 @@ table th[class*="span"],
 	display: block;
 	padding: 4px;
 	line-height: 20px;
-	border: 1px solid $lightGray1;
+	border: 1px solid $light1;
 	background: #fff;
 	@include borderRadius;
 	@include boxShadowRegular;
@@ -1367,7 +1367,7 @@ table th[class*="span"],
 }
 
 a.thumbnail:hover {
-  border-color: $lightGray2;
+  border-color: $light2;
   @include boxShadowSmall;
 }
 
@@ -1424,7 +1424,7 @@ a.thumbnail:hover {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	white-space: nowrap;
 	vertical-align: baseline;
-	background-color: $darkGray2;
+	background-color: $dark2;
 }
 
 .label {
@@ -1496,14 +1496,14 @@ a.badge:hover {
 .label-inverse,
 .badge-inverse {
   background-color: #fff;
-  color: $darkGray2;
+  color: $dark2;
   text-shadow: none;
 }
 
 .label-inverse[href],
 .badge-inverse[href] {
   background-color: #fff;
-  color: $darkGray2;
+  color: $dark2;
 }
 
 .btn .label,
@@ -1522,7 +1522,7 @@ a.badge:hover {
 	margin-bottom: 30px;
 	font-weight: 200;
 	color: inherit;
-	background-color: $lightGray2;
+	background-color: $light2;
 	@include borderRadius;
 	
 	h1 {

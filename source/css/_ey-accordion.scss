@@ -1,0 +1,32 @@
+// EY Accordion: _ey-accordion.scss
+
+.accordion {
+	margin-bottom: 20px;
+}
+
+.accordion-group {
+	margin-bottom: 2px;
+	background: $dark2;
+	@include borderRadius;
+	@include boxShadowRegular;
+}
+
+.accordion-heading {
+	border-bottom: 0;
+}
+
+.accordion-heading .accordion-toggle {
+	display: block;
+	padding: .5em 1em;
+	border: none;
+}
+
+.accordion-toggle {
+	cursor: pointer;
+}
+
+.accordion-inner {
+	padding: .5em 1em;
+	border-top: 1px solid $light2;
+	background: #fff;
+}

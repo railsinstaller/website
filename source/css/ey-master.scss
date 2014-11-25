@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*  Engine Yard Style Guide
+    Built on Bootstrap v3.0.3
+    Maintained lovingly by the UX team {{{ ux@engineyard.com }}}
+/*
+    ----------------------
+    BEGIN LOADING PARTIALS
+    ----------------------
+*/
+
+// Core variables and mixins
+@import "ey-color.scss";
+@import "ey-variables.scss";
+@import "ey-mixins.scss";
+
+// web fonts
+@import "ey-fonts.scss";
+
+// Reset
+@import "ey-normalize.scss";
+@import "ey-scaffolding.scss";
+
+// Core CSS
+@import "ey-component-animations.scss";
+@import "ey-grid.scss";
+@import "ey-accountbar.scss";
+@import "ey-forms.scss";
+@import "ey-navigation.scss";
+@import "ey-buttons.scss";
+@import "ey-header.scss";
+@import "ey-accordion.scss";
+@import "ey-alerts.scss";
+@import "ey-carousel.scss";
+@import "ey-modal.scss";
+@import "ey-popover.scss";
+@import "ey-progressbar.scss";
+@import "ey-tooltip.scss";
+@import "ey-uisections.scss";
+@import "symbolset.scss";
+@import "ey-print.scss";
+@import "ey-utilities.scss";
+@import "ey-responsive-utilities.scss";
+
+// Add-ons, see /docs/example-addon.html for usage
+@import "ey-addons.scss";

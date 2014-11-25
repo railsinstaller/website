@@ -1,0 +1,202 @@
+// EY Modal: _ey-modal.scss
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: rgba($dark3, 0.7);
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 49%;
+  z-index: 1050;
+  width: 660px;
+  margin-left: -280px;
+  background-color: $white;
+  border: 1px solid $dark1;
+  border: 1px solid rgba($light3, 0.3);
+  *border: 1px solid $dark1;
+  outline: none;
+  @include borderRadius;
+  @include boxShadowLarge(0,2px,1px,0,0.25);
+  -webkit-box-shadow: 0 3px 7px rgba($light3, 0.3);
+   -moz-box-shadow: 0 3px 7px rgba($light3, 0.3);
+        box-shadow: 0 3px 7px rgba($light3, 0.3);
+  -webkit-background-clip: padding-box;
+   -moz-background-clip: padding-box;
+        background-clip: padding-box;
+}
+
+.modal.fade {
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal.fade.in {
+  top: 10%;
+}
+
+.modal-header {
+  display: block;
+  clear: both;
+  background-color: $white;
+  padding: 2em 2.5em;
+  margin: 0;
+
+  .close {
+    margin-top: 2px;
+  }
+
+  .ss-delete,
+  .ss-close {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    color: $light3;
+
+    &:hover {
+      color: $dark2;
+    }
+  }
+  button.close,
+  button.ss-delete {
+    border: none;
+  }
+
+  h3 {
+    @include AvenirBlack;
+    color: $dark2;
+    letter-spacing: 0.07em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: $baseFontSize * $scalex1;
+  }
+}
+
+.modal-body {
+  padding: 0.25em 2.5em 0.5em;
+  text-align: left;
+  max-height: 400px;
+  overflow: auto;
+
+  form {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    fieldset {
+      padding: 0 0 1em 0;
+      margin: 0;
+
+      legend {
+        width: auto;
+        padding: 1em 0 0.75em;
+        color: $light3;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: $baseFontSize * $scalex1;
+        @include AvenirBlack;
+      }
+
+      label {
+        padding-top: 0;
+        padding-bottom: .5em;
+        color: $light3;
+        font-weight: normal;
+      }
+
+      input  {
+        font-size: $baseFontSize;
+      }
+
+      .wide-input {
+          width: 100%;
+      }
+    }
+  }
+
+  p {
+    color: $dark2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h4 { // headings inside .modal-body
+    font-size: $baseFontSize * $scalex1;
+    padding: 1em 0;
+    color: $light3;
+    @include AvenirBlack;
+  }
+
+  label {
+    input[type="checkbox"] {
+      margin-right: 5px;
+      vertical-align: 1px;
+    }
+  }
+}
+
+.modal-form {
+  margin-bottom: 0;
+}
+
+.modal-shade {
+  .modal-body {
+    background: $light1;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+.modal-footer {
+  margin-bottom: 0;
+  *zoom: 1;
+  padding: 2em 2.5em;
+  background-color: $white;
+  text-align: center;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 0.5em;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}

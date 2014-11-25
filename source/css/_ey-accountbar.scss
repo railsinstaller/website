@@ -1,0 +1,394 @@
+// EY Accountbar: _ey-accountbar.scss
+
+.account-bar {
+    background: $dark2;
+
+    .navbar-inner {
+        @include gradientColor( $dark2, 7.5%, 1.5%, 1%, 10%, 80% );
+        background: $dark2;
+        min-height: 50px;
+        padding: 0;
+        border: none;
+
+        /* reskin select2 to dark colours */
+        select,
+        .select2-container {
+            float: left;
+            margin: 0.5em 0;
+            width: 100%;
+
+            @include borderRadius(0.125em,0.125em,0.125em,0.125em);
+
+            .select2-choice {
+                border: none;
+                box-shadow: none;
+                line-height: 2.5;
+                height: 2.425em;
+                background: $dark1;
+                @include gradientColor($dark1, 2.5%, 2.5%, 10%, 50%, 90% );
+
+                span {
+                    color: $light2;
+                }
+                div {
+                    background:$dark1;
+                    @include boxShadowLarge(0,0,0,0,0);
+                    border: none;
+
+                    b {
+                        background: url(../img/chosen-sprite.png) no-repeat 4px 8px !important;
+                    }
+                }
+            }
+
+            &.select2-dropdown-open {
+                .select2-choice {
+                    @include gradientColor($dark1, 1.5%, 1.5%, 90%, 50%, 10% );
+
+                    div {
+                        b {
+                            background-color: $dark3;
+                            background-position: -56px 7px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Alert Status Colours */
+
+    &.status .navbar-inner {
+        border-bottom: 4px solid white;
+    }
+
+    &.status-alert .navbar-inner {
+        border-color: $lightRed;
+    }
+    &.status-ok .navbar-inner {
+        border-color: $green;
+    }
+
+    a.status-count {
+        margin: 0.275em 0 0 -1em;
+        float: left;
+
+        span {
+            @include borderRadius(50%,50%,50%,50%);
+            @include btnHoverFX;
+            background: $dark3;
+            display: inline-block;
+            line-height: 1.5;
+            padding: 0.3em 0 0;
+            text-align: center;
+            margin: 0.825em 0 0 -2.5%;
+            font-size: 0.75em;
+            width: 1.8em;
+        }
+    }
+
+    &.status-ok {
+        a.status-count {
+            color: $green;
+            strong { display: none;}
+        }
+    }
+    &.status-alert {
+        a.status-count {
+            color: $lightRed;
+            strong {
+                font-weight: normal;
+                margin: 0 0 0 0.5em;
+                top: -0.15em;
+                position: relative;
+                color: $light2;
+                font-size: $baseFontSize;
+            }
+
+        }
+    }
+
+
+    /* No Org mode */
+
+    &.account-bar-muted,
+    &.account-bar-muted .navbar-inner {
+        background: $light2 !important;
+        background-color: $light2 !important;
+        border-bottom: 4px solid $light2;
+
+        .account-menu {
+            float: right;
+
+            .account-name {
+                color: $dark1;
+
+                &:hover,
+                &.open {
+                    //background: $light2;
+                    //color: $dark3;
+                    color: white;
+                }
+            }
+        }
+    } // account-bar-muted
+
+    .account-bar-hidden {
+        margin-bottom: 32px;
+    }
+
+    &.account-bar-hidden,
+    &.account-bar-hidden .navbar-inner {
+        border-bottom: none;
+        background: $light2 none;
+        background-image: none;
+
+        .account-menu {
+            float: right;
+
+            .account-name {
+                color: $dark1;
+                border-right: none;
+
+                span {
+                    color: $light3;
+                }
+            }
+
+            .account-name:hover,
+            &.open .account-name {
+                background: darken($light2, 2.5%) !important;
+                color: $dark2 !important;
+
+                span {
+                    color: $dark1;
+                }
+            }
+        }
+    } // account-bar-hidden
+}
+
+body {
+    .select2-drop {
+        background: $dark2 !important;
+        border: none;
+        margin-top: 0;
+        padding: 0.1em 0 0;
+
+        .select2-search {
+
+            input {
+                border: 1px solid $dark1;
+                background: $dark1;
+                line-height: 1.5;
+                color: $light2;
+                @include borderRadius(0.125em,0.125em,0.125em,0.125em);
+
+            }
+        }
+
+        .select2-results,
+        .select2-no-results {
+            background: transparent;
+            color: white;
+            border: none;
+
+            li {
+                font-size: $baseFontSize;
+            }
+
+            .select2-result-label {
+                color: white;
+            }
+            .select2-highlighted {
+                background: $blue;
+                color: white;
+            }
+        }
+
+        .select2-results .select2-result-label {}
+
+    }
+}
+
+.account-menu {
+    position: relative;
+
+    .account-name {
+        color: white;
+        font-weight: normal;
+        font-size: $baseFontSize;
+        margin: 0 0 -0.3em;
+        position: relative;
+        display: inline-block;
+        float: right;
+        overflow: hidden;
+        line-height: 50px;
+        padding: 0 4em 0 1.5em;
+        border-right: 1px solid $dark3;
+        cursor: pointer;
+        @include helvetica;
+
+        img {
+            float: left;
+            margin: 0.536em 0.667em 0 0;
+            @include borderRadius(50%,50%,50%,50%);
+            max-width: 2em;
+            max-height: 2em;
+
+        }
+        span {
+            position: absolute;
+            right: 1.25em;
+            top: 0.25em;
+            font-size: 0.75em;
+            margin: -0.15em 0 0;
+            color: $dark3;
+        }
+    }
+
+    .account-name:hover,
+    &.open .account-name {
+        background: lighten($dark3, 1.5%);
+
+        span {
+            color: $light3;
+        }
+    }
+
+    .account-dropdown-menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        min-width: 100px !important;
+        z-index: 900;
+        background: $dark3;
+        border: none;
+        padding: 0;
+        @include borderRadius(0,0,0.25em,0.25em);
+        @include boxShadowRegular(0,5px,6px,0,0.1);
+
+        ul {
+            float: left;
+            margin:0 0.25em;
+            padding: 0.5em 0;
+            min-height: 5em;
+            list-style: none;
+
+            &.account-org-menu {
+                background: darken($dark2, 5%);
+                border-top: 1px solid $dark3;
+                width: 9.25em;
+                position: relative;
+                min-height: 145px;
+
+                li {
+                    a {
+                        padding: 0.5em 0.9em 0.5em 0.9em;
+                        font-weight: 200;
+                        line-height: 1.5
+                    }
+
+                    &.orghome {
+                        color: $light3;
+                        padding: 0.75em 0.9em;
+                        font-size: $baseFontSize;
+                        border-bottom: 1px solid $dark2;
+                    }
+
+                    &.orgnew {
+                        a.btn {
+                            padding: 0.5em 0.75em !important;
+                            border: none;
+                            margin: 0.125em 0 0 1em;
+                            font-size: 0.8666em;
+                            text-align: left;
+                            position: absolute;
+                            left: 0;
+                            bottom: 1.125em;
+                            color: $light3;
+                        }
+                    }
+                }
+            }
+
+            li {
+                padding:0;
+                margin: 0;
+
+                a {
+                    color: white;
+                    font-weight: normal;
+                    display: block;
+                    @include borderRadius(0,0,0,0);
+                    padding: 0.5em 3.25em 0.5em 0.9em;
+
+                    &:hover {
+                        background: darken($dark2, 5%);
+                        color: $blue;
+                    }
+                }
+
+                &.orghome {
+                    a {
+                        //background: $light2;
+                        margin: 0.5em 8% 0.75em;
+                        line-height: 2.75;
+                        padding: 0;
+                        text-align:  center;
+                        color: white;
+                        //background: $blue;
+                        @include borderRadius(0.125em,0.125em,0.125em,0.125em);
+
+                        .font-icon {
+                            font-size: 0.825em;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .account-org-menu {}
+
+
+    ul.dropdown-menu {
+        background: $dark3;
+        border: none;
+        min-width: 185px;
+        @include borderRadius(0,0,0,0);
+    }
+}
+
+.account-bar-hidden .account-menu {
+    .account-dropdown-menu {
+        min-width: auto;
+    }
+}
+
+// Dashboard link
+
+.dash-link {
+
+    a {
+        padding: 1em 0 0 0;
+        display: block;
+        text-transform: uppercase;
+        font-size: $baseFontSize * $scalex1;
+        color: $dark1;
+        @include AvenirMedium;
+
+        &:hover {
+            color: $dark3;
+        }
+
+        .ss-icon {
+            margin-right: .75em;
+            position: relative;
+            top: 3px;
+        }
+    }
+}
+

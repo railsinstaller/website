@@ -2,33 +2,65 @@
 BUTTONS
 */
 
+// Default style
+// --------------------------------------------------
+
 .btn {
-    @include proximaRegular;
-    color: $darkGray2;
+    @include Avenir;
+    font-weight: 900;
+    font-size: $baseFontSize;
+    color: $dark2;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 0px 1px #fff;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    background-color: lighten($light1, 7.5%);
     display: inline-block;
     *display: inline;
-    padding: 0.836em 1.425em;
+    padding: $baseFontSize * 1.1 $baseFontSize * $scalex2 $baseFontSize; //Avenir adds a little bit of space below the text
     margin-bottom: 0;
     *margin-left: 0.3em;
-    font-size: 1em;
-    text-align: center;
     vertical-align: middle;
     cursor: pointer;
+    border: 1px solid $light1;
     *zoom: 1;
-    border: none;
-    line-height: 1;
     @include borderRadius;
     @include btnHoverFX;
     @include btnShade(white);
-    background-color: lighten($lightGray1, 7.5%);
 
     &:hover {
-        @include btnHover(white);
+        color: $dark1;
+        @include gradientColor(lighten($light1, 3.5%));
+        background-color: lighten($light1, 3.5%);
+        @include boxShadowSmall(0,2px,0,0,0.25);
+        text-shadow: 1px 0px 1px rgba(#fff, 0);
     }
 
-    [class^="icon-"],
-    [class*=" icon-"] {
-        margin: 0.125em 0.425em 0 -0.2em;
+    &.disabled,
+    &[disabled] {
+        background-image: none;
+        background: lighten($light1, 3%) !important;
+        color: lighten($light3, 5%);
+        text-shadow: 1px 0px 1px rgba(#fff, 0);
+    }
+
+    &.active {
+      background-color: #cccccc \9;
+      color: $light3;
+      @include btnActive($light1);
+    }
+
+    .icon,
+    .font-icon,
+    .ss-icon,
+    [class^="ss-"],
+    [class*="ss-"] {
+        font-size: 90%;
+        margin-left: 0 !important;
+        margin-right: 5px !important;
+        position: relative;
+        top: 2px;
     }
 }
 
@@ -41,39 +73,26 @@ BUTTONS
   .ss-icon,
   [class^="ss-"],
   [class*="ss-"] {
-    margin-left: -0.5em !important;
-    margin-right: -0.5em !important;
+    margin-left: -$baseFontSize / $scalex5 !important;
+    margin-right: -$baseFontSize / $scalex5 !important;
   }
 }
 
 .btn-cancel {
-  color: $lightRed;
-  background-image: none;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-
-  &:hover,
-  &:active,
-  &:focus {
+    color: $lightRed;
     background-image: none;
-    background-color: transparent !important;
-    color: $darkRed !important;
+    background-color: transparent;
+    border: none;
     box-shadow: none;
-  }
-}
 
-.btn:hover,
-.btn:active,
-.btn.active,
-.btn.disabled,
-.btn[disabled] {
-	color:$darkGray2;
-}
-
-.btn:active,
-.btn.active {
-  background-color: #cccccc \9;
+    &:hover,
+    &:active,
+    &:focus {
+      background-image: none;
+      background-color: transparent !important;
+      color: $darkRed !important;
+      box-shadow: none;
+    }
 }
 
 .btn:first-child {
@@ -81,78 +100,79 @@ BUTTONS
 }
 
 .btn:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: 0;
 }
 
 .btn.active,
 .btn:active {
   background-image: none;
   outline: 0;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .btn.disabled,
-.btn[disabled] {
-	cursor: default;
-	background-image: none;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
-	-webkit-box-shadow: none;
-	 -moz-box-shadow: none;
-	      box-shadow: none;
+.btn[disabled],
+.btn:disabled {
+    cursor: default;
+    background-image: none;
+    -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 }
+
+.btn + .btn {
+    margin-left: $baseFontSize / $scalex3;
+}
+
+
+// Additional button sizes
+// --------------------------------------------------
 
 .btn-large {
-	font-size: $baseFontSize * $scalex2;
-	line-height: 0.8;
+    font-size: $baseFontSize * $scalex1 !important;
+    padding: $baseFontSize $baseFontSize * $scalex2;
 
-	[class^="icon-"],
-	[class*=" icon-"] {
-	}
-}
-
-.btn-small {
-  font-size: .9333em;
-	[class^="icon-"],
-	[class*=" icon-"] {
-	}
-}
-
-.btn-mini {
-    @include helvetica;
-    font-size: 0.8em;
-    padding: 0.325em 1em 0.333em !important;
-    height: 1.75em;
-    text-transform: uppercase;
-
-    [class^="icon-"],
-    [class*=" icon-"] {
-    	// margin-top: -1px;
+    .icon,
+    .font-icon,
+    .ss-icon,
+    [class^="ss-"],
+    [class*="ss-"] {
+        font-size: 100%;
+        margin-left: -5px !important;
+        top: 3px;
     }
 }
 
-.btn-block {
-	display: block;
-	width: 100%;
-	padding-right: 0;
-	padding-left: 0;
-	-webkit-box-sizing: border-box;
-	 -moz-box-sizing: border-box;
-	      box-sizing: border-box;
+.btn-small {
+    padding: $baseFontSize / $scalex1 $baseFontSize * $scalex1;
+}
 
-	+ .btn-block {
-		// margin-top: 5px;
-	}
+.btn-mini {
+    font-size: 13px !important;
+    @include helvetica;
+    padding: $baseFontSize / $scalex1 $baseFontSize * $scalex1;
+}
+
+// Block buttons
+// --------------------------------------------------
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+    + .btn-block {
+        // margin-top: 5px;
+    }
 }
 
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
-	width: 100%;
+    width: 100%;
 }
 
 .btn-primary.active,
@@ -161,212 +181,257 @@ input[type="button"].btn-block {
 .btn-success.active,
 .btn-info.active,
 .btn-inverse.active {
-	color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
 }
+
+// Blue button / .btn-primary
+// --------------------------------------------------
 
 .btn-primary {
-	color: #ffffff;
-  @include btnShade($blue);
+    color: #ffffff;
+    text-shadow: 0px -1px 1px darken($blue, 10%);
+    border-color: rgba($blue, 0.1);
+    @include btnShade($blue);
+
+    &.disabled,
+    &[disabled] {
+        text-shadow: 0px -1px 1px rgba($blue, 0);
+        background-image: none;
+        background: lighten($blue, 13%) !important;
+        color: lighten($light1, 2.5%);
+    }
+
+    &:hover {
+        @include btnHover($blue);
+    }
+
+    &.active {
+        background-color: #003399 \9;
+        color: $light2;
+        @include btnActive(darken($blue, 3%));
+    }
 }
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary.active,
-.btn-primary.disabled,
-.btn-primary[disabled] {
-	color: #fff;
-	@include btnHover($blue);
-}
-
-.btn-primary:active,
-.btn-primary.active {
-	background-color: #003399 \9;
-}
+// Light red button / .btn-warning
+// --------------------------------------------------
 
 .btn-warning {
-	color: #ffffff;
-	background-color: $lightRed;
+    color: #ffffff;
+    text-shadow: 0px -1px 1px darken($lightRed, 20%);
+    border-color: rgba($lightRed, 0.1);
     @include btnShade($lightRed);
-	@include btnHoverFX;
+
+    &.disabled,
+    &[disabled] {
+        text-shadow: 0px -1px 1px rgba($lightRed, 0);
+        background-image: none;
+        background: lighten($lightRed, 25%) !important;
+        color: lighten($light2, 5%);
+    }
+
+    &:hover {
+        @include btnHover($lightRed);
+    }
+
+    &.active {
+      background-color: #c67605 \9;
+      color: $light2;
+      @include btnActive(darken($lightRed, 3%));
+    }
 }
 
-.btn-warning:hover,
-.btn-warning:active,
-.btn-warning.active,
-.btn-warning.disabled,
-.btn-warning[disabled] {
-	color: #fff;
-	@include btnHover($lightRed);
-}
-
-.btn-warning:active,
-.btn-warning.active {
-  background-color: #c67605 \9;
-}
+// Dark red button / .btn-danger
+// --------------------------------------------------
 
 .btn-danger {
-	color: #ffffff;
-	background-color: $darkRed;
+    color: #ffffff;
+    text-shadow: 0px -1px 1px darken($darkRed, 20%);
+    border-color: rgba($darkRed, 0.1);
     @include btnShade($darkRed);
-	@include btnHoverFX;
+
+    &.disabled,
+    &[disabled] {
+        text-shadow: 0px -1px 1px rgba($darkRed, 0);
+        background-image: none;
+        background: lighten($darkRed, 30%) !important;
+        color: lighten($light2, 5%);
+    }
+
+    &:hover {
+        @include btnHover($darkRed);
+    }
+
+    &.active {
+        background-color: #942a25 \9;
+        color: $light2;
+        @include btnActive(darken($darkRed, 3%));
+    }
 }
 
-.btn-danger:hover,
-.btn-danger:active,
-.btn-danger.active,
-.btn-danger.disabled,
-.btn-danger[disabled] {
- 	color: #ffffff;
-	@include btnHover($darkRed);
-}
-
-.btn-danger:active,
-.btn-danger.active {
-  background-color: #942a25 \9;
-}
+// Green button / .btn-success
+// --------------------------------------------------
 
 .btn-success {
-	color: #ffffff;
-	background-color: $green;
+    color: #ffffff;
+    text-shadow: 0px -1px 1px darken($green, 15%);
+    border-color: rgba($green, 0.1);
     @include btnShade($green);
-	@include btnHoverFX;
+
+    &.disabled,
+    &[disabled] {
+        text-shadow: 0px -1px 1px rgba($green, 0);
+        background-image: none;
+        background: lighten($green, 8%) !important;
+        color: lighten($light1, 2.5%);
+    }
+
+    &:hover {
+        @include btnHover($green);
+    }
+
+    &.active {
+      background-color: #408140 \9;
+      @include btnActive(darken($green, 10%));
+    }
 }
 
-.btn-success:hover,
-.btn-success:active,
-.btn-success.active,
-.btn-success.disabled,
-.btn-success[disabled] {
- 	color: #ffffff;
-	@include btnHover($green);
-}
-
-.btn-success:active,
-.btn-success.active {
-  background-color: #408140 \9;
-}
+// Mid grey button / .btn-info
+// --------------------------------------------------
 
 .btn-info {
-	color: #ffffff;
-	background-color: $lightGray3;
-    @include btnShade($lightGray3);
-	@include btnHoverFX;
+    color: #ffffff;
+    text-shadow: 0px -1px 1px darken($light3, 20%);
+    border-color: rgba($light3, 0.1);
+    @include btnShade($light3);
+
+    &.disabled,
+    &[disabled] {
+        text-shadow: 0px -1px 1px rgba($light3, 0);
+        background-image: none;
+        background: lighten($light3, 13%) !important;
+        color: $light2;
+    }
+
+    &:hover {
+        @include btnHover($light3);
+    }
+
+    &.active {
+        background-color: #24748c \9;
+        color: $light2;
+        @include btnActive($dark1);
+    }
 }
 
-.btn-info:hover,
-.btn-info:active,
-.btn-info.active,
-.btn-info.disabled,
-.btn-info[disabled] {
- 	color: #ffffff;
-	@include btnHover($lightGray3);
-}
-
-.btn-info:active,
-.btn-info.active {
-	background-color: #24748c \9;
-}
+// Dark grey button / .btn-inverse
+// --------------------------------------------------
 
 .btn-inverse {
-	color: $lightGray1;
-	background-color: $darkGray2;
-    @include btnShade($darkGray2);
-	@include btnHoverFX;
+    @include btnHoverFX;
+    color: $light1;
+    text-shadow: 0px -1px 1px darken($dark2, 20%);
+    border-color: rgba($dark2, 0.1);
+    @include btnShade($dark2);
+
+    &.disabled,
+    &[disabled] {
+        text-shadow: 0px -1px 1px rgba($dark2, 0);
+        background-image: none;
+        background: $dark1 !important;
+        color: lighten($light3, 20%);
+    }
+
+    &:hover {
+        @include btnHover($dark2);
+    }
+
+    &.active {
+      background-color: #080808 \9;
+      color: lighten($light3, 20%);
+      @include btnActive(darken($dark2, 10%));
+    }
 }
 
-.btn-inverse:hover,
-.btn-inverse:active,
-.btn-inverse.active,
-.btn-inverse.disabled,
-.btn-inverse[disabled] {
- 	color: #ffffff;
-	@include btnHover($darkGray2);
+// Cancel button / .btn-cancel
+// --------------------------------------------------
+
+.btn-cancel {
+    color: $lightRed;
+    text-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    @include boxShadowSmall(0,0,0,0,0);
+
+    &:hover,
+    &.disabled,
+    &[disabled] {
+        text-shadow: none;
+        background: none !important;
+        background-image: none !important;
+        background-color: transparent !important;
+        color: $darkRed;
+    }
+
+    &.active {
+      background-color: none;
+      background-image: none;
+    }
 }
 
-.btn-inverse:active,
-.btn-inverse.active {
-  background-color: #080808 \9;
-}
-
-button.btn,
-input[type="submit"].btn {
-  *padding-top: 3px;
-  *padding-bottom: 3px;
-  height: 2.7em;
-  padding-top:0.925em;
-}
-
-button.btn::-moz-focus-inner,
-input[type="submit"].btn::-moz-focus-inner {
-	padding: 0;
-	border: 0;
-}
-
-button.btn.btn-large,
-input[type="submit"].btn.btn-large {
-  *padding-top: 7px;
-  *padding-bottom: 7px;
-}
-
-button.btn.btn-small,
-input[type="submit"].btn.btn-small {
-  *padding-top: 3px;
-  *padding-bottom: 3px;
-}
-
-button.btn.btn-mini,
-input[type="submit"].btn.btn-mini {
-  *padding-top: 1px;
-  *padding-bottom: 1px;
-}
-
-.btn-link,
-.btn-link:active,
-.btn-link[disabled] {
-	background-color: transparent;
-	background-image: none;
-	-webkit-box-shadow: none;
-	 -moz-box-shadow: none;
-	      box-shadow: none;
-}
+// Link-esque button / .btn-link
+// --------------------------------------------------
 
 .btn-link {
-	color: $blue;
-	text-decoration: none;
-	border-bottom: 1px dotted $blue;
-	cursor: pointer;
+    color: $blue;
+    background-color: transparent;
+    background-image: none;
+    @include boxShadowSmall(0,0,0,0,0);
+    text-decoration: none;
+    text-shadow: none;
+    border: none;
+    border-bottom: 1px solid $blue;
+    cursor: pointer;
     padding-left: 0;
     padding-right: 0;
-	-webkit-border-radius: 0;
-	 -moz-border-radius: 0;
-	      border-radius: 0;
-	@include btnHoverFX;
-}
+    -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+    @include btnHoverFX;
 
-.btn-link:hover {
-	color: darken($blue,20%);
-	text-decoration: none;
-	background-color: transparent;
-	border-color: transparent;
-    background-image: none;
-    box-shadow: none;
-}
+    &:hover,
+    &.disabled,
+    &[disabled] {
+        color: darken($blue,20%);
+        text-decoration: none;
+        text-shadow: none;
+        background: none !important;
+        background-image: none !important;
+        background-color: transparent !important;
+        @include boxShadowRegular(0,0,0,0,0);
+    }
 
+    &.disabled,
+    &[disabled] {
+        border: none;
+    }
 
-.btn-link[disabled]:hover {
-	color: $darkGray1;
-	text-decoration: none;
+    &.active {
+        color: $dark1;
+        border: none;
+    }
+
 }
 
 .btn-group {
-	position: relative;
-	display: inline-block;
-	*display: inline;
-	*margin-left: .3em;
-	font-size: 0;
-	white-space: nowrap;
-	vertical-align: middle;
-	*zoom: 1;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *margin-left: .3em;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    *zoom: 1;
 
   &:first-child {
     *margin-left: 0;
@@ -461,10 +526,8 @@ input[type="submit"].btn.btn-mini {
     *padding-top: 5px;
     padding-right: 0.825em;
     *padding-bottom: 5px;
-    padding-left: 0.425em;
-    -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-       -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-            box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding-left: 0em;
+    @include boxShadowSmall(0,2px,0,0,0.1);
     margin-left: 0 !important;
   }
 
@@ -507,19 +570,19 @@ input[type="submit"].btn.btn-mini {
   }
 
   &.open .btn-danger.dropdown-toggle {
-    background-color: #bd362f;
+    background-color: darken($darkRed, 10%);
   }
 
   &.open .btn-success.dropdown-toggle {
-    background-color: #51a351;
+    background-color: darken($green, 10%);
   }
 
   &.open .btn-info.dropdown-toggle {
-    background-color: #2f96b4;
+    background-color: darken($dark1, 10%);
   }
 
   &.open .btn-inverse.dropdown-toggle {
-    background-color: #222222;
+    background-color: darken($dark2, 10%);
   }
 }
 
@@ -546,12 +609,21 @@ input[type="submit"].btn.btn-mini {
 
     .ss-dropdown,
     .ss-directup {
-      margin: 0.225em -1em 0 1.5em;
+      margin: 0 -0.75em 0 1.5em !important;
+      top: -2px;
       font-size: 0.5em;
       display: inline-block;
     }
+  }
+}
+
+.btn-group .btn {
+  &.dropdown-toggle {
+    .ss-dropdown,
     .ss-directup {
-      margin: 0.225em 0.25em 0 0.5em;
+      margin: 0 -0.75em 0 1em !important;
+      top: -2px;
+      font-size: 0.5em;
     }
   }
 }
@@ -560,17 +632,13 @@ input[type="submit"].btn.btn-mini {
   &.dropdown-toggle {
     .ss-dropdown,
     .ss-directup {
-      margin: 0.225em 0.125em 0 0.5375em;
+      margin: 0 -0.75em 0 1.5em !important;
+      top: -2px;
       font-size: 0.5em;
     }
   }
 }
 
-.btn-mini .caret,
-.btn-small .caret,
-.btn-large .caret {
-  //margin-top: 6px;
-}
 
 .btn-large .caret {
   border-top-width: 5px;
@@ -639,4 +707,43 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-group .dropdown-menu li {
   font-size: 1em;
+}
+
+/* disabled button styles continuned */
+.btn[disabled],
+.btn-primary[disabled],
+.btn-warning[disabled],
+.btn-success[disabled],
+.btn-error[disabled],
+.btn-inverse[disabled],
+.btn.disabled,
+.btn-primary.disabled,
+.btn-warning.disabled,
+.btn-success.disabled,
+.btn-error.disabled,
+.btn-inverse.disabled,
+.btn:disabled,
+.btn-primary:disabled,
+.btn-warning:disabled,
+.btn-success:disabled,
+.btn-error:disabled,
+.btn-inverse:disabled,
+.btn-link:disabled
+ {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-image: none;
+    top: 0px;
+}
+
+.activity-spinner {
+    width: 18px;
+    height: 18px;
+    background: url(../img/activity-spinner.gif) no-repeat -2px -2px;
+    display: block;
 }

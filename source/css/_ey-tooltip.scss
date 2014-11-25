@@ -1,0 +1,99 @@
+// EY Tooltip: _ey-tooltip.scss
+
+.tooltip {
+  	position: absolute;
+  	z-index: 1030;
+  	display: block;
+  	padding: 5px;
+  	font-size: $baseFontSize * 0.8;
+  	opacity: 0;
+  	filter: alpha(opacity=0);
+  	visibility: visible;
+
+    &.in {
+      	opacity: 1;
+    }
+
+    .tooltip-inner {
+        min-width: 240px;
+        max-width: 350px;
+        background-color: $dark1;
+
+        // force font styling to avoid inheritance from trigger element
+        font-size: 15px !important;
+        text-transform: none !important;
+        line-height: 1.425 !important;
+        padding: 15px 12px !important;
+        color: white !important;
+        text-align: center !important;
+
+        @include AvenirRoman;
+        @include boxShadowRegular(0, 2px, 0, 0, 0.25);
+    }
+
+    .tooltip-arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+    }
+
+    // tooltip direction modifiers
+    &.top {
+      	margin-top: -5px;
+
+        .tooltip-arrow {
+              bottom: 0;
+              left: 50%;
+              margin-left: -5px;
+              border-top-color: $dark1;
+              border-width: 5px 5px 0;
+        }
+    }
+
+    &.right {
+    	margin-left: 5px;
+
+        .tooltip-arrow {
+            top: 50%;
+            left: 0;
+            margin-top: -5px;
+            border-right-color: $dark1;
+            border-width: 5px 5px 5px 0;
+        }
+    }
+
+    &.bottom {
+      	margin-top: 5px;
+
+        .tooltip-arrow {
+            top: 0;
+            left: 50%;
+            margin-left: -5px;
+            border-bottom-color: $dark1;
+            border-width: 0 5px 5px;
+        }
+    }
+
+    &.left {
+      	margin-left: -5px;
+
+        .tooltip-arrow {
+            top: 50%;
+            right: 0;
+            margin-top: -5px;
+            border-left-color: $dark1;
+            border-width: 5px 0 5px 5px;
+        }
+    }
+}
+
+
+.tooltip.left .tooltip-arrow {
+	
+}
+
+.tooltip.bottom .tooltip-arrow {
+	
+}

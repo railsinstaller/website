@@ -1,0 +1,65 @@
+// COLOURS
+
+$darkRed: rgb(177, 17, 28);
+$lightRed: rgb(233, 36, 41);
+$blue: rgb(64, 186, 220);
+$green: rgb(114, 197, 155);
+$white: rgb(255, 255, 255);
+$light1: rgb(237, 237, 237);
+$light2: rgb(220, 220, 220);
+$light3: rgb(107, 116, 125);
+$dark1: rgb(75, 87, 99);
+$dark2: rgb(35, 53, 70);
+$dark3: rgb(13, 33, 52);
+
+$formLabel: rgb(135, 130, 130);
+
+// For the style guide documentation
+#colors div[class^="color-"] {
+    padding-left: 1em;
+}
+
+.color-darkRed {
+  background-color: $darkRed;
+  color: $white;
+}
+.color-lightRed {
+  background-color: $lightRed;
+  color: $white;
+}
+.color-blue {
+  background-color: $blue;
+  color: $white;
+}
+.color-green {
+  background-color: $green;
+  color: $white;
+}
+.color-white {
+  background-color: $white;
+}
+.color-light1 {
+  background-color: $light1;
+}
+.color-light2 {
+  background-color: $light2;
+}
+.color-light3 {
+  background-color: $light3;
+  color: $white;
+}
+.color-dark1 {
+  background-color: $dark1;
+  color: $white;
+}
+.color-dark2 {
+  background-color: $dark2;
+  color: $white;
+}
+.color-dark3 {
+  background-color: $dark3;
+  color: $white;
+}
+.color-formLabel {
+  background-color: $formLabel;
+}

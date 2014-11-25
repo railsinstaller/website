@@ -1,0 +1,120 @@
+/* UI SECTIONS
+=================================================
+Styles for UI panels, modules and layouts  */
+
+.panel,
+.accordion {
+    background: white;
+    @include boxShadowSmall;
+    margin-bottom: 1.725em;
+
+    header,
+    .panel-header,
+    .accordion-heading {
+        padding: 1.333em 1.925em;
+        color:  white;
+        position: relative;
+        font-size: 0.875em;
+
+        h1, h2, h3, h4, h5, h5 {
+            color: $dark2;
+            padding:0;
+            line-height: 1.25;
+            margin: 0;
+
+            em {
+                @include AvenirLight;
+                font-style: normal;
+                margin-left: 1.25em;
+            }
+
+            small {
+                color: $light3;
+                font-size: 0.636em;
+                margin-left: 1.25em;
+            }
+
+        }
+
+        &:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            font-size: 0;
+        }
+    }
+
+    .panel-black,
+    &.panel-black {
+        background: $dark2;
+
+        h1, h2, h3, h4, h5, h6, p {
+            color: white;
+        }
+    }
+
+    .panel-shadow,
+    &.panel-shadow {
+        @include boxShadowLarge(0, 2px, 4px, 20, 0.25 );
+    }
+
+    section,
+    .accordion-inner {
+        header {
+            background-color: transparent;
+            color: $dark2;
+
+            h1, h2, h3, h4, h5, h6 {
+                color: $dark2;
+            }
+        }
+    }
+
+    .panel-inner {
+        padding: 1.525em 1.925em;
+
+        .form-vertical ul {
+            padding: 0;
+        }
+
+        legend.blocktext {
+            padding: 1em 0;
+        }
+    }
+
+    &.panel-break {
+        header {
+            border-bottom: 1px solid $light2;
+        }
+
+        hr {
+            border-top-color: $light2;
+            margin: 0;
+        }
+    }
+}
+
+.divider-vertical {
+    width: 1px;
+    border-left: 1px solid $light2;
+    height: 96%;
+    min-height: 100px;
+    padding-bottom: 4%;
+    position: relative;
+    display: inline-block;
+
+    .or {
+        @include circled;
+        line-height: 2.333;
+        font-size: $baseFontSize / $scalex1;
+        font-weight: bold;
+        color: $dark1;
+        background: white;
+        border: 1px solid darken($light2, 2.5%);
+        position: absolute;
+        top: 50%;
+        margin: -1.25em 0 0 -1.25em;
+    }
+}

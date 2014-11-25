@@ -1,0 +1,285 @@
+.navbar-environment {
+    background: white;
+    width: 100%;
+    z-index: 800;
+    -webkit-box-shadow: 0px 3px 3px 0px hsla(0,0%,0%,0.1);
+            box-shadow: 0px 3px 3px 0px hsla(0,0%,0%,0.1);
+
+    &.affix {
+        top: 0;
+        left: 0;
+        opacity: 0.99;
+    }
+}
+
+.toolbar-wrap {
+
+    .navbar-hidden {
+        background: $light1;
+        //border-bottom: 1px solid $light2;
+    }
+
+    &.affix {
+        background: white;
+        width: 100%;
+        @include boxShadowLarge(0, 3px, 3px, 230, 1);
+    }
+}
+
+// from NextgenUI
+.toolbar {
+    display: block;
+    position: relative;
+
+    .logo-wrap {
+        display: inline-block;
+        float: left;
+    }
+
+    img.logo {
+        margin: 17px 0.25em 0 0;
+    }
+
+    header,
+    nav,
+    section {
+        position: relative;
+        float: left;
+        //height: 68px;
+    }
+
+    header {
+        h1 {
+            margin: 0 0 0 1.333em;
+            color: $dark2;
+            font-size: 1.125em;
+            padding: 0;
+            line-height: 50px;
+            @include blockText;
+            letter-spacing: 0.09em;
+            line-height: 65px;
+            float: left;
+            position: relative;
+
+            [class^="ss-"] {
+                color: $light2;
+                font-size: $baseFontSize / $scalex1;
+                margin: 0.2em 0.75em 0 0;
+                display: inline-block;
+                float: left;
+            }
+
+            &.title-project {
+                position: absolute;
+                top: 13px;
+                left: 7px;
+                line-height: 1;
+                font-size: 0.75em;
+                opacity: 0.425;
+                z-index: 800;
+                display: inline-block;
+
+                a {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 250px;
+                    padding-right: 10px;
+                }
+
+                &:hover {
+                    opacity: 1;
+                    color: $blue;
+
+                    a {
+                        color: $blue;
+                    }
+                }
+
+                .ss-box {
+                    display: none;
+                }
+
+            }
+
+            &.title-environment {
+                line-height: 1;
+                margin-top: 32px;
+                padding: 0;
+                display: inline-block;
+                min-width: 350px;
+
+                .title-wrap {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 290px;
+                    display: inline-block;
+                    padding-bottom: 12px;
+                    float: left;
+                }
+
+                .ss-dropdown {
+                    margin: 0.5em 0 0 1.1em;
+                }
+
+                &:hover {
+                    .ss-dropdown {
+                        color: $dark1;
+                        @include btnHoverFX;
+                    }
+                }
+            }
+
+            em {
+                padding-left: 0.125em;
+                color: $blue;
+                @include AvenirLight;
+                font-style: normal;
+            }
+
+            a {
+                color: $dark2;
+                cursor: pointer;
+                display: inline-block;
+                float: left;
+
+                &.dropdown-toggle {
+                    float: none;
+                }
+            }
+        }
+
+        ul.dropdown-menu {
+            margin: 0px;
+            min-width: 260px;
+            @include borderRadius(0,0,0,0);
+            box-shadow: none;
+            -webkit-box-shadow: 0px 3px 3px 0px $light2;
+            border: 1px solid $light1;
+            border-top: none;
+            position: absolute;
+            left: -28px;
+            top: 17px;
+
+            li {
+                font-size: 1em;
+
+                a {
+                    padding: 0.75em 1.5em;
+                    line-height: 1.5;
+                    display: block;
+                    float: none;
+                    border-bottom: 1px solid $light1;
+                    @include borderRadius(0,0,0,0);
+                    @include AvenirBlack;
+                    overflow: visible;
+                    white-space: wrap;
+                    max-width: 600px;
+
+                    &:hover {
+                        color: white;
+                        background: $blue;
+                    }
+                }
+
+                &:first-child {
+                    //border-top: 1px solid $light1;
+                }
+                &:last-child a {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        a.backlink {
+            width: 2em;
+            margin: 0 0 0 -2em;
+            position: absolute;
+            top: 2px;
+            line-height: 64px;
+            display: inline-block;
+            border-right: 1px solid $light1;
+            color: $light3;
+
+            &:hover {
+                color: $dark1;
+            }
+        }
+    }
+
+    ul.nav {
+        border-left: 1px solid $light1;
+        margin: 0 0 0 15px;
+        padding: 14px 10px 12px 10px;
+        float: left;
+        @include helvetica;
+        font-weight: bold;
+
+        li {
+            margin: 0em;
+
+            a {
+                color: $blue;
+                position: relative;
+                padding: 10px 12px 10px;
+
+                &[class^="ss-"] {
+                    color: lighten($dark1, 25%);
+                    margin: 0 -1em 0 0;
+
+                    &:hover {
+                        background: transparent;
+                        color: $light3;
+                    }
+                }
+
+                &.active {
+                    color: $lightRed;
+                }
+
+                .badge {
+                    position: absolute;
+                    top: -6px;
+                    right: -6px;
+
+                    .ss-notifications {
+                        font-size: 0.923em; //12px
+                    }
+                }
+            }
+        }
+    }
+
+    .settings {
+        float: right;
+        line-height: 68px;
+        display: inline-block;
+        margin: 0 2em 0 0;
+
+        a {
+            color: lighten($dark1, 15%) !important;
+        }
+    }
+
+    .heading-controls {
+        float: right;
+        font-size: 0.825em;
+        border-bottom: none;
+        padding-top: 1.2em;
+        margin-right: 2%;
+
+        i {
+            margin-right: 0.5em;
+            opacity: 0.125;
+        }
+
+        &:hover {
+            color: $darkRed;
+            i {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+

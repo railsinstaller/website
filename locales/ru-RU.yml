@@ -20,9 +20,9 @@ ru-RU:
   google_group_preffix: Если вам нужна помощь с RailsInstaller, пожалуйста, зайдите на нашу
   google_group_suffix: где вы можете найти посты от других пользователей и задать вопросы.
   jewerlybox: JewelryBox
-  last_version_download: Скачайте
-  last_version_download_preffix: Хотите самую последнюю версию, которую еще дорабатывают?
-  last_version_download_suffix: railsinstaller-windows 3.0.0-alpha2 c Ruby 2.0.0!
+  old_version_download: Скачайте
+  old_version_download_preffix: Все-таки надо 1.9.3?
+  old_version_download_suffix: railsinstaller-windows c Ruby 1.9.3.
   mac: Mac OSX
   mac_downloads: Для Mac
   mac_ver_new: 10.7 & 10.8

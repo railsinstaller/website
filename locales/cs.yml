@@ -20,9 +20,9 @@ cs:
   google_group_preffix: Pokud potřebujete pomoc s RailsInstallerem, prosím zavítejte na naši
   google_group_suffix: ', kde si můžete přečíst příspěvky od ostatních uživatelů nebo položit otázku.'
   jewerlybox: JewelryBox
-  last_version_download: Stáhněte
-  last_version_download_preffix: Chcete zkusit vývojovou verzi?
-  last_version_download_suffix: si railsinstaller-windows 3.0.0-alpha2 obsahující Ruby 2.0.0!
+  old_version_download: Stáhněte
+  old_version_download_preffix: Stále potřebujete Ruby 1.9?
+  old_version_download_suffix: si railsinstaller-windows obsahující Ruby 1.9.3.
   mac: Mac OSX
   mac_downloads: Mac soubory
   mac_ver_new: 10.7 & 10.8

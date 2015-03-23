@@ -31,7 +31,7 @@ fr-FR:
   nix_repository: railsinstaller-nix
   or: ou
   osx_gcc_installer: osx-gcc-installer
-  osx_warning: "Veuillez ne pas utiliser l\'installeur sous OSX Mavericks jusqu\'à nouvel ordre."
+  osx_warning: "Veuillez ne pas utiliser l'installeur sous OSX Mavericks jusqu'à nouvel ordre."
   osx_note: "À noter :"
   osx_note_description: OSX 10.6 installer est uniquement pour les architectures 64-bit. Sur un ordinateur 32-bits, des crash sont à prévoir.
   packages_included: Cet installeur contient

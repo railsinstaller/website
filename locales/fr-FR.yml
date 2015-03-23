@@ -31,6 +31,7 @@ fr-FR:
   nix_repository: railsinstaller-nix
   or: ou
   osx_gcc_installer: osx-gcc-installer
+  osx_warning: "Veuillez ne pas utiliser l\'installeur sous OSX Mavericks jusqu\'à nouvel ordre."
   osx_note: "À noter :"
   osx_note_description: OSX 10.6 installer est uniquement pour les architectures 64-bit. Sur un ordinateur 32-bits, des crash sont à prévoir.
   packages_included: Cet installeur contient
@@ -41,8 +42,8 @@ fr-FR:
   rails_tutorial: Tutorial Ruby on Rails
   rails_tutorial_preffix: Le
   rails_tutorial_suffix: de Michael Hartl est aussi une excellente source d'information. Le tutorial se base sur l'utilisation d'un Mac, mais il sera également utile aux utilisateurs Windows.
-  rails_ver_new: 3.2
-  rails_ver_old: 3.0.7
+  rails_ver_new: 4.1
+  rails_ver_old: 3.2
   repositories_preffix: dans les dépôts respectifs (
   repositories_suffix: ).
   ruby: Ruby

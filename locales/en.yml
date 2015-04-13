@@ -21,9 +21,9 @@ en:
   google_group_preffix: If you need assistance with RailsInstaller, please see our
   google_group_suffix: where you can view posts from other users as well as ask questions.
   jewerlybox: JewelryBox
-  last_version_download: Download
-  last_version_download_preffix: Still need Ruby 1.9?
-  last_version_download_suffix: railsinstaller-windows with Ruby 1.9.3.
+  old_version_download: Download
+  old_version_download_preffix: Still need Ruby 1.9?
+  old_version_download_suffix: railsinstaller-windows with Ruby 1.9.3.
   mac: Mac OSX
   mac_downloads: Mac Downloads
   mac_ver_new: 10.7 & 10.8

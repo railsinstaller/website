@@ -94,14 +94,10 @@
           %strong= t '.osx_note'
           = t '.osx_note_description'
       .row
-        /.col-md-12.alert.alert-light.alert-shadow
-        /  = t '.last_version_download_preffix'
-        /  = link_to t('.last_version_download'), 'https://github.com/railsinstaller/railsinstaller-windows/releases/download/3.0.0-alpha.2/railsinstaller-3.0.0.exe', style: 'color: rgb(75, 179, 209);'
-        /  = t '.last_version_download_suffix'
         .col-md-12.alert.alert-light.alert-shadow
-          Still need Ruby 1.9?
-          = link_to 'Download', 'https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-2.2.5.exe'
-          railsinstaller-windows with Ruby 1.9.3
+          = t '.old_version_download_preffix'
+          = link_to t('.old_version_download'), 'https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-2.2.5.exe'
+          = t '.old_version_download_suffix'
   .row.space
     .col-md-12
       %h2= t '.next'

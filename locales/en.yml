@@ -53,7 +53,7 @@ en:
   ruby_21: Ruby 2.1
   ruby_19_ver: 1.9.3
   ruby_20_ver: 2.0.0
-  ruby_21_ver: 2.1.5
+  ruby_21_ver: 2.1.8
   rvm: RVM
   sm_framework: SM Framework
   sql_support: SQL Server Support

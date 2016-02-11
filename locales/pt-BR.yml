@@ -41,7 +41,7 @@ pt-BR:
   rails_tutorial: Tutorial de Ruby on Rails
   rails_tutorial_preffix: Um outro grande recurso é o
   rails_tutorial_suffix: por Michael Hartl. Mesmo o tutorial sendo focado em usuários de Mac, ele também disponibiliza grande valor e conhecimento para usuários de Windows.
-  rails_ver_new: '3.2'
+  rails_ver_new: '4.2'
   rails_ver_old: 3.0.7
   repositories_preffix: nos respectivos repositórios (
   repositories_suffix: ).

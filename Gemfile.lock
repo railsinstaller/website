@@ -37,7 +37,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    eventmachine (1.0.7)
+    eventmachine (1.0.9.1)
     execjs (2.2.2)
     ffi (1.9.6)
     gh_contributors (0.8.0)
@@ -154,7 +154,6 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  eventmachine (= 1.0.7)
   gh_contributors
   haml
   middleman (~> 3.3.2)
@@ -165,6 +164,3 @@ DEPENDENCIES
   tzinfo-data
   unicorn
   wdm (~> 0.1.0)
-
-BUNDLED WITH
-   1.11.2

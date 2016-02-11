@@ -15,8 +15,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem 'haml'
 
-gem 'eventmachine', '1.0.7'
-
 group :production do
   gem 'unicorn'
   gem 'puma'

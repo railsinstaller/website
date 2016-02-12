@@ -49,9 +49,11 @@ pt-BR:
   ruby_19: Ruby 1.9
   ruby_20: Ruby 2.0
   ruby_21: Ruby 2.1
+  ruby_22: Ruby 2.2
   ruby_19_ver: 1.9.3
   ruby_20_ver: 2.0.0
   ruby_21_ver: 2.1.8
+  ruby_22_ver: 2.2.4
   rvm: RVM
   sm_framework: Framework SM
   sql_support: Suporte do SQL Server

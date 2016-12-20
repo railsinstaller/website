@@ -43,7 +43,7 @@ en:
   rails_tutorial: Ruby on Rails Tutorial
   rails_tutorial_preffix: Another great resource is the
   rails_tutorial_suffix: by Michael Hartl. While the tutorial is Mac-focused, it does provide great value and insight for Windows users as well.
-  rails_ver_new: 4.2
+  rails_ver_new: 5.0
   rails_ver_old: 3.2
   repositories_preffix: in the respective repositories (
   repositories_suffix: ).
@@ -55,7 +55,7 @@ en:
   ruby_19_ver: 1.9.3
   ruby_20_ver: 2.0.0
   ruby_21_ver: 2.1.8
-  ruby_22_ver: 2.2.4
+  ruby_22_ver: 2.2.6
   rvm: RVM
   sm_framework: SM Framework
   sql_support: SQL Server Support

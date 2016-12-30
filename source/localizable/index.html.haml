@@ -24,13 +24,13 @@
         %h2= t '.mac_downloads'
     .row
       = partial 'download_btn',
-        locals: { down_link: 'https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.1.1.exe',
-                  platform: 'win',
-                  down_version: 'ruby_21' }
-      = partial 'download_btn',
         locals: { down_link: 'https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.1.exe',
                   platform: 'win',
                   down_version: 'ruby_22' }
+      = partial 'download_btn',
+        locals: { down_link: 'https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.3.0.exe',
+                  platform: 'win',
+                  down_version: 'ruby_23' }
       = partial 'download_btn',
         locals: { down_link: 'https://s3.amazonaws.com/railsinstaller/OSX/RailsInstaller-1.0.4-osx-10.7.app.tgz',
                   platform: 'mac',
@@ -46,7 +46,7 @@
             %ul.unstyled
               %li
                 = link_to t('.ruby'), 'http://www.ruby-lang.org'
-                = t '.ruby_21_ver'
+                = t '.ruby_22_ver'
               %li
                 = link_to t('.rails'), 'http://rubyonrails.org/'
                 = t '.rails_ver_new'
@@ -62,7 +62,7 @@
             %ul.unstyled
               %li
                 = link_to t('.ruby'), 'http://www.ruby-lang.org'
-                = t '.ruby_22_ver'
+                = t '.ruby_23_ver'
               %li
                 = link_to t('.rails'), 'http://rubyonrails.org/'
                 = t '.rails_ver_new'

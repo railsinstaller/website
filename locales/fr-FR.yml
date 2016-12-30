@@ -51,10 +51,12 @@ fr-FR:
   ruby_20: Ruby 2.0
   ruby_21: Ruby 2.1
   ruby_22: Ruby 2.2
+  ruby_23: Ruby 2.3
   ruby_19_ver: 1.9.3
   ruby_20_ver: 2.0.0
   ruby_21_ver: 2.1.8
   ruby_22_ver: 2.2.6
+  ruby_23_ver: 2.3.3
   rvm: RVM
   sm_framework: SM Framework
   sql_support: Support SQL Server

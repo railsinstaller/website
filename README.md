@@ -23,6 +23,7 @@ works properly. Check out `locales/en.yml` for strings to localize.
 - Russian (ru-RU)
 - French - France (fr-FR)
 - Czech (cs)
+- Spanish (es)
 
 ### Testing
 

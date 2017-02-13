@@ -34,7 +34,7 @@ es:
   osx_warning: 'Por favor, no ejecute el instalador en OSX Mavericks hasta nuevo aviso'
   osx_note: "Tenga en cuenta:"
   osx_note_description: El instalador de OSX 10.6 es únicamente para 64-bit. Es propenso a 'crashear' en ordenadores de 32-bit.
-  packages_included: Paquetes incluidos:
+  packages_included: "Paquetes incluidos:"
   rails: Rails
   rails_guides: Rails Guides
   rails_guides_preffix: Después de la instalación, eche un vistazo a

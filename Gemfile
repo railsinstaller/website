@@ -22,7 +22,7 @@ end
 
 group :development, :test do
   gem 'gh_contributors'
-  gem 'rake', '~> 10.3'
+  gem 'rake', '~> 12.3'
   gem 'rspec'
   gem 'capybara'
 end

@@ -1,10 +1,11 @@
 # RailsInstaller Web
 
-Web application for http://railsinstaller.org
+Web application for  http://railsinstaller.org can be found here
 
 [ ![Codeship Status for railsinstaller/website](https://codeship.com/projects/cda693e0-f3e1-0130-c6a1-6e039e15cc73/status?branch=master)](https://www.codeship.io/projects/6492)
 
 ### Contributing
+
 
 The website is written using [Middleman](http://middlemanapp.com/) so please
 see the documentation if you have questions about how a Middleman site is

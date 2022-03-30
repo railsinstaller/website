@@ -93,6 +93,7 @@ GEM
     mini_portile (0.6.1)
     minitest (5.4.3)
     multi_json (1.10.1)
+    nio4r (2.5.8)
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     padrino-helpers (0.12.4)
@@ -101,7 +102,8 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.4)
       activesupport (>= 3.1)
-    puma (3.12.2)
+    puma (4.3.12)
+      nio4r (~> 2.0)
     rack (1.6.4)
     rack-livereload (0.3.15)
       rack
